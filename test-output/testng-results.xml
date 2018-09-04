@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Default suite]" duration-ms="51938" started-at="2018-09-03T13:31:46Z" finished-at="2018-09-03T13:32:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51938" started-at="2018-09-03T13:31:46Z" finished-at="2018-09-03T13:32:37Z">
+      <class name="suit.open_browser">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:suit.open_browser@1f36e637]" name="Setup" is-config="true" duration-ms="499" started-at="2018-09-03T19:01:45Z" finished-at="2018-09-03T19:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="openbrowser()[pri:0, instance:suit.open_browser@1f36e637]" name="openbrowser" duration-ms="23088" started-at="2018-09-03T19:01:46Z" finished-at="2018-09-03T19:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.open_browser@1f36e637]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-03T19:02:09Z" finished-at="2018-09-03T19:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openbrowser status=SUCCESS method=open_browser.openbrowser()[pri:0, instance:suit.open_browser@1f36e637] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:suit.open_browser@1f36e637]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-09-03T19:02:38Z" finished-at="2018-09-03T19:02:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- suit.open_browser -->
+      <class name="suit.category_page">
+        <test-method status="PASS" signature="CategoryPage()[pri:0, instance:suit.category_page@578486a3]" name="CategoryPage" duration-ms="28827" started-at="2018-09-03T19:02:09Z" finished-at="2018-09-03T19:02:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CategoryPage -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.category_page@578486a3]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-03T19:02:37Z" finished-at="2018-09-03T19:02:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CategoryPage status=SUCCESS method=category_page.CategoryPage()[pri:0, instance:suit.category_page@578486a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.category_page -->
+    </test> <!-- Default test -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
