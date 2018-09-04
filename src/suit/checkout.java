@@ -9,7 +9,6 @@ import java.util.Properties;
 import org.testng.annotations.Test;
 
 import action.action_select;
-import bsh.This;
 import global_utility.global_variables;
 import global_utility.handle_ajax_call;
 import global_utility.random_email;
@@ -28,7 +27,7 @@ public class checkout extends global_variables{
 		
 		
 		testinfo=reports.createTest(this.getClass().getName());
-		log_system.info("*********************Execution Start for: "+This.class.getName()+"************************");
+		log_system.info("*********************Execution Start for: "+this.getClass().getSimpleName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
 		action_select act=new action_select();
@@ -42,13 +41,13 @@ public class checkout extends global_variables{
 			Properties prop=new Properties();
 			InputStream in=new FileInputStream(path_lib_properties+"path_testcase.properties");
 			prop.load(in);
-			log_system.info("*************************Prepare Data Set for "+This.class.getName()+ "from excel "+prop.getProperty("aislend_ProductList_FileName")+" *******************************************************************");
-			test_data=getExcelSheet.readInputs(path_lib_testcase+prop.getProperty("aislend_ProductList_FileName"), prop.getProperty("aislend_ProductList_SheetName"));
-			log_system.info("*************************** Data set Ready for "+This.class.getName()+" ***************************************");
+			log_system.info("*************************Prepare Data Set for "+this.getClass().getSimpleName()+ "from excel "+prop.getProperty("aislend_Checkout_FileName")+" *******************************************************************");
+			test_data=getExcelSheet.readInputs(path_lib_testcase+prop.getProperty("aislend_Checkout_FileName"), prop.getProperty("aislend_Checkout_SheetName"));
+			log_system.info("*************************** Data set Ready for "+this.getClass().getSimpleName()+" ***************************************");
 			log_system.info("******************************* Intializing Recorder *************************************");
-			recorder.startRecording(path_lib_record,prop.getProperty("aislend_ProductList_SheetName"));
-			path_lib_recoderfull=path_lib_record+prop.getProperty("aislend_ProductList_SheetName")+".mov";
-			log_system.info("************************************** Start Execution "+This.class.getName()+" *********************************************");
+			recorder.startRecording(path_lib_record,prop.getProperty("aislend_Checkout_SheetName"));
+			path_lib_recoderfull=path_lib_record+prop.getProperty("aislend_Checkout_SheetName")+".mov";
+			log_system.info("************************************** Start Execution "+this.getClass().getSimpleName()+" *********************************************");
 			for(List TestData:test_data)
 			  {
 				  String UseCase_ID=TestData.get(0).toString();
@@ -68,10 +67,10 @@ public class checkout extends global_variables{
 					  System.out.println("");
 				  }
 
-				  log_system.info(This.class.getName()+": Test case "+UseCase_ID+"_"+TestCase_ID+" is executing");
+				  log_system.info(this.getClass().getSimpleName()+": Test case "+UseCase_ID+"_"+TestCase_ID+" is executing");
 				  result_log= act.ActionSelect(UseCase_ID,TestCase_ID, Description, Action,ElementType,Element,Input1,Input2,Input3,Input4);				  			
-				  log_system.info(This.class.getName()+": Execution complete for Test case "+UseCase_ID+"_"+TestCase_ID);
-				  log_system.info(This.class.getName()+": Taking Screenshot for Test case "+UseCase_ID+"_"+TestCase_ID);
+				  log_system.info(this.getClass().getSimpleName()+": Execution complete for Test case "+UseCase_ID+"_"+TestCase_ID);
+				  log_system.info(this.getClass().getSimpleName()+": Taking Screenshot for Test case "+UseCase_ID+"_"+TestCase_ID);
 				  try {
 					handle_ajax_call.HandleAjaxCall();
 					  getscreenshot.screenshot(path_lib_screenshot+screenshotFolderName+"\\", UseCase_ID+"_"+TestCase_ID);
