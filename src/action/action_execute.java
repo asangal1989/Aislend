@@ -5,9 +5,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Properties;
@@ -740,6 +743,52 @@ public class action_execute extends global_variables{
 		else
 			Status=0;
 		
+		return Status;
+	}
+	
+	public int VerifyBrokenLink() throws IOException 
+	{
+		HttpURLConnection huc = null;
+		String url = null;
+		int respCode = 200;
+		List<WebElement> links = Driver.findElements(By.tagName("a"));
+		Iterator<WebElement> it = links.iterator();
+		int errorcount=0;
+		while(it.hasNext()){
+            
+            url = it.next().getAttribute("href");
+            
+            System.out.println(url);
+        
+            if(url == null || url.isEmpty()){
+            	System.out.println("URL is either not configured for anchor tag or it is empty");
+            	errorcount++;
+                continue;
+            }
+            
+            
+            huc = (HttpURLConnection)(new java.net.URL(url).openConnection());
+            
+            huc.setRequestMethod("HEAD");
+            
+            huc.connect();
+            
+            respCode = huc.getResponseCode();
+            
+            if(respCode >= 400){
+                System.out.println(url+" is a broken link");
+                errorcount++;
+            }
+            else{
+                System.out.println(url+" is a valid link");
+            }
+
+		}
+		
+		if(errorcount==0)
+		{
+			Status=1;
+		}
 		return Status;
 	}
 	

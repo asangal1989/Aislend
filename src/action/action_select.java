@@ -18,428 +18,442 @@ public class action_select extends global_variables{
 			{
 			case "OpenBrowser":
 			{
-				log_system.info("Action Open Browser Selected");
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_OpenBrowser(Input1);
-				log_system.info("Action Open Browser Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add(Input1+" : Browser Open Successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add(Input1+" : Browser not Opened");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "GetURL":
 			{
-				log_system.info("Action Get URL Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_GetURL(Input1);
-				log_system.info("Action verify URL Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("url verified: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("url mismatch: "+Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyURL":
 			{
-				log_system.info("Action verify URL Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyURL(Input1);
-				log_system.info("Action Get URL Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add(Input1+" : Open Successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add(Input1+" : not Opened");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyText":
 			{
-				log_system.info("Action verify text Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyText(ElementType,Element,Input1);
-				log_system.info("Action verify text Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("text verified: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("text mismatch: "+Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyTitle":
 			{
-				log_system.info("Action Title Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyTitle(Input1,Input2);
-				log_system.info("Action Verify Title Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Title verified succesfully: "+ Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Title verification Failed: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyElement":
 			{
-				log_system.info("Action Verify Element Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyElement(ElementType,Element);
-				log_system.info("Action Verify Element Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Element verified succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Element verification Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}			
 			case "VerifyNoElement":
 			{
-				log_system.info("Action Verify No Element Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyNoElement(ElementType,Element);
-				log_system.info("Action Verify No Element Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Element verified succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Element verification Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyCategoryAndProduct":
 			{
-				log_system.info("Action Verify Category and it's product");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyCategoryAndProduct(ElementType,Element);
-				log_system.info("Action Verify Category and it's product  Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("verification of Category and it's product succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("verification of Category and it's product Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyMyAccountMenu":
 			{
-				log_system.info("Action VerifyMyAccountMenu");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyMyAccountMenu(ElementType,Element,Input1);
-				log_system.info("Action VerifyMyAccountMenu  Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("verification of VerifyMyAccountMenu succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("verification of VerifyMyAccountMenu Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "MoveToCategory":
 			{
-				log_system.info("Action Move To Category");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_MoveToCategory(ElementType,Element,Input1);
-				log_system.info("Action MoveToCategory  Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("user Move To Category successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("user is not able to navigate to category");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifySiteMapFromCategoryPage":
 			{
-				log_system.info("Action VerifySiteMapFromCategoryPage");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifySiteMapFromCategoryPage(ElementType,Element);
-				log_system.info("Action VerifySiteMapFromCategoryPage  Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("VerifySiteMapFromCategoryPage successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("VerifySiteMapFromCategoryPage failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "MoveToProductList":
 			{
 
-				log_system.info("Action Verify MoveToProductList");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_MoveToProductList(ElementType,Element,Input1,Input2);
-				log_system.info("Action Move To Product List Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("verification of Move To Product List succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("verification of Move To Product List Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyMiniCart":
 			{
-				log_system.info("Action Verify MiniCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyMiniCart(ElementType,Element,Input1);
-				log_system.info("Action Verify MiniCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("verification of MiniCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("verification of MiniCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("log captured for action: "+Action);
+				break;
+			}
+			case "VerifyBrokenLink":
+			{
+				log_system.info("Select Action: "+ Action);
+				Status=act_perform.Perform_VerifyBrokenLink();
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "AddProductfromMiniCart":
 			{
-				log_system.info("Action AddProductfromMiniCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_AddProductfromMiniCart(ElementType,Element);
-				log_system.info("Action AddProductfromMiniCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("AddProductfromMiniCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("AddProductfromMiniCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "RemoveProductfromMiniCart":
 			{
-				log_system.info("Action RemoveProductfromMiniCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_RemoveProductfromMiniCart(ElementType,Element);
-				log_system.info("Action RemoveProductfromMiniCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("RemoveProductfromMiniCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("RemoveProductfromMiniCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "DeleteProductfromMiniCart":
 			{
-				log_system.info("Action DeleteProductfromMiniCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_DeleteProductfromMiniCart(ElementType,Element,Input1);
-				log_system.info("Action DeleteProductfromMiniCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("DeleteProductfromMiniCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("DeleteProductfromMiniCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "AddProductfromViewCart":
 			{
-				log_system.info("Action AddProductfromViewCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_AddProductfromViewCart(ElementType,Element);
-				log_system.info("Action AddProductfromViewCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("AddProductfromViewCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("AddProductfromViewCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "AddInstruction":
 			{
-				log_system.info("Action AddInstruction");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_AddInstruction(ElementType,Element,Input1);
-				log_system.info("Action AddInstruction Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("AddInstruction succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("AddInstruction Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "EditInstruction":
 			{
-				log_system.info("Action EditInstruction");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_EditInstruction(ElementType,Element,Input1);
-				log_system.info("Action EditInstruction Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("EditInstruction succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("EditInstruction Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "RemoveInstruction":
 			{
-				log_system.info("Action RemoveInstruction");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_RemoveInstruction(ElementType,Element);
-				log_system.info("Action RemoveInstruction Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("RemoveInstruction succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("RemoveInstruction Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "RemoveProductfromViewCart":
 			{
-				log_system.info("Action RemoveProductfromViewCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_RemoveProductfromViewCart(ElementType,Element);
-				log_system.info("Action RemoveProductfromViewCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("RemoveProductfromViewCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("RemoveProductfromViewCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "DeleteProductfromViewCart":
 			{
-				log_system.info("Action DeleteProductfromViewCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_DeleteProductfromViewCart(ElementType,Element,Input1);
-				log_system.info("Action DeleteProductfromViewCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("DeleteProductfromViewCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("DeleteProductfromViewCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifySummaryViewCart":
 			{
-				log_system.info("Action VerifySummaryViewCart");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifySummaryViewCart(ElementType,Element);
-				log_system.info("Action VerifySummaryViewCart Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("VerifySummaryViewCart succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("VerifySummaryViewCart Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyMiniCartMsg":
 			{
-				log_system.info("Action VerifyMiniCartMsg");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyMiniCartMsg(ElementType,Element,Input1);
-				log_system.info("Action VerifyMiniCartMsg Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("VerifyMiniCartMsg succesfully ");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("VerifyMiniCartMsg Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "Click":
 			{
-				log_system.info("Action Click Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_Click(ElementType,Element);
-				log_system.info("Action Click Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Click Performed succesfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Action Click Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}			
 			case "SelectMyAccountTab":
 			{
-				log_system.info("Action SelectMyAccountTab Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SelectMyAccountTab(ElementType,Element,Input1);
-				log_system.info("Action SelectMyAccountTab Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("SelectMyAccountTab Performed succesfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Action SelectMyAccountTab Failed");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SetText":
 			{
-				log_system.info("Action Set Text Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SetText(ElementType,Element, Input1);
-				log_system.info("Action Set Text Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Text Entered successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Set Text Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "Wait":
 			{
-				log_system.info("Action Wait");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_wait(Input1);
-				if(Status==1){result_log.add("Text Entered successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Set Text Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "ClearText":
 			{
-				log_system.info("Action Clear Text Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_ClearText(ElementType,Element);
-				log_system.info("Action Clear Text Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Clear Entered successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Clear Text Fail:");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SearchProduct":
 			{
-				log_system.info("Action Search Product Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SearchProduct(ElementType,Element, Input1);
-				log_system.info("Action Search Product Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Product searched successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Product Search Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SearchAndAddToWishlist":
 			{
-				log_system.info("Action Search And Add To Wish list Selected");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SearchAndAddToWishlist(ElementType,Element, Input1);
-				log_system.info("Action SearchAndAddToWishlist Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("SearchAndAddToWishlist successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("SearchAndAddToWishlist Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "HeaderMenuSearch":
 			{
-				log_system.info("Action Search Link in Header Menu");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_HeaderMenuSearch(ElementType,Element, Input1);
-				log_system.info("Action Search Header Menu");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Link searched successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Link Search Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "MoveAndAddProduct":
 			{
-				log_system.info("Action Move & add Product");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_MoveAndAddProduct(ElementType,Element,Input1);
-				log_system.info("Action Move and Add Product Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Add product successfully");result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Move and Add product Fail ");result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "MoveAndRemoveProduct":
 			{
-				log_system.info("Action Move & Remove Product");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_MoveAndRemoveProduct(ElementType,Element,Input1);
-				log_system.info("Action Move and Remove Product Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Remove product successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Move and Remove product Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SortBy":
 			{
-				log_system.info("Action Sort by");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SortBy(ElementType,Element, Input1);
-				log_system.info("Action sory by Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Product sort successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("product sort Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "VerifyFooterLinks":
 			{
-				log_system.info("Action VerifyFooterLinks");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_VerifyFooterLinks(ElementType,Element);
-				log_system.info("Action VerifyFooterLinks Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("VerifyFooterLinks successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("VerifyFooterLinks Fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SelectSubstitute":
 			{
-				log_system.info("Action Select Substitute for Product");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SelectSubstitute(ElementType,Element, Input1);
-				log_system.info("Action Select Substitute Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Select Substitute successfully: "+Input1+" for product: "+ Input2);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Select Substitute Fail: "+Input1+" for product: "+ Input2);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "SelectSlot":
 			{
-				log_system.info("Action Select slot");
+				log_system.info("Select Action: "+ Action);
 				Status=act_perform.Perform_SelectSlot(ElementType,Element, Input1,Input2);
-				log_system.info("Action Select Slot Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Select Slot successfully: "+Input1+"  "+ Input2);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Select slot Fail: "+Input1+" for product: "+ Input2);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
 			case "CloseBrowser":
 			{
-				log_system.info("Action Close Browser Selected");				
+				log_system.info("Select Action: "+ Action);				
 				Status=act_perform.Perform_CloseBrowser(Input1);
-				log_system.info("Action Close Browser Executed");
-				log_system.info("Creating manual log for: "+Action+ "Current status is "+Status);
-				if(Status==1){result_log.add("Action performed successfully: "+Input1);result_log.add("Pass");result_log.add("-");}
-				else{ result_log.add("Action fail: "+ Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
@@ -734,6 +748,15 @@ public class action_select extends global_variables{
 			case "MoveAndRemoveProduct":
 			{
 				result_log.add("action MoveAndRemoveProduct failed: "+ Input1);
+				result_log.add("Fail");
+				result_log.add(e.getMessage());
+				log_system.error(e.getMessage());
+				log_system.error(e.getStackTrace().toString());								
+				break;
+			}
+			case "VerifyBrokenLink":
+			{
+				result_log.add("action Verify BrokenLink failed: ");
 				result_log.add("Fail");
 				result_log.add(e.getMessage());
 				log_system.error(e.getMessage());

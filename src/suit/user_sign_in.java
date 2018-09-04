@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.testng.annotations.Test;
 
 import action.action_select;
+import bsh.This;
 import global_utility.global_variables;
 import global_utility.handle_ajax_call;
 import global_utility.random_email;
@@ -27,7 +28,7 @@ public class user_sign_in extends global_variables{
 		
 		
 		testinfo=reports.createTest(this.getClass().getName());
-		log_system.info("Execution Start for: User Sign In");
+		log_system.info("*********************Execution Start for: "+This.class.getName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
 		action_select act=new action_select();
@@ -41,13 +42,13 @@ public class user_sign_in extends global_variables{
 			Properties prop=new Properties();
 			InputStream in=new FileInputStream(path_lib_properties+"path_testcase.properties");
 			prop.load(in);
-			log_system.info("get Data set from excel test cases");
-			test_data=getExcelSheet.readInputs(path_lib_testcase+prop.getProperty("aislend_UserSignIn_FileName"), prop.getProperty("aislend_UserSignIn_SheetName"));
-			log_system.info("Data set Successfully loaded on system for User Login Suit");
-			log_system.info("Start system Recording for User login Suit");
-			recorder.startRecording(path_lib_record,prop.getProperty("aislend_UserSignIn_SheetName"));
-			path_lib_recoderfull=path_lib_record+prop.getProperty("aislend_UserSignIn_SheetName")+".mov";
-			log_system.info("Start Execution of loaded data set");
+			log_system.info("*************************Prepare Data Set for "+This.class.getName()+ "from excel "+prop.getProperty("aislend_ProductList_FileName")+" *******************************************************************");
+			test_data=getExcelSheet.readInputs(path_lib_testcase+prop.getProperty("aislend_ProductList_FileName"), prop.getProperty("aislend_ProductList_SheetName"));
+			log_system.info("*************************** Data set Ready for "+This.class.getName()+" ***************************************");
+			log_system.info("******************************* Intializing Recorder *************************************");
+			recorder.startRecording(path_lib_record,prop.getProperty("aislend_ProductList_SheetName"));
+			path_lib_recoderfull=path_lib_record+prop.getProperty("aislend_ProductList_SheetName")+".mov";
+			log_system.info("************************************** Start Execution "+This.class.getName()+" *********************************************");
 			for(List TestData:test_data)
 			  {
 				  String UseCase_ID=TestData.get(0).toString();
@@ -62,23 +63,22 @@ public class user_sign_in extends global_variables{
 				  String Input4=TestData.get(9).toString().replace("\"", "");
 				  String Expected_result=TestData.get(10).toString();
 				  String screenshotFolderName=TestData.get(14).toString();
-				  if(UseCase_ID.contains("US_ID_17") && TestCase_ID.contains("TC_CityMarket_08"))
+				  if(UseCase_ID.contains("US_ID_14") && TestCase_ID.contains("TC_CityMarket_04") )
 				  {
 					  System.out.println("");
 				  }
 
-				  log_system.info("Test case "+UseCase_ID+"_"+TestCase_ID+" is executing");
+				  log_system.info(This.class.getName()+": Test case "+UseCase_ID+"_"+TestCase_ID+" is executing");
 				  result_log= act.ActionSelect(UseCase_ID,TestCase_ID, Description, Action,ElementType,Element,Input1,Input2,Input3,Input4);				  			
-				  log_system.info("Execution complete for Test case "+UseCase_ID+"_"+TestCase_ID);
-				  log_system.info("Taking Screenshot for Test case "+UseCase_ID+"_"+TestCase_ID);
+				  log_system.info(This.class.getName()+": Execution complete for Test case "+UseCase_ID+"_"+TestCase_ID);
+				  log_system.info(This.class.getName()+": Taking Screenshot for Test case "+UseCase_ID+"_"+TestCase_ID);
 				  try {
 					handle_ajax_call.HandleAjaxCallSignin(ElementType,Element);
 					  getscreenshot.screenshot(path_lib_screenshot+screenshotFolderName+"\\", UseCase_ID+"_"+TestCase_ID);
 				} catch (Exception e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
-				}
-				  log_system.info("screenshot path: "+path_lib_screenshot+screenshotFolderName+"\\"+UseCase_ID+"_"+TestCase_ID);
+				}				  
 				  log_system.info("Writing output in excel file");				  
 				  output.writeResult(UseCase_ID,TestCase_ID,path_lib_testcase+prop.getProperty("aislend_UserSignIn_FileName"), prop.getProperty("aislend_UserSignIn_SheetName"),result_log,test_data.indexOf(TestData),Description,Expected_result,this.getClass().getName());				  
 				  log_system.info("Output written");	

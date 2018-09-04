@@ -105,6 +105,13 @@ public class action_perform extends global_variables{
 		return Status;
 	}
 	
+	public int Perform_VerifyBrokenLink() throws Exception
+	{
+		log_system.info("Perform Action: Verify Mini Cart");
+		Status=act_execute.VerifyBrokenLink();
+		return Status;
+	}
+	
 	public int Perform_AddProductfromMiniCart(String ElementKey, String ElementSelector) throws Exception
 	{
 		log_system.info("Perform Action: AddProductfromMiniCart");
