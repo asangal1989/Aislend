@@ -84,6 +84,7 @@ public class product_list extends global_variables{
 				  
 			  }
 			recorder.stopRecording();
+			reports.flush();
 		}
 		catch(Exception e)
 		{

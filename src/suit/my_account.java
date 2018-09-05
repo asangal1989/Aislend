@@ -84,7 +84,7 @@ public class my_account extends global_variables{
 				  
 			  }
 			recorder.stopRecording();			
-		
+			reports.flush();
 		}
 		catch(Exception e)
 		{

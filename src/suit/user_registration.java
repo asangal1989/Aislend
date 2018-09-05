@@ -84,7 +84,7 @@ public class user_registration extends global_variables{
 				  
 			  }
 			recorder.stopRecording();			
-		
+			reports.flush();
 		}
 		catch(Exception e)
 		{

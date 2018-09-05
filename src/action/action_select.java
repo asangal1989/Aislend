@@ -424,6 +424,17 @@ public class action_select extends global_variables{
 				log_system.info("log captured for action: "+Action);
 				break;
 			}
+			case "VerifyPopularMultiLink":
+			{
+				log_system.info("Select Action: "+ Action);
+				Status=act_perform.Perform_VerifyPopularMultiLink(ElementType,Element);
+				log_system.info("Action Executed: "+ Action);
+				log_system.info("Status of Action "+Action+": "+Status);
+				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}
+				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
+				log_system.info("log captured for action: "+Action);
+				break;
+			}
 			case "SelectSubstitute":
 			{
 				log_system.info("Select Action: "+ Action);
@@ -585,7 +596,16 @@ public class action_select extends global_variables{
 			}
 			case "VerifyFooterLinks":
 			{
-				result_log.add("action VerifyFooterLinks failed: "+ Input1);
+				result_log.add("action VerifyFooterLinks failed");
+				result_log.add("Fail");
+				result_log.add(e.getMessage());
+				log_system.error(e.getMessage());
+				log_system.error(e.getStackTrace().toString());								
+				break;
+			}
+			case "VerifyPopularMultiLink":
+			{
+				result_log.add("action VerifyPopularMultiLink failed");
 				result_log.add("Fail");
 				result_log.add(e.getMessage());
 				log_system.error(e.getMessage());

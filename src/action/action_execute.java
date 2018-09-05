@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 import java.util.HashMap;
@@ -264,6 +263,53 @@ public class action_execute extends global_variables{
 		{
 			Status=1;	
 		}
+		log_system.info("VerifyFooterLinks");
+		log_system.info("Status of VerifyFooterLinks: "+Status);
+		return Status;
+	}
+	
+	public int VerifyPopularMultiLink(String ElementKey, String ElementSelector) 
+	{	
+		int verifyFooterCount=0;
+		ArrayList<String> categoryList=new ArrayList<String>();
+		element_locator=element_loc.getElement(ElementKey, ElementSelector);
+		Actions act=new Actions(Driver);
+		act.moveToElement(Driver.findElement(element_locator)).build().perform();
+		WebElement FooterLink=Driver.findElement(element_locator);
+		List<WebElement> FotterLink_lst=FooterLink.findElements(By.xpath(".//div[normalize-space(@class) = 'multilinks__item']"));
+		
+		
+		for(WebElement footerLnk_itr:FotterLink_lst)
+		{
+			if(footerLnk_itr.getText().length()>0)
+				categoryList.add(footerLnk_itr.getText());			
+		}
+		
+		for(String categoryName:categoryList)
+		{
+			WebElement category_ele=Driver.findElement(By.linkText(categoryName));
+			act.moveToElement(category_ele).build().perform();
+			String old_url=Driver.getCurrentUrl();
+			category_ele.click();
+			String current_url=Driver.getCurrentUrl();
+			if(old_url!=current_url)
+			{
+				
+				Driver.navigate().back();	
+			}
+			else
+			{
+				verifyFooterCount++;
+			}			
+		}
+		
+		
+		
+		if(verifyFooterCount==0)
+		{
+			Status=1;
+		}
+		
 		log_system.info("VerifyFooterLinks");
 		log_system.info("Status of VerifyFooterLinks: "+Status);
 		return Status;
@@ -666,7 +712,7 @@ public class action_execute extends global_variables{
 					String offer_price=Product_added_details.get(price_list).get(1);
 					if(offer_price!=null)
 					{
-						offer_price=offer_price.replaceAll("$", "");
+						offer_price=offer_price.replace("$", "");
 						price=offer_price;
 					}
 					float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
@@ -777,6 +823,7 @@ public class action_execute extends global_variables{
             
             if(respCode >= 400){
                 System.out.println(url+" is a broken link");
+                log_system.error(url+" is a broken link");
                 errorcount++;
             }
             else{
@@ -849,6 +896,12 @@ public class action_execute extends global_variables{
 						for(String price_list:Product_added_details_itrator)
 						{
 							String price=Product_added_details.get(price_list).get(0).replace("$","");
+							String price_offer=Product_added_details.get(price_list).get(1);
+							if(price_offer!=null)
+							{
+								price_offer=price_offer.replace("$", "");
+								price=price_offer;
+							}
 							float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 							price=String.valueOf(Float.parseFloat(price)*product_count);
 							totalprice=Float.parseFloat(price)+totalprice;
@@ -908,6 +961,7 @@ public class action_execute extends global_variables{
 						{
 							error_log.add("Incorrect Product total price");
 							log_system.info("Incorrect Product total price");
+							break;
 						}
 					}
 					
@@ -950,6 +1004,12 @@ public class action_execute extends global_variables{
 							for(String price_list:Product_added_details_itrator)
 							{
 								String price=Product_added_details.get(price_list).get(0).replace("$","");
+								String price_offer=Product_added_details.get(price_list).get(1);
+								if(price_offer!=null)
+								{
+									price_offer=price_offer.replace("$", "");
+									price=price_offer;
+								}
 								float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 								price=String.valueOf(Float.parseFloat(price)*product_count);
 								totalprice=Float.parseFloat(price)+totalprice;
@@ -1009,6 +1069,7 @@ public class action_execute extends global_variables{
 							{
 								error_log.add("Incorrect Product total price");
 								log_system.info("Incorrect Product total price");
+								break;
 							}
 						}
 						
@@ -1085,6 +1146,13 @@ public class action_execute extends global_variables{
 				for(String price_list:Product_added_details_itrator)
 				{
 					String price=Product_added_details.get(price_list).get(0).replace("$","");
+					String offer_price=Product_added_details.get(price_list).get(1);
+					if(offer_price!=null)
+					{
+						offer_price=offer_price.replace("$", "");
+						price=offer_price;
+					}
+					
 					float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 					price=String.valueOf(Float.parseFloat(price)*product_count);
 					totalprice=Float.parseFloat(price)+totalprice;
@@ -1219,6 +1287,12 @@ public class action_execute extends global_variables{
 				for(String price_list:Product_added_details_itrator)
 				{
 					String price=Product_added_details.get(price_list).get(0).replace("$","");
+					String offer_price=Product_added_details.get(price_list).get(1);
+					if(offer_price!=null)
+					{
+						offer_price=offer_price.replace("$", "");
+						price=offer_price;
+					}
 					float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 					price=String.valueOf(Float.parseFloat(price)*product_count);
 					totalprice=Float.parseFloat(price)+totalprice;

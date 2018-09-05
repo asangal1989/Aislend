@@ -84,6 +84,7 @@ public class home_page extends global_variables{
 				  
 			  }
 			recorder.stopRecording();
+			reports.flush();
 		}
 		catch(Exception e)
 		{

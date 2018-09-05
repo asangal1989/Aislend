@@ -83,7 +83,7 @@ public class open_browser extends global_variables{
 				  log_system.info("Output written");	  				 
 			  }
 			 recorder.stopRecording();
-			 
+			 reports.flush();
 		}
 		catch(Exception e)
 		{

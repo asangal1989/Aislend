@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 3, 2018 07:19:34 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 5, 2018 12:21:45 PM</span>
 				</a>
 			</li>
 			<li>
@@ -76,7 +76,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +127,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='55.556%'><span class='strong'>5</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='44.444%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -142,10 +142,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>11</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -163,14 +163,62 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>suit.open_browser</span>
-						<span class='test-time'>Sep 3, 2018 07:19:34 PM</span>
+						<span class='test-time'>Sep 5, 2018 12:21:47 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 3, 2018 07:19:34 PM</span>
-	<span class='label end-time'>Sep 3, 2018 07:19:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+69ms</span>
+	<span class='label start-time'>Sep 5, 2018 12:21:47 PM</span>
+	<span class='label end-time'>Sep 5, 2018 12:21:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.user_registration</span>
+						<span class='test-time'>Sep 5, 2018 12:22:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 12:22:16 PM</span>
+	<span class='label end-time'>Sep 5, 2018 12:22:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.user_sign_in</span>
+						<span class='test-time'>Sep 5, 2018 12:25:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 12:25:23 PM</span>
+	<span class='label end-time'>Sep 5, 2018 12:25:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.home_page</span>
+						<span class='test-time'>Sep 5, 2018 12:27:46 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 12:27:46 PM</span>
+	<span class='label end-time'>Sep 5, 2018 12:31:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 55s+954ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -182,20 +230,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:42 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Open Browser</td><td>Browser should appear on the screen.</td><td>Chrome : Browser Open Successfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_01.png"></td></tr></table></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:53 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_02</td><td>Open City Market URL</td><td>City Market Site should open in browser</td><td>url verified: https://www.citymarketnorwalk.com/</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_02.png"></td></tr></table></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:54 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_03</td><td>Close Continue pop up</td><td>user should able to click on continue button</td><td>Click Performed succesfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_03.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:31:42 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_01</td><td>Click on right arrow button </td><td>User should able to click on button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png"></td></tr></table></td>
 				</tr>
 			</tbody>
 		</table>
@@ -204,17 +242,33 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>suit.category_page</span>
-						<span class='test-time'>Sep 3, 2018 07:19:55 PM</span>
+						<span class='test-time'>Sep 5, 2018 12:35:42 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 3, 2018 07:19:55 PM</span>
-	<span class='label end-time'>Sep 3, 2018 07:20:28 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+256ms</span>
+	<span class='label start-time'>Sep 5, 2018 12:35:42 PM</span>
+	<span class='label end-time'>Sep 5, 2018 12:35:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.product_list</span>
+						<span class='test-time'>Sep 5, 2018 12:50:13 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 12:50:13 PM</span>
+	<span class='label end-time'>Sep 5, 2018 01:00:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 10m 22s+563ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -226,65 +280,129 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:56 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Verify Title of landing page</td><td>title should be City Marketplace</td><td>Title verified succesfully: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_01.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:57:50 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_14_TC_CityMarket_01</td><td>verify product sort by name</td><td>product should sort by Product name</td><td>action sort by failed: Product Name</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_14_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_14_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_14_TC_CityMarket_01.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:58 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_02</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>Element verified succesfully </td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_02.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:59:07 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_15_TC_CityMarket_02</td><td>Add and verify product in wish list</td><td>product should add in wishlist</td><td>SearchAndAddToWishlist: Jose Ole Steak & Cheese Chimichanga</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:19:59 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_03</td><td>Click on My Account Link</td><td>User should able to click on My account link</td><td>Click Performed succesfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_03.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:00:36 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_16_TC_CityMarket_3</td><td>Add product</td><td>Product should add</td><td>MoveAndAddProduct: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_16_TC_CityMarket_3.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_16_TC_CityMarket_3.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_16_TC_CityMarket_3.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:00 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_04</td><td>Verify Sign in screen</td><td>Sign in pop-up should appear on the screen</td><td>Element verified succesfully </td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_04.png"></td></tr></table></td>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.mini_cart</span>
+						<span class='test-time'>Sep 5, 2018 01:03:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 01:03:56 PM</span>
+	<span class='label end-time'>Sep 5, 2018 01:03:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.view_cart</span>
+						<span class='test-time'>Sep 5, 2018 01:08:58 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 01:08:58 PM</span>
+	<span class='label end-time'>Sep 5, 2018 01:14:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 16s+882ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:01 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_05</td><td>Enter correct email id</td><td>user should able to enter correct email</td><td>Text Entered successfully: userchandna4269593@mailinator.com</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_05.png"></td></tr></table></td>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:14:15 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_02_TC_CityMarket_01</td><td>Verify message for substitute product</td><td>Message should appear on the screen</td><td>text not verified: Customers can opt for replacements in case an item is out of stock. We will choose a replacement item that is comparable to the original based on brand, flavor, size and price. You will be notified of replacements and will have the opportunity to approve the replacement or request a refund for the item.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:02 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_06</td><td>enter correct password</td><td>user should able to enter correct password</td><td>Text Entered successfully: 123456</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_06.png"></td></tr></table></td>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.checkout</span>
+						<span class='test-time'>Sep 5, 2018 01:19:08 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 01:19:08 PM</span>
+	<span class='label end-time'>Sep 5, 2018 01:26:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 7m 36s+779ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:11 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_07</td><td>Click on Sign in button</td><td>user should able to click on Sign in button</td><td>Click Performed succesfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_01_TC_CityMarket_07.png"></td></tr></table></td>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:24:03 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_28</td><td>Add product</td><td>title should be City Marketplace</td><td>MoveAndAddProduct: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:12 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_01</td><td>Click on  User name</td><td>User should able to click.</td><td>Click Performed succesfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_01.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:26:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_05</td><td>Enter Order instruction</td><td>user should able to enter Order instruction</td><td>action set text failed: user chandna</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:19 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_02</td><td>Click on Sign out link</td><td>user should able to click</td><td>Click Performed succesfully</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_02.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:26:27 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_07</td><td>verify time slot</td><td>Time Slot should not appear on the screen</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:25 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_03</td><td>wait for 6 sec</td><td>null</td><td>Text Entered successfully: 6000</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_03.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:26:40 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_01</td><td>Select time slot</td><td>user should able to select slot</td><td>SelectSlot: 4 Sep</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:26 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_04</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>Element verified succesfully </td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:26:42 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_01</td><td>Click on Place Order button</td><td>User should able to click on place order button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png"></td></tr></table></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:20:28 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Close all browser</td><td>All browser Should close</td><td>Action performed successfully: All</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_12_TC_CityMarket_04.png"></td></tr></table></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:26:45 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_02</td><td>verify message "Your card's security code is incomplete"</td><td>message should appear on the screen</td><td>VerifyText: Your card's security code is incomplete</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png"></td></tr></table></td>
 				</tr>
 			</tbody>
 		</table>
@@ -326,31 +444,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>15</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 3, 2018 07:19:34 PM</div>
+					<div class='panel-lead'>Sep 5, 2018 12:21:45 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 3, 2018 07:20:28 PM</div>
+			 		<div class='panel-lead'>Sep 5, 2018 01:27:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 53s+516ms</div>
+					<div class='panel-lead'>1h 6m 5s+688ms</div>
 				</div>
 			</div>
 		</div>
@@ -363,22 +481,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 0,
+				passParent: 5,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 4,
 				
-				passChild: 15,
-				failChild: 0,
+				passChild: 0,
+				failChild: 11,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 11,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

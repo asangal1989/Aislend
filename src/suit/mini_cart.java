@@ -84,7 +84,7 @@ public class mini_cart extends global_variables{
 				  
 			  }
 			recorder.stopRecording();			
-		
+			reports.flush();
 		}
 		catch(Exception e)
 		{

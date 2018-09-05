@@ -271,6 +271,13 @@ public class action_perform extends global_variables{
 		return Status;
 	}
 	
+	public int Perform_VerifyPopularMultiLink(String ElementKey, String ElementSelector)
+	{
+		log_system.info("Perform Action: Move & Add Product");
+		Status=act_execute.VerifyPopularMultiLink(ElementKey,ElementSelector);
+		return Status;
+	}
+	
 	public int Perform_SelectSubstitute(String ElementKey, String ElementSelector,String Substitute_Type) throws InterruptedException
 	{
 		log_system.info("Perform Action: Select Substitute");
