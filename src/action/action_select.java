@@ -846,10 +846,11 @@ public class action_select extends global_variables{
 				log_system.error(e.getStackTrace().toString());								
 				break;
 			}
+			
 			default:
-				if(e.getMessage().contains("500"))
+				if(e.getMessage().contains("500") || e.getMessage().contains("ERR") || e.getMessage().toLowerCase().contains("error"))
 				{
-					Driver.navigate().back();
+					Driver.get(Driver.getCurrentUrl());
 				}
 			}
 		}

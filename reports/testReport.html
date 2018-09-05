@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 5, 2018 02:27:10 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 5, 2018 06:37:03 PM</span>
 				</a>
 			</li>
 			<li>
@@ -127,10 +127,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -145,7 +145,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>159</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,17 +160,65 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>suit.open_browser</span>
-						<span class='test-time'>Sep 5, 2018 02:27:10 PM</span>
+						<span class='test-time'>Sep 5, 2018 06:37:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 06:37:06 PM</span>
+	<span class='label end-time'>Sep 5, 2018 06:37:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.user_registration</span>
+						<span class='test-time'>Sep 5, 2018 06:37:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 06:37:30 PM</span>
+	<span class='label end-time'>Sep 5, 2018 06:37:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.user_sign_in</span>
+						<span class='test-time'>Sep 5, 2018 06:40:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 06:40:16 PM</span>
+	<span class='label end-time'>Sep 5, 2018 06:40:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.home_page</span>
+						<span class='test-time'>Sep 5, 2018 06:42:32 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 5, 2018 02:27:10 PM</span>
-	<span class='label end-time'>Sep 5, 2018 02:47:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 20m 20s+635ms</span>
+	<span class='label start-time'>Sep 5, 2018 06:42:32 PM</span>
+	<span class='label end-time'>Sep 5, 2018 06:46:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 32s+890ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -184,8 +232,943 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>2:47:31 PM</td>
-					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_04</td><td>Verify Broken Link</td><td>All links should workd</td><td>action Verify BrokenLink failed: </td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\OpenBrowser\\US_ID_01_TC_CityMarket_04.png"></td></tr></table></td>
+					<td class='timestamp'>6:46:05 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_12_TC_CityMarket_01</td><td>Click on right arrow button </td><td>User should able to click on button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\HomePage\\US_ID_12_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.category_page</span>
+						<span class='test-time'>Sep 5, 2018 06:49:40 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 06:49:40 PM</span>
+	<span class='label end-time'>Sep 5, 2018 06:52:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 15s+51ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>6:52:56 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_01</td><td>Verify category and it's product</td><td>User should able to verify Category and it;'s product</td><td>VerifyCategoryAndProduct: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_09_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_09_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Category\\US_ID_09_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.product_list</span>
+						<span class='test-time'>Sep 5, 2018 07:00:32 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 07:00:32 PM</span>
+	<span class='label end-time'>Sep 5, 2018 07:35:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 34m 52s+17ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:04:43 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_11_TC_CityMarket_04</td><td>Add Product</td><td>Product should add</td><td>MoveAndAddProduct: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_11_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_11_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_11_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:06:29 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_15_TC_CityMarket_02</td><td>Add and verify product in wish list</td><td>product should add in wishlist</td><td>SearchAndAddToWishlist: Jose Ole Steak & Cheese Chimichanga</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_15_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:09:28 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_17_TC_CityMarket_01</td><td>verify footer links</td><td>Banner should be clickable </td><td>action VerifyFooterLinks failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_17_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_17_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_17_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:09:29 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_18_TC_CityMarket_01</td><td>Click on  User name</td><td>User should able to click.</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:09:30 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_18_TC_CityMarket_02</td><td>Click on Sign out link</td><td>user should able to click</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:35:24 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_18_TC_CityMarket_04</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ProductList\\US_ID_18_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.mini_cart</span>
+						<span class='test-time'>Sep 5, 2018 07:36:23 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 07:36:23 PM</span>
+	<span class='label end-time'>Sep 5, 2018 07:39:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 41s+242ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:24 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Verify Title of landing page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:24 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_02</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:25 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_03</td><td>Click on My Account Link</td><td>User should able to click on My account link</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:25 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_04</td><td>Verify Sign in screen</td><td>Sign in pop-up should appear on the screen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:26 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_05</td><td>Enter correct email id</td><td>user should able to enter correct email</td><td>action set text failed: Randomemailid</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:26 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_06</td><td>enter correct password</td><td>user should able to enter correct password</td><td>action set text failed: 123456</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:36:27 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_07</td><td>Click on Sign in button</td><td>user should able to click on Sign in button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_07.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:09 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_08</td><td>verify user logged in successfully</td><td>User should able to login and navigate to Home page after login</td><td>text not verified: Akash sangal</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_08.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_08.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_08.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:10 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_09</td><td>Verify title of the page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_09.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_09.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_01_TC_CityMarket_09.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:10 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_02_TC_CityMarket_01</td><td>verify mini cart icon is appaering on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_02_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_02_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_02_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:11 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_01</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:11 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_02</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_03</td><td>verify mini cart tab should appear on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:55 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_04</td><td>Message "You have no items in your shopping cart." shpuld sppear on the screen.</td><td>title should be City Marketplace</td><td>text not verified: You have no items in your shopping cart.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:55 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_05</td><td>Close Mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:57 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_06</td><td>Verify mini cart closed</td><td>title should be City Marketplace</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_03_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:37:58 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_01</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:01 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_02</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:05 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_03</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:08 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_04</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_04_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:09 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_01</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:10 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_03</td><td>Close mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_04</td><td>Verify mini cart closed</td><td>title should be City Marketplace</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_05_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:13 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_01</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:13 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_02</td><td>verify header of the mini cart</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:14 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_03</td><td>Close mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:16 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_04</td><td>Verify mini cart closed</td><td>title should be City Marketplace</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_06_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:16 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_01</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:22 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_02</td><td>Add quantity of product</td><td>User should able to add product</td><td>action AddProductfromMiniCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:28 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_04</td><td>Remove quantity of product</td><td>null</td><td>action RemoveProductfromMiniCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:33 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_05</td><td>Remove quantity of product</td><td>null</td><td>action RemoveProductfromMiniCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_07_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:46 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_04</td><td>Close Mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_08_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_08_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_08_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:46 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_01</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:49 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_02</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:50 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_03</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:50 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_04</td><td>Verify message for mini cart</td><td>Verify Message </td><td>VerifyMiniCartMsg: You have no items in your shopping cart.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:56 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_06</td><td>Close Mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_09_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:57 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_10_TC_CityMarket_01</td><td>Click on  User name</td><td>User should able to click.</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:38:57 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_10_TC_CityMarket_02</td><td>Click on Sign out link</td><td>user should able to click</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:04 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_10_TC_CityMarket_04</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\MiniCart\\US_ID_10_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.view_cart</span>
+						<span class='test-time'>Sep 5, 2018 07:39:04 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 07:39:04 PM</span>
+	<span class='label end-time'>Sep 5, 2018 07:44:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 5m 40s+843ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:05 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Verify Title of landing page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:06 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_02</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:06 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_03</td><td>Click on My Account Link</td><td>User should able to click on My account link</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:07 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_04</td><td>Verify Sign in screen</td><td>Sign in pop-up should appear on the screen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:07 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_05</td><td>Enter correct email id</td><td>user should able to enter correct email</td><td>action set text failed: Randomemailid</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:07 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_06</td><td>enter correct password</td><td>user should able to enter correct password</td><td>action set text failed: 123456</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:08 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_07</td><td>Click on Sign in button</td><td>user should able to click on Sign in button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_07.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:51 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_08</td><td>verify user logged in successfully</td><td>User should able to login and navigate to Home page after login</td><td>text not verified: Akash sangal</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_08.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_08.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_08.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:51 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_09</td><td>Verify title of the page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_09.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_09.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_09.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:52 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_10</td><td>verify mini cart icon is appaering on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_10.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_10.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_10.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:52 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_11</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_11.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_11.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_11.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:53 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_12</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_12.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_12.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_12.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:39:53 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_13</td><td>verify mini cart tab should appear on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_13.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_13.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_13.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:36 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_14</td><td>Message "You have no items in your shopping cart." shpuld sppear on the screen.</td><td>title should be City Marketplace</td><td>text not verified: You have no items in your shopping cart.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_14.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_14.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_14.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:36 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_15</td><td>Close Mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_15.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_15.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_15.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:39 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_16</td><td>Verify mini cart closed</td><td>title should be City Marketplace</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_16.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_16.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_16.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:39 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_17</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_17.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_17.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_17.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:42 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_18</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_18.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_18.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_18.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:46 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_19</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_19.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_19.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_19.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:50 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_20</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: Banquet Brown 'N Serve Turkey Sausage Links</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_20.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_20.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_20.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:53 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_21</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_21.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_21.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_21.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:40:57 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_22</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_22.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_22.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_22.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:00 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_23</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_23.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_23.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_23.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:04 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_24</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_24.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_24.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_24.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:07 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_25</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_25.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_25.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_25.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:11 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_26</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_26.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_26.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_26.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:14 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_27</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_27.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_27.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_27.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:17 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_28</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_28.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_28.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_28.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_29</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_29.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_29.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_29.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_30</td><td>verify mini cart tab should appear on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_30.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_30.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_30.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:41:19 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_31</td><td>Click on view cart button</td><td>user should navigate to view cart screen</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_31.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_31.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_01_TC_CityMarket_31.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:42:02 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_02_TC_CityMarket_01</td><td>Verify message for substitute product</td><td>Message should appear on the screen</td><td>text not verified: Customers can opt for replacements in case an item is out of stock. We will choose a replacement item that is comparable to the original based on brand, flavor, size and price. You will be notified of replacements and will have the opportunity to approve the replacement or request a refund for the item.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_02_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:42:06 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_01</td><td>Add instruction </td><td>Instrustion should add</td><td>action AddInstruction failed: Hello</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:42:11 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_02</td><td>Add instruction </td><td>Instrustion should add</td><td>action AddInstruction failed: Hello</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_03_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:42:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_01</td><td>enter email id for news letter</td><td>user should able to enter email</td><td>action set text failed: asdasd@</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:42:19 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_02</td><td>Click on join button</td><td>user shsoud able to click on join button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:02 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_03</td><td>verify message "Please enter a valid email address (Ex: johndoe@domain.com)."</td><td>Message "Please enter a valid email address (Ex: johndoe@domain.com)." should appear on the screen.</td><td>text not verified: Please enter a valid email address (Ex: johndoe@domain.com).</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:02 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_04</td><td>enter email id for news letter</td><td>user should able to enter email</td><td>action set text failed: asdasd@assdcsadsaasd.com</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:03 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_05</td><td>Click on join button</td><td>user shsoud able to click on join button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:46 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_06</td><td>Verify Message should appear on the screen</td><td>"Thank you for your subscription." messge should appear on the screen</td><td>text not verified: Thank you for your subscription.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_04_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:50 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_01</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Do Not Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:54 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_02</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:43:59 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_03</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:03 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_04</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Do Not Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:08 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_05</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_06</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_07</td><td>verify summary on viewcart</td><td>user should able to verify summary</td><td>action VerifySummaryViewCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_05_TC_CityMarket_07.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_01</td><td>Add product</td><td>user should able to add product</td><td>action AddProductfromViewCart failed: Jose Ole Steak & Cheese Chimichanga</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:24 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_02</td><td>verify summary on viewcart</td><td>user should able to verify summary</td><td>action VerifySummaryViewCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:24 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_03</td><td>Remove product</td><td>user should able to add product</td><td>action RemoveProductfromViewCart failed: Jose Ole Steak & Cheese Chimichanga</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:30 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_04</td><td>verify summary on viewcart</td><td>user should able to verify summary</td><td>action VerifySummaryViewCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_06_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:31 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_01</td><td>Delete product</td><td>user should able to Delete product</td><td>action DeleteProductfromViewCart failed: Jose Ole Steak & Cheese Chimichanga</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:31 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_02</td><td>Delete product</td><td>user should able to Delete product</td><td>DeleteProductfromViewCart: all</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:37 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_03</td><td>verify summary on viewcart</td><td>user should able to verify summary</td><td>action VerifySummaryViewCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_07_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:37 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_01</td><td>verify footer links</td><td>Banner should be clickable </td><td>action VerifyFooterLinks failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_08_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_08_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_08_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:38 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_01</td><td>Click on  User name</td><td>User should able to click.</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:38 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_02</td><td>Click on Sign out link</td><td>user should able to click</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:45 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_04</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\ViewCart\\US_ID_09_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>suit.checkout</span>
+						<span class='test-time'>Sep 5, 2018 07:44:45 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 5, 2018 07:44:45 PM</span>
+	<span class='label end-time'>Sep 5, 2018 07:49:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 14s+231ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:46 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_01</td><td>Verify Title of landing page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:47 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_02</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:47 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_03</td><td>Click on My Account Link</td><td>User should able to click on My account link</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:48 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_04</td><td>Verify Sign in screen</td><td>Sign in pop-up should appear on the screen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:48 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_05</td><td>Enter correct email id</td><td>user should able to enter correct email</td><td>action set text failed: Randomemailid</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:49 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_06</td><td>enter correct password</td><td>user should able to enter correct password</td><td>action set text failed: 123456</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_06.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:44:49 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_07</td><td>Click on Sign in button</td><td>user should able to click on Sign in button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_07.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:32 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_08</td><td>verify user logged in successfully</td><td>User should able to login and navigate to Home page after login</td><td>text not verified: Akash sangal</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_08.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_08.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_08.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:32 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_09</td><td>Verify title of the page</td><td>title should be City Marketplace</td><td>VerifyTitle: City Market Norwalk - Online Grocery Supermarket with Home Delivery</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_09.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_09.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_09.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:33 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_10</td><td>verify mini cart icon is appaering on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_10.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_10.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_10.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:33 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_17</td><td>Navigate To Product </td><td>title should be City Marketplace</td><td>action MoveToProductList failed: Quick & Easy Food Solutions</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_17.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_17.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_17.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:37 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_18</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_18.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_18.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_18.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:40 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_19</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_19.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_19.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_19.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:44 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_20</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: Banquet Brown 'N Serve Turkey Sausage Links</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_20.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_20.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_20.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:47 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_21</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_21.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_21.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_21.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:51 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_22</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_22.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_22.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_22.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:54 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_23</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_23.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_23.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_23.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:45:58 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_24</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: College Inn Fat Free & Lower Sodium Chicken Broth - 32oz</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_24.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_24.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_24.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:01 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_25</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_25.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_25.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_25.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:05 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_26</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: College Inn Fat Free & Lower Sodium Chicken Broth - 32oz</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_26.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_26.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_26.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:08 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_27</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: exist</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_27.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_27.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_27.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_28</td><td>Add product</td><td>title should be City Marketplace</td><td>action Move and add product failed: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_28.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:12 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_29</td><td>Click on mini cart</td><td>title should be City Marketplace</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_29.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_29.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_29.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:13 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_30</td><td>verify mini cart tab should appear on the screen</td><td>title should be City Marketplace</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_30.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_30.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_30.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:13 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_31</td><td>Click on view cart button</td><td>user should navigate to view cart screen</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_31.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_31.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_31.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:18 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_32</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Do Not Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_32.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_32.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_32.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:22 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_33</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_33.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_33.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_33.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:27 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_34</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_34.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_34.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_34.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:31 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_35</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Do Not Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_35.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_35.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_35.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:36 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_36</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_36.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_36.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_36.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:40 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_37</td><td>Select Allow Substitute for product "Utz Restaurant Style Tortillas"</td><td>user should able to select Substitute</td><td>action Select Substitute failed: Allow Substitute</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_37.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_37.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_37.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:45 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_01_TC_CityMarket_38</td><td>verify summary on viewcart</td><td>user should able to verify summary</td><td>action VerifySummaryViewCart failed: null  null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_38.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_38.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_01_TC_CityMarket_38.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:51 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_02_TC_CityMarket_01</td><td>Click on checkout button</td><td>user should able to click on checkout button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:52 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_02_TC_CityMarket_02</td><td>verify title of checkout page</td><td>user should navigate to check out page</td><td>VerifyTitle: Checkout</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_02_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:46:59 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_01</td><td>Click on Proceed  to payment button </td><td>user should able to click on button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:42 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_03_TC_CityMarket_02</td><td>Message should appear on the screen</td><td>message should appear on the screen</td><td>text not verified: Please select delivery slot.</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_03_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:42 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_01</td><td>Enter street aderss</td><td>user should able to enter address</td><td>action set text failed: ChandnaUserAddress</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:43 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_02</td><td>Enter City Name</td><td>user should able to enter city</td><td>action set text failed: ChandnaUserCity</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:43 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_03</td><td>Enter zip code</td><td>user should able to enter zip code</td><td>action set text failed: 068202322</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:44 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_04</td><td>Enter phone number</td><td>user should able to enter phone number</td><td>action set text failed: 1234567890</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:45 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_05</td><td>Enter Order instruction</td><td>user should able to enter Order instruction</td><td>action set text failed: user chandna</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_05.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:54 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_04_TC_CityMarket_07</td><td>verify time slot</td><td>Time Slot should not appear on the screen</td><td>Element not verified</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_04_TC_CityMarket_07.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:47:54 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_01</td><td>Enter zip code</td><td>user should able to enter zip code</td><td>action set text failed: 06820</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:01 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_05_TC_CityMarket_03</td><td>verify time slot</td><td>user should able to select slot</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_05_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:05 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_06_TC_CityMarket_01</td><td>Select time slot</td><td>user should able to select slot</td><td>action Select slot failed: 4 Sep  06:00 PM-07:00 PM</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_06_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:06 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_07_TC_CityMarket_01</td><td>Click on Proceed  to payment button </td><td>user should able to click</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_07_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_07_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_07_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:06 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_01</td><td>Click on Place Order button</td><td>User should able to click on place order button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:49 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_08_TC_CityMarket_02</td><td>verify message "Your card's security code is incomplete"</td><td>message should appear on the screen</td><td>text not verified: Your card's security code is incomplete</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_08_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:49 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_01</td><td>Click on edit button</td><td>user should able to edit button</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_01.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_01.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_01.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:51 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_02</td><td>Delete product</td><td>user should able to Delete product</td><td>DeleteProductfromViewCart: all</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_02.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_02.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_02.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:52 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_03</td><td>Click on  User name</td><td>User should able to click.</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_03.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_03.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_03.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:52 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_04</td><td>Click on Sign out link</td><td>user should able to click</td><td>action click failed</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_04.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_04.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_04.png"></td></tr></table></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:49:00 PM</td>
+					<td class='step-details'><table><tr><td>Test ID</td><td>Descritpion</td><td>Expected Result</td><td>Actual Result</td><td>Screenshot</td></tr><tr><td>US_ID_09_TC_CityMarket_06</td><td>Verify My Account Link</td><td>My Account link should apepar on the srceen</td><td>VerifyElement: null</td><td><img width='100px' src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_06.png" data-src="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_06.png" data-featherlight="D:\Akash\aislend\CityMarket\lib_screenshot\Checkout\\US_ID_09_TC_CityMarket_06.png"></td></tr></table></td>
 				</tr>
 			</tbody>
 		</table>
@@ -227,31 +1210,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>159</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 5, 2018 02:27:10 PM</div>
+					<div class='panel-lead'>Sep 5, 2018 06:37:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 5, 2018 02:47:37 PM</div>
+			 		<div class='panel-lead'>Sep 5, 2018 07:49:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 20m 26s+775ms</div>
+					<div class='panel-lead'>1h 12m 0s+887ms</div>
 				</div>
 			</div>
 		</div>
@@ -264,22 +1247,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 3,
+				failParent: 6,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 6,
 				
 				passChild: 0,
-				failChild: 1,
+				failChild: 159,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 159,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
