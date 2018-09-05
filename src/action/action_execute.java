@@ -800,36 +800,39 @@ public class action_execute extends global_variables{
 		List<WebElement> links = Driver.findElements(By.tagName("a"));
 		Iterator<WebElement> it = links.iterator();
 		int errorcount=0;
-		while(it.hasNext()){
+		while(it.hasNext())
+		{
             
             url = it.next().getAttribute("href");
             
-            System.out.println(url);
-        
-            if(url == null || url.isEmpty()){
-            	System.out.println("URL is either not configured for anchor tag or it is empty");
-            	errorcount++;
-                continue;
-            }
-            
-            
-            huc = (HttpURLConnection)(new java.net.URL(url).openConnection());
-            
-            huc.setRequestMethod("HEAD");
-            
-            huc.connect();
-            
-            respCode = huc.getResponseCode();
-            
-            if(respCode >= 400){
-                System.out.println(url+" is a broken link");
-                log_system.error(url+" is a broken link");
-                errorcount++;
-            }
-            else{
-                System.out.println(url+" is a valid link");
-            }
+            try {
 
+				if(url!=null && !url.contains("javascript:void(0)") && !url.contains("tel:"))
+				{
+	            	System.out.println(url);
+					if(url.contains("https://www.citymarketnorwalk.com/catalogsearch/advanced/"))
+					{
+						System.out.println();
+					}
+					huc = (HttpURLConnection)(new java.net.URL(url).openConnection());
+				    
+				    huc.setRequestMethod("HEAD");
+				    
+				    huc.connect();
+				    
+				    respCode = huc.getResponseCode();
+				    
+				    if(respCode >= 400){
+				        System.out.println(url+" is a broken link");
+				        log_system.error(url+" is a broken link");
+				        errorcount++;
+				    }            
+				}
+			} catch (Exception e) {
+
+				e.printStackTrace();
+			}
+            
 		}
 		
 		if(errorcount==0)

@@ -70,7 +70,7 @@ public class action_select extends global_variables{
 				else{ result_log.add(Action+": "+Input1);result_log.add("Fail");result_log.add("-");}
 				log_system.info("log captured for action: "+Action);
 				break;
-			}
+			}			
 			case "VerifyElement":
 			{
 				log_system.info("Select Action: "+ Action);
