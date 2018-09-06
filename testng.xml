@@ -14,7 +14,7 @@
       <class name="suit.mini_cart"/>
       <class name="suit.view_cart"/>
       <class name="suit.checkout"/>
-      <!-- <class name="suit.my_account"/> -->
+      <class name="suit.my_account"/>
 	 <class name="suit.close_browser"/>
     </classes>
   </test> <!-- Default test -->

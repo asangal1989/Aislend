@@ -744,7 +744,13 @@ public class action_execute extends global_variables{
 						String minicart_ProductPrice=ele_minicart_ProductPrice.getText();
 						if(Product_added_details.containsKey(minicart_ProductName))
 						{
+							
 							String ProductPrice=Product_added_details.get(minicart_ProductName).get(0);
+							String offer_price=Product_added_details.get(minicart_ProductName).get(1);
+							if(offer_price!=null)
+							{
+								ProductPrice=offer_price;
+							}
 							if(minicart_ProductPrice.equals(ProductPrice))
 							{
 								String ProductCount=Product_added_details.get(minicart_ProductName).get(2);
@@ -1115,7 +1121,6 @@ public class action_execute extends global_variables{
 		}			
 		int index=rdm.nextInt(product_list_Collection.size());
 		ProductName=product_list_Collection.get(index);
-		
 		try {
 			
  			if(Product_added_details.isEmpty())
