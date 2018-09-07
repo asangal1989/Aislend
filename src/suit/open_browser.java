@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+
 import org.testng.annotations.Test;
 
 import action.action_select;
@@ -25,6 +26,7 @@ public class open_browser extends global_variables{
 	@Test	
 	  public void openbrowser() {
 		
+	
 		
 		testinfo=reports.createTest(this.getClass().getName());
 		log_system.info("*********************Execution Start for: "+this.getClass().getName()+"************************");
@@ -83,7 +85,7 @@ public class open_browser extends global_variables{
 				  log_system.info("Output written");	  				 
 			  }
 			 recorder.stopRecording();
-			 reports.flush();
+			 reports.flush();			 
 		}
 		catch(Exception e)
 		{

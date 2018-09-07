@@ -25,8 +25,8 @@ public class category_page extends global_variables{
 	@Test	
 	  public void CategoryPage() {
 		
-		
-		testinfo=reports.createTest(this.getClass().getName());
+	
+		testinfo=reports.createTest(this.getClass().getName());		
 		log_system.info("*********************Execution Start for: "+this.getClass().getSimpleName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
@@ -85,6 +85,7 @@ public class category_page extends global_variables{
 			  }
 			recorder.stopRecording();			
 			reports.flush();
+			
 		}
 		catch(Exception e)
 		{

@@ -1456,6 +1456,12 @@ public class action_execute extends global_variables{
 						for(String price_list:Product_added_details_itrator)
 						{
 							String price=Product_added_details.get(price_list).get(0).replace("$","");
+							String price_offer=Product_added_details.get(price_list).get(1);
+							if(price_offer!=null)
+							{
+								price_offer=price_offer.replace("$", "");
+								price=price_offer;
+							}
 							float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 							price=String.valueOf(Float.parseFloat(price)*product_count);
 							totalprice=Float.parseFloat(price)+totalprice;
@@ -1678,7 +1684,9 @@ public class action_execute extends global_variables{
 		}
 		
 		JavascriptExecutor js = (JavascriptExecutor) Driver;
-		js.executeScript("window.scrollBy(0,-1000)");
+		js.executeScript("window.scrollBy(0,-1500)");
+		Actions act=new Actions(Driver);
+		act.moveToElement(Driver.findElement(By.xpath("//button[normalize-space(@class) = 'action switch']")));
 		Driver.findElement(By.xpath("//span[normalize-space(@class) = 'filter__sortTrigger']")).click();
 		WebElement sort_ul=Driver.findElement(element_locator);
 		List<WebElement> sort_li_list=sort_ul.findElements(By.tagName("li"));
@@ -1724,7 +1732,7 @@ public class action_execute extends global_variables{
 			for(WebElement element_page_list_itr:element_page_list)
 			{
 				
-				Actions act=new Actions(Driver);
+				
 				act.moveToElement(element_page_list_itr).build().perform();
 				element_page_list_itr.click();
 				product_container_sort_apply=Driver.findElement(By.xpath("//div[normalize-space(@class) = 'products wrapper cp__products-wrapper grid products-grid']"));
@@ -3057,13 +3065,19 @@ public class action_execute extends global_variables{
 			}
 			
 			float Subtotalprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Subtotal']")).getText().replace("$", ""));
-			float Shipingprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", ""));
+			String Shipingprice_=Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", "");
+			float Shipingprice=0;
+			if(!Shipingprice_.contains("Free"))
+			{
+				Shipingprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", ""));
+			}			
 			float orderamount=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//td[normalize-space(@data-th) = 'Order Total']")).getText().replace("$", ""));
 			
 			BigDecimal bd = new BigDecimal(totalPrice);
 			totalPrice =Float.parseFloat(String.valueOf(bd.setScale(2, RoundingMode.HALF_UP)));
 			
 			if(totalPrice<50.00)
+			{
 				if(Subtotalprice==totalPrice)
 				{
 					totalPrice=totalPrice+Shipingprice;
@@ -3074,7 +3088,9 @@ public class action_execute extends global_variables{
 						Status=1;
 					}
 				}
+			}				
 			else
+			{
 				if(Subtotalprice==totalPrice)
 				{
 					if(totalPrice==orderamount)
@@ -3082,6 +3098,8 @@ public class action_execute extends global_variables{
 						Status=1;
 					}
 				}
+			}
+				
 		}
 			
 		else
