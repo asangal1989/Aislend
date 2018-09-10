@@ -9,10 +9,10 @@ public class action_perform extends global_variables{
 	action_execute act_execute=new action_execute();
 	int Status;
 	
-	public int Perform_OpenBrowser(String BrowserName) throws IOException
+	public int Perform_OpenBrowser(String Environment,String BrowserName) throws IOException, InterruptedException
 	{		
 		log_system.info("Perform Action: Open Browser");
-		Status=act_execute.OpenBrowser(BrowserName);
+		Status=act_execute.OpenBrowser(Environment,BrowserName);
 		return Status;
 				
 	}

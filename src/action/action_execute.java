@@ -1,5 +1,7 @@
 package action;
 
+
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,6 +9,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
+
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -19,6 +22,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -47,68 +51,125 @@ public class action_execute extends global_variables{
 	element_locator element_loc=new element_locator();
 	By element_locator=null;
 	
-	public int OpenBrowser(String BrowserName) throws IOException
+	public int OpenBrowser(String Environment,String BrowserName) throws IOException, InterruptedException
 	{		
 		Properties prop=new Properties();
 		InputStream in=new FileInputStream(path_lib_properties+"config_webdriver.properties");
 		prop.load(in);
+		log_system.info("Open Env: "+ Environment );
 		log_system.info("Open Browser: "+ BrowserName );
-		switch(BrowserName)
-		{		
-		case "Chrome":
+		switch(Environment)
 		{
-			log_system.info("Set Configuration for Browser: "+ BrowserName );
-			System.setProperty(prop.getProperty("property_chromeDriver"),path_lib_driver+ prop.getProperty("Path_chromeDriver"));
-			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
-			chromePrefs.put("profile.default_content_settings.popups", 0);
-		    chromePrefs.put("download.default_directory", path_lib_download);
-		    ChromeOptions options = new ChromeOptions();
-		    HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
-		    options.setExperimentalOption("prefs", chromePrefs);
-		    options.addArguments("start-maximized");
-		    DesiredCapabilities cap = DesiredCapabilities.chrome();
-		    cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
-		    cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		    cap.setCapability(ChromeOptions.CAPABILITY, options);
-		    log_system.info("Creating object for browser"+ BrowserName );
-		    Driver = new ChromeDriver(cap);
-		    log_system.info("Browser Opened successfully: "+ BrowserName );
-		    log_system.info("Deleting all cookies for: "+ BrowserName );
-		    Driver.manage().deleteAllCookies();
-		    Status=1;
-		    mainwindow=Driver.getWindowHandle();
-		    break;
+			case "Window":
+			{
+				switch(BrowserName)
+				{			
+				case "Chrome":
+				{
+					log_system.info("Set Configuration for Browser: "+ BrowserName );
+					System.setProperty(prop.getProperty("property_chromeDriver"),path_lib_driver+ prop.getProperty("Path_chromeDriver"));
+					HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+					chromePrefs.put("profile.default_content_settings.popups", 0);
+				    chromePrefs.put("download.default_directory", path_lib_download);
+				    ChromeOptions options = new ChromeOptions();
+				    HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+				    options.setExperimentalOption("prefs", chromePrefs);
+				    options.addArguments("start-maximized");
+				    DesiredCapabilities cap = DesiredCapabilities.chrome();
+				    cap.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+				    cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				    cap.setCapability(ChromeOptions.CAPABILITY, options);
+				    log_system.info("Creating object for browser"+ BrowserName );
+				    Driver = new ChromeDriver(cap);
+				    log_system.info("Browser Opened successfully: "+ BrowserName );
+				    log_system.info("Deleting all cookies for: "+ BrowserName );
+				    Driver.manage().deleteAllCookies();
+				    Status=1;
+				    mainwindow=Driver.getWindowHandle();
+				    break;
+				}
+				case "FireFox":
+				{
+					System.setProperty(prop.getProperty("property_firefoxDriver"),path_lib_driver+ prop.getProperty("Path_firefoxDriver"));
+					DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+					capabilities.setCapability("marionette", true);
+				    Driver = new FirefoxDriver(capabilities);
+				    Driver.manage().deleteAllCookies();
+				    mainwindow=Driver.getWindowHandle();
+				    Status=1;
+				    log_system.info("Browser Opened successfully: "+ BrowserName );
+				    break;
+				}
+				case "IE11":
+				{
+					System.setProperty(prop.getProperty("property_IEDriver"),path_lib_driver+ prop.getProperty("Path_IEDriver"));
+					DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+					capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+					capabilities.setCapability("requireWindowFocus", true);
+					capabilities.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
+					capabilities.setCapability(CapabilityType.VERSION, "11");
+					capabilities.setCapability(CapabilityType.PLATFORM, "WINDOWS");
+					Driver = new InternetExplorerDriver(capabilities);
+					Driver = new InternetExplorerDriver();
+					Driver.manage().deleteAllCookies();
+				    Status=1;
+				    log_system.info("Browser Opened successfully: "+ BrowserName );
+				    mainwindow=Driver.getWindowHandle();
+				    break;
+				}
+				}
+			}
+			case "Android":
+			{
+				switch(BrowserName)
+				{			
+				case "Chrome":
+				{
+					
+					log_system.info("Set Configuration for Browser: "+ BrowserName );					
+
+					
+					System.setProperty(prop.getProperty("property_chromeDriver"),path_lib_driver+ prop.getProperty("Path_chromeDriver"));
+					HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+					chromePrefs.put("profile.default_content_settings.popups", 0);
+				    chromePrefs.put("download.default_directory", path_lib_download);
+				    ChromeOptions options = new ChromeOptions();
+				    HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+				    options.setExperimentalOption("prefs", chromePrefs);
+				    options.addArguments("start-maximized");
+					
+					
+					DesiredCapabilities caps = new DesiredCapabilities();
+					caps.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+				    caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+				    caps.setCapability(ChromeOptions.CAPABILITY, options);
+				    log_system.info("Creating object for browser"+ BrowserName );
+				    caps.setCapability("app-wait-activity", "activity-to-wait-for");
+					/*caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Redmi111");
+					caps.setCapability(MobileCapabilityType.UDID, "5a0c7cb7d140"); //Give Device ID of your mobile phone
+					caps.setCapability(MobileCapabilityType.PLATFORM_NAME,Platform.ANDROID);
+					caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.2");	
+					caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.APPIUM);
+					caps.setCapability(MobileCapabilityType.NO_RESET, true);
+					caps.setCapability(MobileCapabilityType.FULL_RESET, false);
+					caps.setCapability("appPackage", "com.android.chrome");*/
+					caps.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+					/*caps.setCapability("noReset", "true");*/
+				/*	Driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);*/
+					
+					 
+					log_system.info("Browser Opened successfully: "+ BrowserName );
+				    log_system.info("Deleting all cookies for: "+ BrowserName );
+				  //  driver.manage().deleteAllCookies();
+				    Status=1;
+				  //  mainwindow=driver.getWindowHandle();
+				    break;
+				}
+				
+				}
+			}
 		}
-		case "FireFox":
-		{
-			System.setProperty(prop.getProperty("property_firefoxDriver"),path_lib_driver+ prop.getProperty("Path_firefoxDriver"));
-			DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-			capabilities.setCapability("marionette", true);
-		    Driver = new FirefoxDriver(capabilities);
-		    Driver.manage().deleteAllCookies();
-		    mainwindow=Driver.getWindowHandle();
-		    Status=1;
-		    log_system.info("Browser Opened successfully: "+ BrowserName );
-		    break;
-		}
-		case "IE11":
-		{
-			System.setProperty(prop.getProperty("property_IEDriver"),path_lib_driver+ prop.getProperty("Path_IEDriver"));
-			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-			capabilities.setCapability("requireWindowFocus", true);
-			capabilities.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
-			capabilities.setCapability(CapabilityType.VERSION, "11");
-			capabilities.setCapability(CapabilityType.PLATFORM, "WINDOWS");
-			Driver = new InternetExplorerDriver(capabilities);
-			Driver = new InternetExplorerDriver();
-			Driver.manage().deleteAllCookies();
-		    Status=1;
-		    log_system.info("Browser Opened successfully: "+ BrowserName );
-		    mainwindow=Driver.getWindowHandle();
-		    break;
-		}
-		}
+		
 		log_system.info("Status of Open Browser: "+Status);
 		return Status;
 
@@ -1581,7 +1642,6 @@ public class action_execute extends global_variables{
 									Driver.findElement(By.xpath("//button[normalize-space(@class) = 'action-primary action-accept btn__default']")).click();
 									ArrayList<String> productlist_temp=Product_added_details.get(minicart_ProductName);
 									Product_added_details.remove(ProductName);
-																						
 									Status=1;
 									log_system.info("Product removed");
 									log_system.info("Status of removeProductfromMiniCart: "+Status);
@@ -1643,8 +1703,8 @@ public class action_execute extends global_variables{
 				WebElement product_name=product_li.findElement(By.xpath(".//strong[normalize-space(@class) = 'product name product-item-name product__item-title']"));
 				WebElement product_price=product_li.findElement(By.xpath(".//div[normalize-space(@class) = 'price-box price-final_price']"));
 				productname_sequence_default.add(product_name.getText());
-				if(product_price.getText().contains("Special Price"))
-					productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[1].replace("$", "").trim()));
+				if(product_price.getText().contains("Special Price"))					
+					productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));
 				else
 					productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));
 																						
@@ -1671,7 +1731,7 @@ public class action_execute extends global_variables{
 					WebElement product_price=product_li.findElement(By.xpath(".//div[normalize-space(@class) = 'price-box price-final_price']"));
 					productname_sequence_default.add(product_name.getText());
 					if(product_price.getText().contains("Special Price"))
-						productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[1].replace("$", "").trim()));
+						productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));
 					else
 						productprice_sequence_default.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));
 				}
@@ -1718,7 +1778,7 @@ public class action_execute extends global_variables{
 				WebElement product_price=product_li.findElement(By.xpath(".//div[normalize-space(@class) = 'price-box price-final_price']"));
 				productname_sequence_sort_apply.add(product_name.getText());
 				if(product_price.getText().contains("Special Price"))
-					productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[1].replace("$", "").trim()));	
+					productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));	
 				else
 					productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));	
 																	
@@ -1744,7 +1804,7 @@ public class action_execute extends global_variables{
 					WebElement product_price=product_li.findElement(By.xpath(".//div[normalize-space(@class) = 'price-box price-final_price']"));
 					productname_sequence_sort_apply.add(product_name.getText());
 					if(product_price.getText().contains("Special Price"))
-						productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[1].replace("$", "").trim()));	
+						productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));	
 					else
 						productprice_sequence_sort_apply.add(Float.valueOf(product_price.getText().split("Special Price")[0].replace("$", "").trim()));										
 				}

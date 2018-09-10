@@ -45,4 +45,27 @@ public class handle_ajax_call extends global_variables{
 		}
 		
 	}
+	
+	public static void HandleNodeCall() throws InterruptedException
+	{
+		 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		 LocalDateTime now = LocalDateTime.now();  		   
+		 Boolean isJqueryUsed1 = (Boolean)((JavascriptExecutor)Driver).executeScript("return (typeof(jQuery) != 'undefined')");
+			if(isJqueryUsed1)
+			{				
+				while (true)
+				{
+					Boolean ajaxIsComplete = (Boolean)(((JavascriptExecutor)Driver).executeScript("return jQuery.active == 0"));
+				    if (ajaxIsComplete) break;				    
+				    do
+				    {
+				    	System.out.println(dtf.format(now)+ ":  Ajax call in progress...");
+				    }
+				    while(ajaxIsComplete);
+				}
+			}		 		
+	}
+
+	
 }
+
