@@ -876,11 +876,8 @@ public class action_execute extends global_variables{
 
 				if(url!=null && !url.contains("javascript:void(0)") && !url.contains("tel:"))
 				{
-	            	System.out.println(url);
-					if(url.contains("https://www.citymarketnorwalk.com/catalogsearch/advanced/"))
-					{
-						System.out.println();
-					}
+	            	
+					
 					huc = (HttpURLConnection)(new java.net.URL(url).openConnection());
 				    
 				    huc.setRequestMethod("HEAD");
@@ -1604,6 +1601,12 @@ public class action_execute extends global_variables{
 					for(String price_list:Product_added_details_itrator)
 					{
 						String price=Product_added_details.get(price_list).get(0).replace("$","");
+						String price_offer=Product_added_details.get(price_list).get(1);
+						if(price_offer!=null)
+						{
+							price_offer=price_offer.replace("$", "");
+							price=price_offer;
+						}
 						float product_count=Float.parseFloat(Product_added_details.get(price_list).get(2));
 						price=String.valueOf(Float.parseFloat(price)*product_count);
 						totalprice=Float.parseFloat(price)+totalprice;
@@ -3100,12 +3103,13 @@ public class action_execute extends global_variables{
 
 	public int VerifySummaryViewCart(String ElementKey, String ElementSelector) throws InterruptedException
 	{	
-		Thread.sleep(5000);
+		handle_ajax_call.HandleAjaxCall();
+		Thread.sleep(8000);
 		if(!Product_added_details.isEmpty())
 		{
 			element_locator=element_loc.getElement(ElementKey, ElementSelector);
 			handle_ajax_call.HandleAjaxCall();
-			((JavascriptExecutor) Driver).executeScript("window.scrollBy(0, -500)", "");								
+			((JavascriptExecutor) Driver).executeScript("window.scrollBy(0, -1000)", "");								
 			WebElement Shopping_cart_table=Driver.findElement(element_locator);			
 			float totalPrice=0;
 			Set<String> keyset=Product_added_details.keySet();		
@@ -3125,11 +3129,15 @@ public class action_execute extends global_variables{
 			}
 			
 			float Subtotalprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Subtotal']")).getText().replace("$", ""));
-			String Shipingprice_=Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", "");
-			float Shipingprice=0;
-			if(!Shipingprice_.contains("Free"))
-			{
-				Shipingprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", ""));
+			float Shipingprice = 0;
+			try {
+				String Shipingprice_=Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", "");
+				if(!Shipingprice_.contains("Free"))
+				{
+					Shipingprice=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//span[normalize-space(@data-th) = 'Shipping']")).getText().replace("$", ""));
+				}
+			} catch (NumberFormatException e) {
+				
 			}			
 			float orderamount=Float.parseFloat(Shopping_cart_table.findElement(By.xpath(".//td[normalize-space(@data-th) = 'Order Total']")).getText().replace("$", ""));
 			
@@ -3168,9 +3176,7 @@ public class action_execute extends global_variables{
 				Status=1;
 		}
 			
-		
-		
-		
+
 		return Status;
 	}
 	

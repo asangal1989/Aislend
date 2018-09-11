@@ -62,7 +62,7 @@ public class view_cart extends global_variables{
 				  String Input4=TestData.get(9).toString().replace("\"", "");
 				  String Expected_result=TestData.get(10).toString();
 				  String screenshotFolderName=TestData.get(14).toString();
-				  if(UseCase_ID.contains("US_ID_14") && TestCase_ID.contains("TC_CityMarket_04") )
+				  if(UseCase_ID.contains("US_ID_06") && TestCase_ID.contains("TC_CityMarket_04") )
 				  {
 					  System.out.println("");
 				  }
