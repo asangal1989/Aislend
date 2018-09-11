@@ -1,896 +1,824 @@
-2018-09-11 14:46:33,315 [main] INFO suit.close_browser - *********************Execution Start for: suit.open_browser************************
-2018-09-11 14:46:33,357 [main] INFO reader_writer.excelWriter - *************************Prepare Data Set for suit.open_browser from excel com.aislend.OpenBrowser.xlsx *******************************************************************
-2018-09-11 14:46:33,945 [main] INFO reader_writer.excelWriter - *************************** Data set Ready for suit.open_browser ***************************************
-2018-09-11 14:46:33,945 [main] INFO reader_writer.excelWriter - ******************************* Intializing Recorder *************************************
-2018-09-11 14:46:34,066 [main] INFO reader_writer.excelWriter - ************************************** Start Execution suit.open_browser *********************************************
-2018-09-11 14:46:34,068 [main] INFO reader_writer.excelWriter - suit.open_browser: Test case US_ID_01_TC_CityMarket_01 is executing
-2018-09-11 14:46:34,145 [main] INFO action.action_execute - Select Action: OpenBrowser
-2018-09-11 14:46:34,145 [main] INFO action.action_execute - Action Selected: OpenBrowser
-2018-09-11 14:46:34,146 [main] INFO action.action_execute - Perform Action: Open Browser
-2018-09-11 14:46:34,147 [main] INFO action.action_execute - Open Env: Window
-2018-09-11 14:46:34,147 [main] INFO action.action_execute - Open Browser: Chrome
-2018-09-11 14:46:34,148 [main] INFO action.action_execute - Set Configuration for Browser: Chrome
-2018-09-11 14:46:34,246 [main] INFO action.action_execute - Creating object for browserChrome
-2018-09-11 14:46:38,874 [main] INFO action.action_execute - Browser Opened successfully: Chrome
-2018-09-11 14:46:38,874 [main] INFO action.action_execute - Deleting all cookies for: Chrome
-2018-09-11 14:46:39,832 [main] INFO action.action_execute - Set Configuration for Browser: Chrome
-2018-09-11 14:46:39,836 [main] INFO action.action_execute - Creating object for browserChrome
-2018-09-11 14:46:39,836 [main] INFO action.action_execute - Browser Opened successfully: Chrome
-2018-09-11 14:46:39,837 [main] INFO action.action_execute - Deleting all cookies for: Chrome
-2018-09-11 14:46:39,837 [main] INFO action.action_execute - Status of Open Browser: 1
-2018-09-11 14:46:39,837 [main] INFO action.action_execute - Action Executed: OpenBrowser
-2018-09-11 14:46:39,837 [main] INFO action.action_execute - Status of Action OpenBrowser: 1
-2018-09-11 14:46:39,838 [main] INFO action.action_execute - log captured for action: OpenBrowser
-2018-09-11 14:46:39,838 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_01
-2018-09-11 14:46:39,839 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_01
-2018-09-11 14:46:40,167 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:46:40,444 [main] INFO action.action_execute - Output written
-2018-09-11 14:46:40,444 [main] INFO action.action_execute - suit.open_browser: Test case US_ID_01_TC_CityMarket_02 is executing
-2018-09-11 14:46:40,476 [main] INFO action.action_execute - Select Action: GetURL
-2018-09-11 14:46:40,476 [main] INFO action.action_execute - Select Action: GetURL
-2018-09-11 14:46:40,477 [main] INFO action.action_execute - Perform Action: Get URL
-2018-09-11 14:46:48,304 [main] INFO action.action_execute - URL opened Successfully: https://www.citymarketnorwalk.com/
-2018-09-11 14:46:48,304 [main] INFO action.action_execute - Status of Get URL: 1
-2018-09-11 14:46:48,305 [main] INFO action.action_execute - Action Executed: GetURL
-2018-09-11 14:46:48,305 [main] INFO action.action_execute - Status of Action GetURL: 1
-2018-09-11 14:46:48,305 [main] INFO action.action_execute - log captured for action: GetURL
-2018-09-11 14:46:48,305 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_02
-2018-09-11 14:46:48,305 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_02
-2018-09-11 14:46:48,900 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:46:49,140 [main] INFO action.action_execute - Output written
-2018-09-11 14:46:49,141 [main] INFO action.action_execute - suit.open_browser: Test case US_ID_01_TC_CityMarket_03 is executing
-2018-09-11 14:46:49,180 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:46:49,180 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:46:49,180 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 14:46:49,382 [main] INFO action.action_execute - click perfomed
-2018-09-11 14:46:49,382 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 14:46:49,383 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 14:46:49,383 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 14:46:49,383 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 14:46:49,383 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_03
-2018-09-11 14:46:49,384 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_03
-2018-09-11 14:46:49,912 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:46:50,042 [main] INFO action.action_execute - Output written
-2018-09-11 14:46:50,043 [main] INFO action.action_execute - suit.open_browser: Test case US_ID_01_TC_CityMarket_04 is executing
-2018-09-11 14:46:50,127 [main] INFO action.action_execute - Select Action: VerifyBrokenLink
-2018-09-11 14:46:50,128 [main] INFO action.action_execute - Select Action: VerifyBrokenLink
-2018-09-11 14:46:50,129 [main] INFO action.action_execute - Perform Action: Verify Mini Cart
-2018-09-11 14:47:03,828 [main] ERROR action.action_execute - https://www.citymarketnorwalk.com/catalogsearch/advanced/ is a broken link
-2018-09-11 14:52:35,130 [main] ERROR action.action_execute - https://www.instagram.com/citymarketnorwalk/ is a broken link
-2018-09-11 14:57:50,225 [main] INFO action.action_execute - Action Executed: VerifyBrokenLink
-2018-09-11 14:57:50,226 [main] INFO action.action_execute - Status of Action VerifyBrokenLink: 0
-2018-09-11 14:57:50,226 [main] INFO action.action_execute - log captured for action: VerifyBrokenLink
-2018-09-11 14:57:50,226 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_04
-2018-09-11 14:57:50,226 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_04
-2018-09-11 14:57:50,968 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:51,096 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:52,013 [main] INFO action.action_execute - *********************Execution Start for: view_cart************************
-2018-09-11 14:57:52,083 [main] INFO reader_writer.excelWriter - *************************Prepare Data Set for view_cartfrom excel com.aislend.ViewCart.xlsx *******************************************************************
-2018-09-11 14:57:52,166 [main] INFO reader_writer.excelWriter - *************************** Data set Ready for view_cart ***************************************
-2018-09-11 14:57:52,167 [main] INFO reader_writer.excelWriter - ******************************* Intializing Recorder *************************************
-2018-09-11 14:57:52,212 [main] INFO reader_writer.excelWriter - ************************************** Start Execution view_cart *********************************************
-2018-09-11 14:57:52,213 [main] INFO reader_writer.excelWriter - view_cart: Test case US_ID_01_TC_CityMarket_01 is executing
-2018-09-11 14:57:52,255 [main] INFO action.action_execute - Select Action: VerifyTitle
-2018-09-11 14:57:52,255 [main] INFO action.action_execute - Select Action: VerifyTitle
-2018-09-11 14:57:52,255 [main] INFO action.action_execute - Perform Action: verify Title
-2018-09-11 14:57:52,265 [main] INFO action.action_execute - title verified: City Market Norwalk - Online Grocery Supermarket with Home Delivery
-2018-09-11 14:57:52,265 [main] INFO action.action_execute - Status of verify Title: 1
-2018-09-11 14:57:52,265 [main] INFO action.action_execute - Action Executed: VerifyTitle
-2018-09-11 14:57:52,265 [main] INFO action.action_execute - Status of Action VerifyTitle: 1
-2018-09-11 14:57:52,266 [main] INFO action.action_execute - log captured for action: VerifyTitle
-2018-09-11 14:57:52,266 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_01
-2018-09-11 14:57:52,266 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_01
-2018-09-11 14:57:52,730 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:52,905 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:52,907 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_02 is executing
-2018-09-11 14:57:52,947 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:57:52,947 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:57:52,947 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 14:57:53,088 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:57:53,088 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:57:53,089 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 14:57:53,090 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 14:57:53,091 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 14:57:53,092 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_02
-2018-09-11 14:57:53,092 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_02
-2018-09-11 14:57:53,592 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:53,846 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:53,847 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_03 is executing
-2018-09-11 14:57:53,918 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:57:53,918 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:57:53,919 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 14:57:54,233 [main] INFO action.action_execute - click perfomed
-2018-09-11 14:57:54,233 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 14:57:54,234 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 14:57:54,234 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 14:57:54,234 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 14:57:54,234 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_03
-2018-09-11 14:57:54,234 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_03
-2018-09-11 14:57:55,020 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:55,211 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:55,212 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_04 is executing
-2018-09-11 14:57:55,277 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:57:55,277 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:57:55,278 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 14:57:55,443 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:57:55,443 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:57:55,444 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 14:57:55,444 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 14:57:55,444 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 14:57:55,444 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_04
-2018-09-11 14:57:55,444 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_04
-2018-09-11 14:57:56,114 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:56,313 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:56,313 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_05 is executing
-2018-09-11 14:57:56,378 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 14:57:56,378 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 14:57:56,379 [main] INFO action.action_execute - Perform Action: SetText
-2018-09-11 14:57:56,833 [main] INFO action.action_execute - Text Entered
-2018-09-11 14:57:56,836 [main] INFO action.action_execute - Status of SetText: 1
-2018-09-11 14:57:56,837 [main] INFO action.action_execute - Action Executed: SetText
-2018-09-11 14:57:56,838 [main] INFO action.action_execute - Status of Action SetText: 1
-2018-09-11 14:57:56,838 [main] INFO action.action_execute - log captured for action: SetText
-2018-09-11 14:57:56,838 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_05
-2018-09-11 14:57:56,838 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_05
-2018-09-11 14:57:57,395 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:57,531 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:57,531 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_06 is executing
-2018-09-11 14:57:57,603 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 14:57:57,603 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 14:57:57,603 [main] INFO action.action_execute - Perform Action: SetText
-2018-09-11 14:57:57,950 [main] INFO action.action_execute - Text Entered
-2018-09-11 14:57:57,950 [main] INFO action.action_execute - Status of SetText: 1
-2018-09-11 14:57:57,951 [main] INFO action.action_execute - Action Executed: SetText
-2018-09-11 14:57:57,951 [main] INFO action.action_execute - Status of Action SetText: 1
-2018-09-11 14:57:57,951 [main] INFO action.action_execute - log captured for action: SetText
-2018-09-11 14:57:57,951 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_06
-2018-09-11 14:57:57,952 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_06
-2018-09-11 14:57:58,413 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:57:58,542 [main] INFO action.action_execute - Output written
-2018-09-11 14:57:58,542 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_07 is executing
-2018-09-11 14:57:58,592 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:57:58,592 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:57:58,592 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 14:57:58,798 [main] INFO action.action_execute - click perfomed
-2018-09-11 14:57:58,798 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 14:57:58,798 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 14:57:58,799 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 14:57:58,799 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 14:57:58,799 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_07
-2018-09-11 14:57:58,799 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_07
-2018-09-11 14:58:06,059 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:06,137 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:06,138 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_08 is executing
-2018-09-11 14:58:06,196 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 14:58:06,196 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 14:58:06,196 [main] INFO action.action_execute - Perform Action: Verify text
-2018-09-11 14:58:08,314 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:58:08,314 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:58:08,314 [main] INFO action.action_execute - Action Executed: VerifyText
-2018-09-11 14:58:08,314 [main] INFO action.action_execute - Status of Action VerifyText: 1
-2018-09-11 14:58:08,314 [main] INFO action.action_execute - log captured for action: VerifyText
-2018-09-11 14:58:08,315 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_08
-2018-09-11 14:58:08,315 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_08
-2018-09-11 14:58:08,831 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:08,947 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:08,947 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_09 is executing
-2018-09-11 14:58:09,005 [main] INFO action.action_execute - Select Action: VerifyTitle
-2018-09-11 14:58:09,006 [main] INFO action.action_execute - Select Action: VerifyTitle
-2018-09-11 14:58:09,007 [main] INFO action.action_execute - Perform Action: verify Title
-2018-09-11 14:58:09,016 [main] INFO action.action_execute - title verified: City Market Norwalk - Online Grocery Supermarket with Home Delivery
-2018-09-11 14:58:09,017 [main] INFO action.action_execute - Status of verify Title: 1
-2018-09-11 14:58:09,017 [main] INFO action.action_execute - Action Executed: VerifyTitle
-2018-09-11 14:58:09,017 [main] INFO action.action_execute - Status of Action VerifyTitle: 1
-2018-09-11 14:58:09,017 [main] INFO action.action_execute - log captured for action: VerifyTitle
-2018-09-11 14:58:09,017 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_09
-2018-09-11 14:58:09,018 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_09
-2018-09-11 14:58:09,432 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:09,519 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:09,519 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_10 is executing
-2018-09-11 14:58:09,579 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:58:09,579 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:58:09,579 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 14:58:09,676 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:58:09,676 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:58:09,676 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 14:58:09,676 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 14:58:09,676 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 14:58:09,677 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_10
-2018-09-11 14:58:09,677 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_10
-2018-09-11 14:58:10,216 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:10,290 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:10,290 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_11 is executing
-2018-09-11 14:58:10,364 [main] INFO action.action_execute - Select Action: MoveToProductList
-2018-09-11 14:58:10,365 [main] INFO action.action_execute - Select Action: MoveToProductList
-2018-09-11 14:58:10,365 [main] INFO action.action_execute - Perform Action: Move To Product List
-2018-09-11 14:58:17,067 [main] INFO action.action_execute - User navigated to: Quick & Easy Food Solutions --> Ready to Eat
-2018-09-11 14:58:17,067 [main] INFO action.action_execute - Status of verify Category and Product on Home Page: 1
-2018-09-11 14:58:17,068 [main] INFO action.action_execute - Action Executed: MoveToProductList
-2018-09-11 14:58:17,068 [main] INFO action.action_execute - Status of Action MoveToProductList: 1
-2018-09-11 14:58:17,068 [main] INFO action.action_execute - log captured for action: MoveToProductList
-2018-09-11 14:58:17,069 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_11
-2018-09-11 14:58:17,069 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_11
-2018-09-11 14:58:17,375 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:17,486 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:17,487 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_12 is executing
-2018-09-11 14:58:17,545 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:58:17,546 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:58:17,546 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 14:58:17,744 [main] INFO action.action_execute - click perfomed
-2018-09-11 14:58:17,744 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 14:58:17,744 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 14:58:17,745 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 14:58:17,745 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 14:58:17,745 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_12
-2018-09-11 14:58:17,745 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_12
-2018-09-11 14:58:18,065 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:18,149 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:18,149 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_13 is executing
-2018-09-11 14:58:18,215 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:58:18,215 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 14:58:18,215 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 14:58:18,311 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:58:18,311 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:58:18,312 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 14:58:18,312 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 14:58:18,312 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 14:58:18,312 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_13
-2018-09-11 14:58:18,312 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_13
-2018-09-11 14:58:18,647 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:18,714 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:18,715 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_14 is executing
-2018-09-11 14:58:18,750 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 14:58:18,751 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 14:58:18,751 [main] INFO action.action_execute - Perform Action: Verify text
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - Verify Element
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - Action Executed: VerifyText
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - Status of Action VerifyText: 1
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - log captured for action: VerifyText
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_14
-2018-09-11 14:58:20,908 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_14
-2018-09-11 14:58:21,187 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:21,253 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:21,253 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_15 is executing
-2018-09-11 14:58:21,289 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:58:21,289 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 14:58:21,290 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - click perfomed
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 14:58:21,431 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_15
-2018-09-11 14:58:21,432 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_15
-2018-09-11 14:58:21,726 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:21,794 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:21,794 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_16 is executing
-2018-09-11 14:58:21,830 [main] INFO action.action_execute - Select Action: VerifyNoElement
-2018-09-11 14:58:21,830 [main] INFO action.action_execute - Select Action: VerifyNoElement
-2018-09-11 14:58:21,830 [main] INFO action.action_execute - Perform Action: verify No Element
-2018-09-11 14:58:23,883 [main] INFO action.action_execute - Verify No Element
-2018-09-11 14:58:23,883 [main] INFO action.action_execute - Status of verify No Element: 1
-2018-09-11 14:58:23,883 [main] INFO action.action_execute - Action Executed: VerifyNoElement
-2018-09-11 14:58:23,883 [main] INFO action.action_execute - Status of Action VerifyNoElement: 1
-2018-09-11 14:58:23,884 [main] INFO action.action_execute - log captured for action: VerifyNoElement
-2018-09-11 14:58:23,884 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_16
-2018-09-11 14:58:23,884 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_16
-2018-09-11 14:58:24,166 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:24,228 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:24,228 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_17 is executing
-2018-09-11 14:58:24,274 [main] INFO action.action_execute - Select Action: MoveToProductList
-2018-09-11 14:58:24,274 [main] INFO action.action_execute - Select Action: MoveToProductList
-2018-09-11 14:58:24,274 [main] INFO action.action_execute - Perform Action: Move To Product List
-2018-09-11 14:58:30,168 [main] INFO action.action_execute - User navigated to: Quick & Easy Food Solutions --> Ready to Eat
-2018-09-11 14:58:30,168 [main] INFO action.action_execute - Status of verify Category and Product on Home Page: 1
-2018-09-11 14:58:30,168 [main] INFO action.action_execute - Action Executed: MoveToProductList
-2018-09-11 14:58:30,169 [main] INFO action.action_execute - Status of Action MoveToProductList: 1
-2018-09-11 14:58:30,169 [main] INFO action.action_execute - log captured for action: MoveToProductList
-2018-09-11 14:58:30,169 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_17
-2018-09-11 14:58:30,169 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_17
-2018-09-11 14:58:30,467 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:30,531 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:30,532 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_18 is executing
-2018-09-11 14:58:30,563 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:58:30,563 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:58:30,564 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - Product Added
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 14:58:52,940 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_18
-2018-09-11 14:58:52,941 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_18
-2018-09-11 14:58:53,255 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:58:53,335 [main] INFO action.action_execute - Output written
-2018-09-11 14:58:53,336 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_19 is executing
-2018-09-11 14:58:53,385 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:58:53,385 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:58:53,385 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 14:59:10,629 [main] INFO action.action_execute - Product Added
-2018-09-11 14:59:10,629 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 14:59:10,629 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 14:59:10,629 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 14:59:10,629 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 14:59:10,630 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_19
-2018-09-11 14:59:10,630 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_19
-2018-09-11 14:59:10,936 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:59:11,009 [main] INFO action.action_execute - Output written
-2018-09-11 14:59:11,009 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_20 is executing
-2018-09-11 14:59:11,043 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:11,043 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:11,044 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - Product Added
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 14:59:27,873 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_20
-2018-09-11 14:59:27,874 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_20
-2018-09-11 14:59:28,182 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:59:28,272 [main] INFO action.action_execute - Output written
-2018-09-11 14:59:28,272 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_21 is executing
-2018-09-11 14:59:28,307 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:28,308 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:28,308 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - Product Added
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_21
-2018-09-11 14:59:42,348 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_21
-2018-09-11 14:59:42,638 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:59:42,701 [main] INFO action.action_execute - Output written
-2018-09-11 14:59:42,701 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_22 is executing
-2018-09-11 14:59:42,745 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:42,745 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:42,745 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 14:59:56,448 [main] INFO action.action_execute - Product Added
-2018-09-11 14:59:56,448 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 14:59:56,449 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 14:59:56,449 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 14:59:56,449 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 14:59:56,449 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_22
-2018-09-11 14:59:56,449 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_22
-2018-09-11 14:59:56,733 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 14:59:56,798 [main] INFO action.action_execute - Output written
-2018-09-11 14:59:56,798 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_23 is executing
-2018-09-11 14:59:56,843 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:56,843 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 14:59:56,844 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:00:15,795 [main] INFO action.action_execute - Product Added
-2018-09-11 15:00:15,795 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:00:15,795 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:00:15,795 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:00:15,796 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:00:15,796 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_23
-2018-09-11 15:00:15,796 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_23
-2018-09-11 15:00:16,119 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:00:16,165 [main] INFO action.action_execute - Output written
-2018-09-11 15:00:16,165 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_24 is executing
-2018-09-11 15:00:16,203 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:16,203 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:16,203 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:00:37,349 [main] INFO action.action_execute - Product Added
-2018-09-11 15:00:37,349 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:00:37,349 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:00:37,350 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:00:37,350 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:00:37,350 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_24
-2018-09-11 15:00:37,350 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_24
-2018-09-11 15:00:38,550 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:00:38,676 [main] INFO action.action_execute - Output written
-2018-09-11 15:00:38,676 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_25 is executing
-2018-09-11 15:00:38,719 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:38,720 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:38,720 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:00:53,251 [main] INFO action.action_execute - Product Added
-2018-09-11 15:00:53,251 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:00:53,251 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:00:53,251 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:00:53,251 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:00:53,252 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_25
-2018-09-11 15:00:53,252 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_25
-2018-09-11 15:00:53,552 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:00:53,591 [main] INFO action.action_execute - Output written
-2018-09-11 15:00:53,591 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_26 is executing
-2018-09-11 15:00:53,630 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:53,630 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:00:53,630 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:01:11,620 [main] INFO action.action_execute - Product Added
-2018-09-11 15:01:11,620 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:01:11,620 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:01:11,621 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:01:11,621 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:01:11,621 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_26
-2018-09-11 15:01:11,621 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_26
-2018-09-11 15:01:11,943 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:12,001 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:12,001 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_27 is executing
-2018-09-11 15:01:12,040 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:01:12,040 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:01:12,041 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - Product Added
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:01:30,746 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_27
-2018-09-11 15:01:30,747 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_27
-2018-09-11 15:01:31,042 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:31,101 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:31,102 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_28 is executing
-2018-09-11 15:01:31,134 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:01:31,134 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
-2018-09-11 15:01:31,135 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - Product Added
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - Status of Product move and add: 1
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_28
-2018-09-11 15:01:46,286 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_28
-2018-09-11 15:01:46,573 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:46,627 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:46,627 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_29 is executing
-2018-09-11 15:01:46,660 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:01:46,661 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:01:46,661 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:01:46,838 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:01:46,838 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:01:46,838 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:01:46,839 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:01:46,839 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:01:46,839 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_29
-2018-09-11 15:01:46,839 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_29
-2018-09-11 15:01:47,143 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:47,190 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:47,190 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_30 is executing
-2018-09-11 15:01:47,255 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 15:01:47,255 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 15:01:47,256 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - Verify Element
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 15:01:47,325 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_30
-2018-09-11 15:01:47,326 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_30
-2018-09-11 15:01:47,615 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:47,686 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:47,686 [main] INFO action.action_execute - view_cart: Test case US_ID_01_TC_CityMarket_31 is executing
-2018-09-11 15:01:47,732 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:01:47,732 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:01:47,733 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:01:52,701 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_01_TC_CityMarket_31
-2018-09-11 15:01:52,702 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_01_TC_CityMarket_31
-2018-09-11 15:01:56,812 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:56,860 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:56,860 [main] INFO action.action_execute - view_cart: Test case US_ID_02_TC_CityMarket_01 is executing
-2018-09-11 15:01:56,899 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:01:56,899 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:01:56,899 [main] INFO action.action_execute - Perform Action: Verify text
-2018-09-11 15:01:58,997 [main] INFO action.action_execute - Verify Element
-2018-09-11 15:01:58,997 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 15:01:58,997 [main] INFO action.action_execute - Action Executed: VerifyText
-2018-09-11 15:01:58,997 [main] INFO action.action_execute - Status of Action VerifyText: 1
-2018-09-11 15:01:58,998 [main] INFO action.action_execute - log captured for action: VerifyText
-2018-09-11 15:01:58,998 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_02_TC_CityMarket_01
-2018-09-11 15:01:58,998 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_02_TC_CityMarket_01
-2018-09-11 15:01:59,264 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:01:59,307 [main] INFO action.action_execute - Output written
-2018-09-11 15:01:59,307 [main] INFO action.action_execute - view_cart: Test case US_ID_03_TC_CityMarket_01 is executing
-2018-09-11 15:01:59,348 [main] INFO action.action_execute - Select Action: AddInstruction
-2018-09-11 15:01:59,348 [main] INFO action.action_execute - Select Action: AddInstruction
-2018-09-11 15:01:59,348 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:02:06,850 [main] INFO action.action_execute - Instruction Added
-2018-09-11 15:02:06,850 [main] INFO action.action_execute - Status of AddInstruction: 1
-2018-09-11 15:02:06,850 [main] INFO action.action_execute - Action Executed: AddInstruction
-2018-09-11 15:02:06,850 [main] INFO action.action_execute - Status of Action AddInstruction: 1
-2018-09-11 15:02:06,850 [main] INFO action.action_execute - log captured for action: AddInstruction
-2018-09-11 15:02:06,851 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_03_TC_CityMarket_01
-2018-09-11 15:02:06,851 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_03_TC_CityMarket_01
-2018-09-11 15:02:07,161 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:02:07,233 [main] INFO action.action_execute - Output written
-2018-09-11 15:02:07,233 [main] INFO action.action_execute - view_cart: Test case US_ID_03_TC_CityMarket_02 is executing
-2018-09-11 15:02:07,295 [main] INFO action.action_execute - Select Action: AddInstruction
-2018-09-11 15:02:07,295 [main] INFO action.action_execute - Select Action: AddInstruction
-2018-09-11 15:02:07,295 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - Instruction Added
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - Status of AddInstruction: 1
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - Action Executed: AddInstruction
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - Status of Action AddInstruction: 1
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - log captured for action: AddInstruction
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_03_TC_CityMarket_02
-2018-09-11 15:02:14,930 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_03_TC_CityMarket_02
-2018-09-11 15:02:15,188 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:02:15,242 [main] INFO action.action_execute - Output written
-2018-09-11 15:02:15,243 [main] INFO action.action_execute - view_cart: Test case US_ID_03_TC_CityMarket_03 is executing
-2018-09-11 15:02:15,295 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:02:15,295 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:02:15,295 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:13:48,492 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:13:48,493 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:13:48,493 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:13:56,868 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:13:58,484 [main] INFO action.action_execute - Select Action: EditInstruction
-2018-09-11 15:13:59,701 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:14:45,755 [main] INFO action.action_execute - Instruction Added
-2018-09-11 15:14:46,121 [main] INFO action.action_execute - Status of AddInstruction: 1
-2018-09-11 15:14:50,806 [main] INFO action.action_execute - Action Executed: EditInstruction
-2018-09-11 15:14:50,806 [main] INFO action.action_execute - Status of Action EditInstruction: 1
-2018-09-11 15:14:50,806 [main] INFO action.action_execute - log captured for action: EditInstruction
-2018-09-11 15:14:50,807 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_03_TC_CityMarket_03
-2018-09-11 15:14:50,807 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_03_TC_CityMarket_03
-2018-09-11 15:14:51,386 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:14:51,446 [main] INFO action.action_execute - Output written
-2018-09-11 15:14:51,446 [main] INFO action.action_execute - view_cart: Test case US_ID_03_TC_CityMarket_04 is executing
-2018-09-11 15:14:51,496 [main] INFO action.action_execute - Select Action: RemoveInstruction
-2018-09-11 15:14:51,496 [main] INFO action.action_execute - Select Action: RemoveInstruction
-2018-09-11 15:14:51,496 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:14:54,913 [main] INFO action.action_execute - Instruction Added
-2018-09-11 15:14:54,913 [main] INFO action.action_execute - Status of AddInstruction: 1
-2018-09-11 15:14:54,913 [main] INFO action.action_execute - Action Executed: RemoveInstruction
-2018-09-11 15:14:54,914 [main] INFO action.action_execute - Status of Action RemoveInstruction: 1
-2018-09-11 15:14:54,914 [main] INFO action.action_execute - log captured for action: RemoveInstruction
-2018-09-11 15:14:54,914 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_03_TC_CityMarket_04
-2018-09-11 15:14:54,914 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_03_TC_CityMarket_04
-2018-09-11 15:14:55,192 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:14:55,235 [main] INFO action.action_execute - Output written
-2018-09-11 15:14:55,236 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_01 is executing
-2018-09-11 15:14:55,278 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 15:14:55,279 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 15:14:55,279 [main] INFO action.action_execute - Perform Action: SetText
-2018-09-11 15:14:55,563 [main] INFO action.action_execute - Text Entered
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - Status of SetText: 1
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - Action Executed: SetText
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - Status of Action SetText: 1
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - log captured for action: SetText
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_01
-2018-09-11 15:14:55,564 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_01
-2018-09-11 15:14:56,025 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:14:56,070 [main] INFO action.action_execute - Output written
-2018-09-11 15:14:56,070 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_01 is executing
-2018-09-11 15:14:56,116 [main] INFO action.action_execute - Select Action: Wait
-2018-09-11 15:14:56,117 [main] INFO action.action_execute - Select Action: Wait
-2018-09-11 15:14:56,117 [main] INFO action.action_execute - Perform Action: Wait
-2018-09-11 15:15:02,117 [main] INFO action.action_execute - Action Executed: Wait
-2018-09-11 15:15:02,117 [main] INFO action.action_execute - Status of Action Wait: 1
-2018-09-11 15:15:02,117 [main] INFO action.action_execute - log captured for action: Wait
-2018-09-11 15:15:02,117 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_01
-2018-09-11 15:15:02,117 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_01
-2018-09-11 15:15:02,402 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:02,462 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:02,462 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_02 is executing
-2018-09-11 15:15:02,505 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:15:02,505 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:15:02,505 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:15:02,691 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_02
-2018-09-11 15:15:02,692 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_02
-2018-09-11 15:15:02,978 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:03,026 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:03,026 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_03 is executing
-2018-09-11 15:15:03,070 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:15:03,070 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:15:03,071 [main] INFO action.action_execute - Perform Action: Verify text
-2018-09-11 15:15:05,181 [main] INFO action.action_execute - Verify Element
-2018-09-11 15:15:05,181 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 15:15:05,181 [main] INFO action.action_execute - Action Executed: VerifyText
-2018-09-11 15:15:05,182 [main] INFO action.action_execute - Status of Action VerifyText: 1
-2018-09-11 15:15:05,182 [main] INFO action.action_execute - log captured for action: VerifyText
-2018-09-11 15:15:05,182 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_03
-2018-09-11 15:15:05,182 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_03
-2018-09-11 15:15:05,454 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:05,507 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:05,508 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_04 is executing
-2018-09-11 15:15:05,555 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 15:15:05,555 [main] INFO action.action_execute - Select Action: SetText
-2018-09-11 15:15:05,555 [main] INFO action.action_execute - Perform Action: SetText
-2018-09-11 15:15:05,875 [main] INFO action.action_execute - Text Entered
-2018-09-11 15:15:05,876 [main] INFO action.action_execute - Status of SetText: 1
-2018-09-11 15:15:05,876 [main] INFO action.action_execute - Action Executed: SetText
-2018-09-11 15:15:05,876 [main] INFO action.action_execute - Status of Action SetText: 1
-2018-09-11 15:15:05,876 [main] INFO action.action_execute - log captured for action: SetText
-2018-09-11 15:15:05,876 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_04
-2018-09-11 15:15:05,877 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_04
-2018-09-11 15:15:06,173 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:06,221 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:06,221 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_05 is executing
-2018-09-11 15:15:06,267 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:15:06,267 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:15:06,267 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:15:06,419 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:15:06,420 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:15:06,420 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:15:06,420 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:15:06,420 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:15:06,420 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_05
-2018-09-11 15:15:06,421 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_05
-2018-09-11 15:15:09,060 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:09,112 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:09,112 [main] INFO action.action_execute - view_cart: Test case US_ID_04_TC_CityMarket_06 is executing
-2018-09-11 15:15:09,157 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:15:09,158 [main] INFO action.action_execute - Select Action: VerifyText
-2018-09-11 15:15:09,158 [main] INFO action.action_execute - Perform Action: Verify text
-2018-09-11 15:15:11,259 [main] INFO action.action_execute - Verify Element
-2018-09-11 15:15:11,260 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 15:15:11,261 [main] INFO action.action_execute - Action Executed: VerifyText
-2018-09-11 15:15:11,261 [main] INFO action.action_execute - Status of Action VerifyText: 1
-2018-09-11 15:15:11,261 [main] INFO action.action_execute - log captured for action: VerifyText
-2018-09-11 15:15:11,261 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_04_TC_CityMarket_06
-2018-09-11 15:15:11,261 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_04_TC_CityMarket_06
-2018-09-11 15:15:11,547 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:11,589 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:11,590 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_01 is executing
-2018-09-11 15:15:11,634 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:11,634 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:11,634 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:15:21,009 [main] INFO action.action_execute - Select Substitute done for Product: Maruchan Instant Lunch Chipotle Chicken Soup as Do Not Allow Substitute
-2018-09-11 15:15:21,009 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:15:21,009 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:15:21,009 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:15:21,009 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:15:21,010 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_01
-2018-09-11 15:15:21,010 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_01
-2018-09-11 15:15:21,286 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:21,347 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:21,347 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_02 is executing
-2018-09-11 15:15:21,391 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:21,391 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:21,391 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - Select Substitute done for Product: Maruchan Instant Lunch Chipotle Chicken Soup as Allow Substitute
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_02
-2018-09-11 15:15:34,854 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_02
-2018-09-11 15:15:35,121 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:35,176 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:35,177 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_03 is executing
-2018-09-11 15:15:35,221 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:35,222 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:35,222 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - Select Substitute done for Product: Libby's Chicken Vienna Sausage as Allow Substitute
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_03
-2018-09-11 15:15:48,517 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_03
-2018-09-11 15:15:48,781 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:48,822 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:48,822 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_04 is executing
-2018-09-11 15:15:48,875 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:48,875 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:48,876 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:15:58,243 [main] INFO action.action_execute - Select Substitute done for Product: Nissin Premium Spicy Teriyaki Beef Flavor Chow Mein Noodles as Do Not Allow Substitute
-2018-09-11 15:15:58,243 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:15:58,244 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:15:58,244 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:15:58,244 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:15:58,244 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_04
-2018-09-11 15:15:58,244 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_04
-2018-09-11 15:15:58,513 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:15:58,567 [main] INFO action.action_execute - Output written
-2018-09-11 15:15:58,567 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_05 is executing
-2018-09-11 15:15:58,610 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:58,611 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:15:58,611 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - Select Substitute done for Product: Maruchan Instant Lunch Chipotle Chicken Soup as Allow Substitute
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_05
-2018-09-11 15:16:12,079 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_05
-2018-09-11 15:16:12,334 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:12,376 [main] INFO action.action_execute - Output written
-2018-09-11 15:16:12,377 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_06 is executing
-2018-09-11 15:16:12,422 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:16:12,423 [main] INFO action.action_execute - Select Action: SelectSubstitute
-2018-09-11 15:16:12,423 [main] INFO action.action_execute - Perform Action: Select Substitute
-2018-09-11 15:16:25,792 [main] INFO action.action_execute - Select Substitute done for Product: Nissin Cup Noodles Hearty Chicken Flavor Ramen Noodles Soup as Allow Substitute
-2018-09-11 15:16:25,792 [main] INFO action.action_execute - Status of select Product substitue: 1
-2018-09-11 15:16:25,793 [main] INFO action.action_execute - Action Executed: SelectSubstitute
-2018-09-11 15:16:25,793 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
-2018-09-11 15:16:25,793 [main] INFO action.action_execute - log captured for action: SelectSubstitute
-2018-09-11 15:16:25,793 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_06
-2018-09-11 15:16:25,793 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_06
-2018-09-11 15:16:26,077 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:26,125 [main] INFO action.action_execute - Output written
-2018-09-11 15:16:26,125 [main] INFO action.action_execute - view_cart: Test case US_ID_05_TC_CityMarket_07 is executing
-2018-09-11 15:16:26,165 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:16:26,165 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:16:26,165 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:16:34,350 [main] INFO action.action_execute - Action Executed: VerifySummaryViewCart
-2018-09-11 15:16:34,350 [main] INFO action.action_execute - Status of Action VerifySummaryViewCart: 1
-2018-09-11 15:16:34,350 [main] INFO action.action_execute - log captured for action: VerifySummaryViewCart
-2018-09-11 15:16:34,350 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_05_TC_CityMarket_07
-2018-09-11 15:16:34,351 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_05_TC_CityMarket_07
-2018-09-11 15:16:34,614 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:34,673 [main] INFO action.action_execute - Output written
-2018-09-11 15:16:34,673 [main] INFO action.action_execute - view_cart: Test case US_ID_06_TC_CityMarket_01 is executing
-2018-09-11 15:16:34,718 [main] INFO action.action_execute - Select Action: AddProductfromViewCart
-2018-09-11 15:16:34,718 [main] INFO action.action_execute - Select Action: AddProductfromViewCart
-2018-09-11 15:16:34,718 [main] INFO action.action_execute - Perform Action: AddProductfromViewCart
-2018-09-11 15:16:34,957 [main] INFO action.action_execute - Product Added
-2018-09-11 15:16:34,958 [main] INFO action.action_execute - Status of AddProductfromViewCart: 1
-2018-09-11 15:16:34,958 [main] INFO action.action_execute - Action Executed: AddProductfromViewCart
-2018-09-11 15:16:34,958 [main] INFO action.action_execute - Status of Action AddProductfromViewCart: 1
-2018-09-11 15:16:34,958 [main] INFO action.action_execute - log captured for action: AddProductfromViewCart
-2018-09-11 15:16:34,958 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_06_TC_CityMarket_01
-2018-09-11 15:16:34,959 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_06_TC_CityMarket_01
-2018-09-11 15:16:38,472 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:38,522 [main] INFO action.action_execute - Output written
-2018-09-11 15:16:38,523 [main] INFO action.action_execute - view_cart: Test case US_ID_06_TC_CityMarket_02 is executing
-2018-09-11 15:16:38,584 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:16:38,585 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:16:38,585 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:16:48,917 [main] INFO action.action_execute - Action Executed: VerifySummaryViewCart
-2018-09-11 15:16:48,918 [main] INFO action.action_execute - Status of Action VerifySummaryViewCart: 1
-2018-09-11 15:16:48,918 [main] INFO action.action_execute - log captured for action: VerifySummaryViewCart
-2018-09-11 15:16:48,918 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_06_TC_CityMarket_02
-2018-09-11 15:16:48,918 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_06_TC_CityMarket_02
-2018-09-11 15:16:49,177 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:49,222 [main] INFO action.action_execute - Output written
-2018-09-11 15:16:49,222 [main] INFO action.action_execute - view_cart: Test case US_ID_06_TC_CityMarket_03 is executing
-2018-09-11 15:16:49,294 [main] INFO action.action_execute - Select Action: RemoveProductfromViewCart
-2018-09-11 15:16:49,295 [main] INFO action.action_execute - Select Action: RemoveProductfromViewCart
-2018-09-11 15:16:49,296 [main] INFO action.action_execute - Perform Action: RemoveProductfromViewCart
-2018-09-11 15:16:49,606 [main] INFO action.action_execute - Product removed
-2018-09-11 15:16:49,607 [main] INFO action.action_execute - Status of removeProductfromViewCart: 1
-2018-09-11 15:16:49,607 [main] INFO action.action_execute - Action Executed: RemoveProductfromViewCart
-2018-09-11 15:16:49,607 [main] INFO action.action_execute - Status of Action RemoveProductfromViewCart: 1
-2018-09-11 15:16:49,607 [main] INFO action.action_execute - log captured for action: RemoveProductfromViewCart
-2018-09-11 15:16:49,608 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_06_TC_CityMarket_03
-2018-09-11 15:16:49,608 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_06_TC_CityMarket_03
-2018-09-11 15:16:52,473 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:16:52,520 [main] INFO action.action_execute - Output written
-2018-09-11 15:17:16,422 [main] INFO action.action_execute - view_cart: Test case US_ID_06_TC_CityMarket_04 is executing
-2018-09-11 15:17:17,966 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:17:18,744 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:17:19,619 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:19:30,159 [main] INFO action.action_execute - Action Executed: VerifySummaryViewCart
-2018-09-11 15:19:30,161 [main] INFO action.action_execute - Status of Action VerifySummaryViewCart: 1
-2018-09-11 15:19:30,161 [main] INFO action.action_execute - log captured for action: VerifySummaryViewCart
-2018-09-11 15:19:30,161 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_06_TC_CityMarket_04
-2018-09-11 15:19:30,161 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_06_TC_CityMarket_04
-2018-09-11 15:19:30,470 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:19:30,532 [main] INFO action.action_execute - Output written
-2018-09-11 15:19:30,532 [main] INFO action.action_execute - view_cart: Test case US_ID_07_TC_CityMarket_01 is executing
-2018-09-11 15:19:30,575 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
-2018-09-11 15:19:30,575 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
-2018-09-11 15:19:30,575 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:19:38,295 [main] INFO action.action_execute - Product Delete
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - Action Executed: DeleteProductfromViewCart
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - Status of Action DeleteProductfromViewCart: 1
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - log captured for action: DeleteProductfromViewCart
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_07_TC_CityMarket_01
-2018-09-11 15:19:38,296 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_07_TC_CityMarket_01
-2018-09-11 15:19:46,307 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:19:46,369 [main] INFO action.action_execute - Output written
-2018-09-11 15:19:46,369 [main] INFO action.action_execute - view_cart: Test case US_ID_07_TC_CityMarket_02 is executing
-2018-09-11 15:19:46,409 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
-2018-09-11 15:19:46,409 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
-2018-09-11 15:19:46,409 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:19:51,917 [main] INFO action.action_execute - Product Delete
-2018-09-11 15:19:51,918 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
-2018-09-11 15:19:58,955 [main] INFO action.action_execute - Product Delete
-2018-09-11 15:19:58,956 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
-2018-09-11 15:20:03,023 [main] INFO action.action_execute - Product Delete
-2018-09-11 15:20:03,023 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
-2018-09-11 15:20:03,023 [main] INFO action.action_execute - Action Executed: DeleteProductfromViewCart
-2018-09-11 15:20:03,024 [main] INFO action.action_execute - Status of Action DeleteProductfromViewCart: 1
-2018-09-11 15:20:03,024 [main] INFO action.action_execute - log captured for action: DeleteProductfromViewCart
-2018-09-11 15:20:03,024 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_07_TC_CityMarket_02
-2018-09-11 15:20:03,024 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_07_TC_CityMarket_02
-2018-09-11 15:20:08,394 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:20:08,451 [main] INFO action.action_execute - Output written
-2018-09-11 15:20:08,452 [main] INFO action.action_execute - view_cart: Test case US_ID_07_TC_CityMarket_03 is executing
-2018-09-11 15:20:08,501 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:20:08,501 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
-2018-09-11 15:20:08,501 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
-2018-09-11 15:20:16,564 [main] INFO action.action_execute - Action Executed: VerifySummaryViewCart
-2018-09-11 15:20:16,564 [main] INFO action.action_execute - Status of Action VerifySummaryViewCart: 1
-2018-09-11 15:20:16,564 [main] INFO action.action_execute - log captured for action: VerifySummaryViewCart
-2018-09-11 15:20:16,564 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_07_TC_CityMarket_03
-2018-09-11 15:20:16,564 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_07_TC_CityMarket_03
-2018-09-11 15:20:16,820 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:20:16,873 [main] INFO action.action_execute - Output written
-2018-09-11 15:20:16,873 [main] INFO action.action_execute - view_cart: Test case US_ID_08_TC_CityMarket_01 is executing
-2018-09-11 15:20:16,913 [main] INFO action.action_execute - Select Action: VerifyFooterLinks
-2018-09-11 15:20:16,913 [main] INFO action.action_execute - Select Action: VerifyFooterLinks
-2018-09-11 15:20:16,914 [main] INFO action.action_execute - Perform Action: Move & Add Product
-2018-09-11 15:22:01,041 [main] INFO action.action_execute - VerifyFooterLinks
-2018-09-11 15:22:01,041 [main] INFO action.action_execute - Status of VerifyFooterLinks: 1
-2018-09-11 15:22:01,041 [main] INFO action.action_execute - Action Executed: VerifyFooterLinks
-2018-09-11 15:22:01,042 [main] INFO action.action_execute - Status of Action VerifyFooterLinks: 1
-2018-09-11 15:22:01,043 [main] INFO action.action_execute - log captured for action: VerifyFooterLinks
-2018-09-11 15:22:01,044 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_08_TC_CityMarket_01
-2018-09-11 15:22:01,044 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_08_TC_CityMarket_01
-2018-09-11 15:22:01,578 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:01,697 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:01,697 [main] INFO action.action_execute - view_cart: Test case US_ID_09_TC_CityMarket_01 is executing
-2018-09-11 15:22:01,778 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:22:01,779 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:22:01,779 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:22:01,922 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:22:01,923 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:22:01,923 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:22:01,923 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:22:01,924 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:22:01,924 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_09_TC_CityMarket_01
-2018-09-11 15:22:01,925 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_09_TC_CityMarket_01
-2018-09-11 15:22:02,334 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:02,373 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:02,373 [main] INFO action.action_execute - view_cart: Test case US_ID_09_TC_CityMarket_02 is executing
-2018-09-11 15:22:02,424 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:22:02,425 [main] INFO action.action_execute - Select Action: Click
-2018-09-11 15:22:02,426 [main] INFO action.action_execute - Perform Action: Click
-2018-09-11 15:22:05,811 [main] INFO action.action_execute - click perfomed
-2018-09-11 15:22:05,811 [main] INFO action.action_execute - Status of Click: 1
-2018-09-11 15:22:05,811 [main] INFO action.action_execute - Action Executed: Click
-2018-09-11 15:22:05,811 [main] INFO action.action_execute - Status of Action Click: 1
-2018-09-11 15:22:05,812 [main] INFO action.action_execute - log captured for action: Click
-2018-09-11 15:22:05,812 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_09_TC_CityMarket_02
-2018-09-11 15:22:05,812 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_09_TC_CityMarket_02
-2018-09-11 15:22:06,179 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:06,250 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:06,250 [main] INFO action.action_execute - view_cart: Test case US_ID_09_TC_CityMarket_03 is executing
-2018-09-11 15:22:06,298 [main] INFO action.action_execute - Select Action: Wait
-2018-09-11 15:22:06,299 [main] INFO action.action_execute - Select Action: Wait
-2018-09-11 15:22:06,299 [main] INFO action.action_execute - Perform Action: Wait
-2018-09-11 15:22:12,302 [main] INFO action.action_execute - Action Executed: Wait
-2018-09-11 15:22:12,303 [main] INFO action.action_execute - Status of Action Wait: 1
-2018-09-11 15:22:12,304 [main] INFO action.action_execute - log captured for action: Wait
-2018-09-11 15:22:12,304 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_09_TC_CityMarket_03
-2018-09-11 15:22:12,304 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_09_TC_CityMarket_03
-2018-09-11 15:22:13,988 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:14,045 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:14,046 [main] INFO action.action_execute - view_cart: Test case US_ID_09_TC_CityMarket_04 is executing
-2018-09-11 15:22:14,108 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 15:22:14,108 [main] INFO action.action_execute - Select Action: VerifyElement
-2018-09-11 15:22:14,109 [main] INFO action.action_execute - Perform Action: verify Element
-2018-09-11 15:22:14,185 [main] INFO action.action_execute - Verify Element
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - Status of verify Element: 1
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - Action Executed: VerifyElement
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - Status of Action VerifyElement: 1
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - log captured for action: VerifyElement
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - view_cart: Execution complete for Test case US_ID_09_TC_CityMarket_04
-2018-09-11 15:22:14,186 [main] INFO action.action_execute - view_cart: Taking Screenshot for Test case US_ID_09_TC_CityMarket_04
-2018-09-11 15:22:14,703 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:14,772 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:15,647 [main] INFO action.action_execute - Execution Start for: User Sign In
-2018-09-11 15:22:15,710 [main] INFO reader_writer.excelWriter - get Data set from excel test cases
-2018-09-11 15:22:15,720 [main] INFO reader_writer.excelWriter - Data set Successfully loaded on system for User Login Suit
-2018-09-11 15:22:15,720 [main] INFO reader_writer.excelWriter - Start Execution of loaded data set
-2018-09-11 15:22:15,720 [main] INFO reader_writer.excelWriter - Test case US_ID_01_TC_CityMarket_01 is executing
-2018-09-11 15:22:15,756 [main] INFO action.action_execute - Select Action: CloseBrowser
-2018-09-11 15:22:15,756 [main] INFO action.action_execute - Select Action: CloseBrowser
-2018-09-11 15:22:15,757 [main] INFO action.action_execute - Perform Action: Close Browser
-2018-09-11 15:22:17,182 [main] INFO action.action_execute - Browser Closed successfully
-2018-09-11 15:22:17,182 [main] INFO action.action_execute - Status of Close Browser: 1
-2018-09-11 15:22:17,182 [main] INFO action.action_execute - Action Executed: CloseBrowser
-2018-09-11 15:22:17,182 [main] INFO action.action_execute - Status of Action CloseBrowser: 1
-2018-09-11 15:22:17,182 [main] INFO action.action_execute - log captured for action: CloseBrowser
-2018-09-11 15:22:17,183 [main] INFO action.action_execute - Execution complete for Test case US_ID_01_TC_CityMarket_01
-2018-09-11 15:22:17,183 [main] INFO action.action_execute - Writing output in excel file
-2018-09-11 15:22:17,212 [main] INFO action.action_execute - Output written
-2018-09-11 15:22:17,212 [main] INFO action.action_execute - Test case US_ID_01_TC_CityMarket_02 is executing
-2018-09-11 15:22:17,252 [main] INFO action.action_execute - Select Action: QuitDriver
-2018-09-11 15:22:17,252 [main] INFO action.action_execute - Action Quit Driver Selected
-2018-09-11 15:22:17,252 [main] INFO action.action_execute - Perform Action: Quit Driver
-2018-09-11 15:22:17,314 [main] INFO action.action_execute - Execution Done
+2018-09-11 17:27:24,182 [main] INFO suit.close_browser - *********************Execution Start for: suit.open_browser************************
+2018-09-11 17:27:24,335 [main] INFO reader_writer.excelWriter - *************************Prepare Data Set for suit.open_browser from excel com.aislend.OpenBrowser.xlsx *******************************************************************
+2018-09-11 17:27:25,013 [main] INFO reader_writer.excelWriter - *************************** Data set Ready for suit.open_browser ***************************************
+2018-09-11 17:27:25,014 [main] INFO reader_writer.excelWriter - ******************************* Intializing Recorder *************************************
+2018-09-11 17:27:25,222 [main] INFO reader_writer.excelWriter - ************************************** Start Execution suit.open_browser *********************************************
+2018-09-11 17:27:25,701 [main] INFO reader_writer.excelWriter - suit.open_browser: Test case US_ID_01_TC_CityMarket_01 is executing
+2018-09-11 17:27:25,770 [main] INFO action.action_execute - Select Action: OpenBrowser
+2018-09-11 17:27:25,771 [main] INFO action.action_execute - Action Selected: OpenBrowser
+2018-09-11 17:27:25,773 [main] INFO action.action_execute - Perform Action: Open Browser
+2018-09-11 17:27:25,794 [main] INFO action.action_execute - Open Env: Window
+2018-09-11 17:27:25,795 [main] INFO action.action_execute - Open Browser: Chrome
+2018-09-11 17:27:25,795 [main] INFO action.action_execute - Set Configuration for Browser: Chrome
+2018-09-11 17:27:25,955 [main] INFO action.action_execute - Creating object for browserChrome
+2018-09-11 17:27:29,629 [main] INFO action.action_execute - Browser Opened successfully: Chrome
+2018-09-11 17:27:29,629 [main] INFO action.action_execute - Deleting all cookies for: Chrome
+2018-09-11 17:27:31,051 [main] INFO action.action_execute - Set Configuration for Browser: Chrome
+2018-09-11 17:27:31,054 [main] INFO action.action_execute - Creating object for browserChrome
+2018-09-11 17:27:31,055 [main] INFO action.action_execute - Browser Opened successfully: Chrome
+2018-09-11 17:27:31,055 [main] INFO action.action_execute - Deleting all cookies for: Chrome
+2018-09-11 17:27:31,055 [main] INFO action.action_execute - Status of Open Browser: 1
+2018-09-11 17:27:31,055 [main] INFO action.action_execute - Action Executed: OpenBrowser
+2018-09-11 17:27:31,056 [main] INFO action.action_execute - Status of Action OpenBrowser: 1
+2018-09-11 17:27:31,056 [main] INFO action.action_execute - log captured for action: OpenBrowser
+2018-09-11 17:27:31,056 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_01
+2018-09-11 17:27:31,057 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_01
+2018-09-11 17:27:31,377 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:31,692 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:31,692 [main] INFO action.action_execute - suit.open_browser: Test case US_ID_01_TC_CityMarket_02 is executing
+2018-09-11 17:27:31,728 [main] INFO action.action_execute - Select Action: GetURL
+2018-09-11 17:27:31,728 [main] INFO action.action_execute - Select Action: GetURL
+2018-09-11 17:27:31,728 [main] INFO action.action_execute - Perform Action: Get URL
+2018-09-11 17:27:50,580 [main] INFO action.action_execute - URL opened Successfully: https://www.citymarketnorwalk.com/
+2018-09-11 17:27:50,581 [main] INFO action.action_execute - Status of Get URL: 1
+2018-09-11 17:27:50,581 [main] INFO action.action_execute - Action Executed: GetURL
+2018-09-11 17:27:50,581 [main] INFO action.action_execute - Status of Action GetURL: 1
+2018-09-11 17:27:50,582 [main] INFO action.action_execute - log captured for action: GetURL
+2018-09-11 17:27:50,582 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_02
+2018-09-11 17:27:50,582 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_02
+2018-09-11 17:27:51,096 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:51,347 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:51,348 [main] INFO action.action_execute - suit.open_browser: Test case US_ID_01_TC_CityMarket_03 is executing
+2018-09-11 17:27:51,408 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:27:51,408 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:27:51,409 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:27:51,691 [main] INFO action.action_execute - suit.open_browser: Execution complete for Test case US_ID_01_TC_CityMarket_03
+2018-09-11 17:27:51,692 [main] INFO action.action_execute - suit.open_browser: Taking Screenshot for Test case US_ID_01_TC_CityMarket_03
+2018-09-11 17:27:52,191 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:52,407 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:52,969 [main] INFO action.action_execute - *********************Execution Start for: checkout************************
+2018-09-11 17:27:53,039 [main] INFO reader_writer.excelWriter - *************************Prepare Data Set for checkoutfrom excel com.aislend.Checkout.xlsx *******************************************************************
+2018-09-11 17:27:53,132 [main] INFO reader_writer.excelWriter - *************************** Data set Ready for checkout ***************************************
+2018-09-11 17:27:53,133 [main] INFO reader_writer.excelWriter - ******************************* Intializing Recorder *************************************
+2018-09-11 17:27:53,192 [main] INFO reader_writer.excelWriter - ************************************** Start Execution checkout *********************************************
+2018-09-11 17:27:53,196 [main] INFO reader_writer.excelWriter - checkout: Test case US_ID_01_TC_CityMarket_01 is executing
+2018-09-11 17:27:53,254 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:27:53,255 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:27:53,255 [main] INFO action.action_execute - Perform Action: verify Title
+2018-09-11 17:27:53,274 [main] INFO action.action_execute - title verified: City Market Norwalk - Online Grocery Supermarket with Home Delivery
+2018-09-11 17:27:53,274 [main] INFO action.action_execute - Status of verify Title: 1
+2018-09-11 17:27:53,279 [main] INFO action.action_execute - Action Executed: VerifyTitle
+2018-09-11 17:27:53,279 [main] INFO action.action_execute - Status of Action VerifyTitle: 1
+2018-09-11 17:27:53,279 [main] INFO action.action_execute - log captured for action: VerifyTitle
+2018-09-11 17:27:53,280 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_01
+2018-09-11 17:27:53,280 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_01
+2018-09-11 17:27:53,907 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:54,100 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:54,101 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_02 is executing
+2018-09-11 17:27:54,185 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:27:54,186 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:27:54,186 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:27:54,442 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:27:54,442 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:27:54,442 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:27:54,442 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:27:54,442 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:27:54,443 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_02
+2018-09-11 17:27:54,443 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_02
+2018-09-11 17:27:55,094 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:55,574 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:55,574 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_03 is executing
+2018-09-11 17:27:55,683 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:27:55,685 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:27:55,687 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:27:55,976 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:27:55,977 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:27:55,977 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:27:55,977 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:27:55,977 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:27:55,978 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_03
+2018-09-11 17:27:55,979 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_03
+2018-09-11 17:27:56,632 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:56,804 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:56,804 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_04 is executing
+2018-09-11 17:27:56,843 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:27:56,843 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:27:56,843 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:27:56,917 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:27:56,917 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:27:56,918 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:27:56,918 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:27:56,918 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:27:56,918 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_04
+2018-09-11 17:27:56,918 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_04
+2018-09-11 17:27:57,591 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:57,871 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:57,871 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_05 is executing
+2018-09-11 17:27:57,973 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:27:57,973 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:27:57,973 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:27:58,822 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:27:58,823 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:27:58,823 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:27:58,823 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:27:58,823 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:27:58,824 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_05
+2018-09-11 17:27:58,824 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_05
+2018-09-11 17:27:59,454 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:27:59,765 [main] INFO action.action_execute - Output written
+2018-09-11 17:27:59,765 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_06 is executing
+2018-09-11 17:27:59,802 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:27:59,802 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:27:59,802 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:28:00,057 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:28:00,058 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:28:00,058 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:28:00,059 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:28:00,059 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:28:00,059 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_06
+2018-09-11 17:28:00,059 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_06
+2018-09-11 17:28:00,554 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:00,720 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:00,720 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_07 is executing
+2018-09-11 17:28:00,761 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:28:00,762 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:28:00,762 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:28:00,986 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:28:00,986 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:28:00,987 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:28:00,987 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:28:00,987 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:28:00,987 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_07
+2018-09-11 17:28:00,987 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_07
+2018-09-11 17:28:08,879 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:09,083 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:09,083 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_08 is executing
+2018-09-11 17:28:09,147 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:28:09,148 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:28:09,148 [main] INFO action.action_execute - Perform Action: Verify text
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - Action Executed: VerifyText
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - Status of Action VerifyText: 1
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - log captured for action: VerifyText
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_08
+2018-09-11 17:28:11,294 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_08
+2018-09-11 17:28:11,779 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:11,916 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:11,917 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_09 is executing
+2018-09-11 17:28:11,995 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:28:11,996 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:28:11,996 [main] INFO action.action_execute - Perform Action: verify Title
+2018-09-11 17:28:12,003 [main] INFO action.action_execute - title verified: City Market Norwalk - Online Grocery Supermarket with Home Delivery
+2018-09-11 17:28:12,004 [main] INFO action.action_execute - Status of verify Title: 1
+2018-09-11 17:28:12,004 [main] INFO action.action_execute - Action Executed: VerifyTitle
+2018-09-11 17:28:12,005 [main] INFO action.action_execute - Status of Action VerifyTitle: 1
+2018-09-11 17:28:12,005 [main] INFO action.action_execute - log captured for action: VerifyTitle
+2018-09-11 17:28:12,005 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_09
+2018-09-11 17:28:12,006 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_09
+2018-09-11 17:28:12,524 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:12,656 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:12,657 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_10 is executing
+2018-09-11 17:28:12,700 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:28:12,701 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:28:12,701 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_10
+2018-09-11 17:28:12,791 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_10
+2018-09-11 17:28:13,399 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:13,578 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:13,579 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_17 is executing
+2018-09-11 17:28:13,628 [main] INFO action.action_execute - Select Action: MoveToProductList
+2018-09-11 17:28:13,629 [main] INFO action.action_execute - Select Action: MoveToProductList
+2018-09-11 17:28:13,629 [main] INFO action.action_execute - Perform Action: Move To Product List
+2018-09-11 17:28:19,899 [main] INFO action.action_execute - User navigated to: Quick & Easy Food Solutions --> Ready to Eat
+2018-09-11 17:28:19,899 [main] INFO action.action_execute - Status of verify Category and Product on Home Page: 1
+2018-09-11 17:28:19,900 [main] INFO action.action_execute - Action Executed: MoveToProductList
+2018-09-11 17:28:19,900 [main] INFO action.action_execute - Status of Action MoveToProductList: 1
+2018-09-11 17:28:19,900 [main] INFO action.action_execute - log captured for action: MoveToProductList
+2018-09-11 17:28:19,900 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_17
+2018-09-11 17:28:19,901 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_17
+2018-09-11 17:28:20,241 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:20,402 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:20,402 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_18 is executing
+2018-09-11 17:28:20,450 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:20,450 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:20,450 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - Product Added
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:28:41,065 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_18
+2018-09-11 17:28:41,066 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_18
+2018-09-11 17:28:41,398 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:41,493 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:41,493 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_19 is executing
+2018-09-11 17:28:41,538 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:41,538 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:41,538 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - Product Added
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:28:56,328 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_19
+2018-09-11 17:28:56,329 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_19
+2018-09-11 17:28:56,624 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:28:56,695 [main] INFO action.action_execute - Output written
+2018-09-11 17:28:56,696 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_20 is executing
+2018-09-11 17:28:56,874 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:56,874 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:28:56,874 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - Product Added
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_20
+2018-09-11 17:29:20,127 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_20
+2018-09-11 17:29:20,440 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:29:20,512 [main] INFO action.action_execute - Output written
+2018-09-11 17:29:20,513 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_21 is executing
+2018-09-11 17:29:20,571 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:29:20,571 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:29:20,571 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:29:35,843 [main] INFO action.action_execute - Product Added
+2018-09-11 17:29:35,843 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:29:35,843 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:29:35,844 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:29:35,845 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:29:35,845 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_21
+2018-09-11 17:29:35,845 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_21
+2018-09-11 17:29:36,147 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:29:36,231 [main] INFO action.action_execute - Output written
+2018-09-11 17:29:36,231 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_22 is executing
+2018-09-11 17:29:36,270 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:29:36,271 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:29:36,271 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - Product Added
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:30:03,069 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_22
+2018-09-11 17:30:03,070 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_22
+2018-09-11 17:30:03,367 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:30:03,483 [main] INFO action.action_execute - Output written
+2018-09-11 17:30:03,483 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_23 is executing
+2018-09-11 17:30:03,539 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:03,540 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:03,540 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:30:22,054 [main] INFO action.action_execute - Product Added
+2018-09-11 17:30:22,054 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:30:22,055 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:30:22,055 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:30:22,055 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:30:22,055 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_23
+2018-09-11 17:30:22,055 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_23
+2018-09-11 17:30:22,352 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:30:22,431 [main] INFO action.action_execute - Output written
+2018-09-11 17:30:22,432 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_24 is executing
+2018-09-11 17:30:22,495 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:22,496 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:22,496 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:30:47,125 [main] INFO action.action_execute - Product Added
+2018-09-11 17:30:47,126 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:30:47,126 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:30:47,126 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:30:47,127 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:30:47,127 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_24
+2018-09-11 17:30:47,127 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_24
+2018-09-11 17:30:47,435 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:30:47,556 [main] INFO action.action_execute - Output written
+2018-09-11 17:30:47,556 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_25 is executing
+2018-09-11 17:30:47,606 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:47,606 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:30:47,606 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:31:09,175 [main] INFO action.action_execute - Product Added
+2018-09-11 17:31:09,175 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:31:09,175 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:31:09,176 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:31:09,176 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:31:09,176 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_25
+2018-09-11 17:31:09,176 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_25
+2018-09-11 17:31:09,478 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:31:09,541 [main] INFO action.action_execute - Output written
+2018-09-11 17:31:09,541 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_26 is executing
+2018-09-11 17:31:09,598 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:09,598 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:09,598 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:31:27,847 [main] INFO action.action_execute - Product Added
+2018-09-11 17:31:27,848 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:31:27,848 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:31:27,848 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:31:27,849 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:31:27,851 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_26
+2018-09-11 17:31:27,851 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_26
+2018-09-11 17:31:28,146 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:31:28,230 [main] INFO action.action_execute - Output written
+2018-09-11 17:31:28,230 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_27 is executing
+2018-09-11 17:31:28,276 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:28,276 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:28,276 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:31:43,102 [main] INFO action.action_execute - Product Added
+2018-09-11 17:31:43,102 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:31:43,103 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:31:43,103 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:31:43,104 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:31:43,104 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_27
+2018-09-11 17:31:43,104 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_27
+2018-09-11 17:31:43,406 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:31:43,491 [main] INFO action.action_execute - Output written
+2018-09-11 17:31:43,492 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_28 is executing
+2018-09-11 17:31:43,553 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:43,553 [main] INFO action.action_execute - Select Action: MoveAndAddProduct
+2018-09-11 17:31:43,554 [main] INFO action.action_execute - Perform Action: Move & Add Product
+2018-09-11 17:32:05,052 [main] INFO action.action_execute - Product Added
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - Status of Product move and add: 1
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - Action Executed: MoveAndAddProduct
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - Status of Action MoveAndAddProduct: 1
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - log captured for action: MoveAndAddProduct
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_28
+2018-09-11 17:32:05,053 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_28
+2018-09-11 17:32:05,369 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:05,450 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:05,450 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_29 is executing
+2018-09-11 17:32:05,493 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:32:05,493 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:32:05,493 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:32:05,694 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:32:05,694 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:32:05,695 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:32:05,695 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:32:05,695 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:32:05,695 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_29
+2018-09-11 17:32:05,695 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_29
+2018-09-11 17:32:05,981 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:06,042 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:06,042 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_30 is executing
+2018-09-11 17:32:06,086 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:32:06,087 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:32:06,087 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:32:06,171 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_30
+2018-09-11 17:32:06,172 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_30
+2018-09-11 17:32:06,478 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:06,605 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:06,605 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_31 is executing
+2018-09-11 17:32:06,646 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:32:06,646 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:32:06,646 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:32:13,181 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:32:13,182 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:32:13,182 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:32:13,182 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:32:13,182 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:32:13,182 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_31
+2018-09-11 17:32:13,183 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_31
+2018-09-11 17:32:15,348 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:15,443 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:15,444 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_32 is executing
+2018-09-11 17:32:15,523 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:15,523 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:15,524 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:32:24,941 [main] INFO action.action_execute - Select Substitute done for Product: Mahler Refried Black Beans as Do Not Allow Substitute
+2018-09-11 17:32:24,943 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:32:24,943 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:32:24,943 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:32:24,943 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:32:24,944 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_32
+2018-09-11 17:32:24,944 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_32
+2018-09-11 17:32:25,229 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:25,335 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:25,336 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_33 is executing
+2018-09-11 17:32:25,379 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:25,379 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:25,379 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:32:39,036 [main] INFO action.action_execute - Select Substitute done for Product: Nissin Shrimp Flavor Cup Noodles as Allow Substitute
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_33
+2018-09-11 17:32:39,037 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_33
+2018-09-11 17:32:39,339 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:39,549 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:39,549 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_34 is executing
+2018-09-11 17:32:39,598 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:39,600 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:39,600 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:32:53,178 [main] INFO action.action_execute - Select Substitute done for Product: Nissin Shrimp Flavor Cup Noodles as Allow Substitute
+2018-09-11 17:32:53,178 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:32:53,178 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:32:53,178 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:32:53,179 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:32:53,179 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_34
+2018-09-11 17:32:53,179 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_34
+2018-09-11 17:32:53,476 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:32:53,575 [main] INFO action.action_execute - Output written
+2018-09-11 17:32:53,575 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_35 is executing
+2018-09-11 17:32:53,639 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:53,639 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:32:53,639 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:33:03,149 [main] INFO action.action_execute - Select Substitute done for Product: Maruchan Instant Lunch Beef Flavor Ramen Noodles with Vegetables as Do Not Allow Substitute
+2018-09-11 17:33:03,150 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:33:03,150 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:33:03,150 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:33:03,152 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:33:03,152 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_35
+2018-09-11 17:33:03,152 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_35
+2018-09-11 17:33:03,442 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:03,522 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:03,523 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_36 is executing
+2018-09-11 17:33:03,567 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:33:03,568 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:33:03,568 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - Select Substitute done for Product: Fud Salchichas De Pavo Turkey Franks as Allow Substitute
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_36
+2018-09-11 17:33:16,919 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_36
+2018-09-11 17:33:17,190 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:17,247 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:17,247 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_37 is executing
+2018-09-11 17:33:17,291 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:33:17,291 [main] INFO action.action_execute - Select Action: SelectSubstitute
+2018-09-11 17:33:17,291 [main] INFO action.action_execute - Perform Action: Select Substitute
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - Select Substitute done for Product: Maruchan Instant Lunch Beef Flavor Ramen Noodles with Vegetables as Allow Substitute
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - Action Executed: SelectSubstitute
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - Status of Action SelectSubstitute: 1
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - log captured for action: SelectSubstitute
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_37
+2018-09-11 17:33:30,513 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_37
+2018-09-11 17:33:30,824 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:30,892 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:30,892 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_38 is executing
+2018-09-11 17:33:30,926 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
+2018-09-11 17:33:30,926 [main] INFO action.action_execute - Select Action: VerifySummaryViewCart
+2018-09-11 17:33:30,926 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
+2018-09-11 17:33:39,139 [main] INFO action.action_execute - Action Executed: VerifySummaryViewCart
+2018-09-11 17:33:39,140 [main] INFO action.action_execute - Status of Action VerifySummaryViewCart: 1
+2018-09-11 17:33:39,140 [main] INFO action.action_execute - log captured for action: VerifySummaryViewCart
+2018-09-11 17:33:39,140 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_38
+2018-09-11 17:33:39,140 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_38
+2018-09-11 17:33:39,400 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:39,451 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:39,451 [main] INFO action.action_execute - checkout: Test case US_ID_01_TC_CityMarket_39 is executing
+2018-09-11 17:33:39,491 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:33:39,491 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:33:39,492 [main] INFO action.action_execute - Perform Action: Wait
+2018-09-11 17:33:44,497 [main] INFO action.action_execute - Action Executed: Wait
+2018-09-11 17:33:44,497 [main] INFO action.action_execute - Status of Action Wait: 1
+2018-09-11 17:33:44,497 [main] INFO action.action_execute - log captured for action: Wait
+2018-09-11 17:33:44,497 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_01_TC_CityMarket_39
+2018-09-11 17:33:44,497 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_01_TC_CityMarket_39
+2018-09-11 17:33:44,756 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:44,797 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:44,797 [main] INFO action.action_execute - checkout: Test case US_ID_02_TC_CityMarket_01 is executing
+2018-09-11 17:33:44,839 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:33:44,840 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:33:44,840 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:33:55,024 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:33:55,024 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:33:55,024 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:33:55,024 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:33:55,025 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:33:55,025 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_02_TC_CityMarket_01
+2018-09-11 17:33:55,025 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_02_TC_CityMarket_01
+2018-09-11 17:33:56,739 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:56,786 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:56,786 [main] INFO action.action_execute - checkout: Test case US_ID_02_TC_CityMarket_02 is executing
+2018-09-11 17:33:56,843 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:33:56,843 [main] INFO action.action_execute - Select Action: VerifyTitle
+2018-09-11 17:33:56,843 [main] INFO action.action_execute - Perform Action: verify Title
+2018-09-11 17:33:56,850 [main] INFO action.action_execute - title verified: Checkout
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - Status of verify Title: 1
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - Action Executed: VerifyTitle
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - Status of Action VerifyTitle: 1
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - log captured for action: VerifyTitle
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_02_TC_CityMarket_02
+2018-09-11 17:33:56,851 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_02_TC_CityMarket_02
+2018-09-11 17:33:57,111 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:33:57,159 [main] INFO action.action_execute - Output written
+2018-09-11 17:33:57,160 [main] INFO action.action_execute - checkout: Test case US_ID_02_TC_CityMarket_03 is executing
+2018-09-11 17:33:57,196 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:33:57,196 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:33:57,197 [main] INFO action.action_execute - Perform Action: Wait
+2018-09-11 17:34:03,198 [main] INFO action.action_execute - Action Executed: Wait
+2018-09-11 17:34:03,198 [main] INFO action.action_execute - Status of Action Wait: 1
+2018-09-11 17:34:03,199 [main] INFO action.action_execute - log captured for action: Wait
+2018-09-11 17:34:03,199 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_02_TC_CityMarket_03
+2018-09-11 17:34:03,199 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_02_TC_CityMarket_03
+2018-09-11 17:34:03,502 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:03,586 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:03,586 [main] INFO action.action_execute - checkout: Test case US_ID_03_TC_CityMarket_01 is executing
+2018-09-11 17:34:03,653 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:34:03,654 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:34:03,654 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:34:04,373 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_03_TC_CityMarket_01
+2018-09-11 17:34:04,374 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_03_TC_CityMarket_01
+2018-09-11 17:34:04,655 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:04,723 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:04,724 [main] INFO action.action_execute - checkout: Test case US_ID_03_TC_CityMarket_02 is executing
+2018-09-11 17:34:04,784 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:34:04,784 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:34:04,784 [main] INFO action.action_execute - Perform Action: Verify text
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - Action Executed: VerifyText
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - Status of Action VerifyText: 1
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - log captured for action: VerifyText
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_03_TC_CityMarket_02
+2018-09-11 17:34:08,156 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_03_TC_CityMarket_02
+2018-09-11 17:34:08,487 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:08,554 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:08,554 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_01 is executing
+2018-09-11 17:34:08,624 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:08,625 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:08,628 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:09,064 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:09,064 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:09,065 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:09,065 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:09,065 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:09,065 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_01
+2018-09-11 17:34:09,065 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_01
+2018-09-11 17:34:09,369 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:09,410 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:09,410 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_02 is executing
+2018-09-11 17:34:09,459 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:09,459 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:09,459 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:11,854 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_02
+2018-09-11 17:34:11,855 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_02
+2018-09-11 17:34:12,138 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:12,181 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:12,181 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_03 is executing
+2018-09-11 17:34:12,224 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:12,225 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:12,225 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:14,029 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:14,029 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:14,029 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:14,029 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:14,029 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:14,030 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_03
+2018-09-11 17:34:14,030 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_03
+2018-09-11 17:34:14,314 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:14,379 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:14,379 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_04 is executing
+2018-09-11 17:34:14,423 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:14,423 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:14,423 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:14,801 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:14,801 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:14,802 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:14,802 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:14,802 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:14,802 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_04
+2018-09-11 17:34:14,802 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_04
+2018-09-11 17:34:15,092 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:15,134 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:15,134 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_05 is executing
+2018-09-11 17:34:15,188 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:15,188 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:15,188 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_05
+2018-09-11 17:34:16,373 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_05
+2018-09-11 17:34:16,639 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:16,696 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:16,696 [main] INFO action.action_execute - checkout: Test case US_ID_04_TC_CityMarket_06 is executing
+2018-09-11 17:34:16,736 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:34:16,737 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:34:16,737 [main] INFO action.action_execute - Perform Action: Wait
+2018-09-11 17:34:22,738 [main] INFO action.action_execute - Action Executed: Wait
+2018-09-11 17:34:22,738 [main] INFO action.action_execute - Status of Action Wait: 1
+2018-09-11 17:34:22,738 [main] INFO action.action_execute - log captured for action: Wait
+2018-09-11 17:34:22,738 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_04_TC_CityMarket_06
+2018-09-11 17:34:22,738 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_04_TC_CityMarket_06
+2018-09-11 17:34:23,036 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:23,091 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:23,091 [main] INFO action.action_execute - checkout: Test case US_ID_05_TC_CityMarket_01 is executing
+2018-09-11 17:34:23,127 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:23,127 [main] INFO action.action_execute - Select Action: SetText
+2018-09-11 17:34:23,127 [main] INFO action.action_execute - Perform Action: SetText
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - Text Entered
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - Status of SetText: 1
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - Action Executed: SetText
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - Status of Action SetText: 1
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - log captured for action: SetText
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_05_TC_CityMarket_01
+2018-09-11 17:34:23,388 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_05_TC_CityMarket_01
+2018-09-11 17:34:24,761 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:24,825 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:24,826 [main] INFO action.action_execute - checkout: Test case US_ID_05_TC_CityMarket_02 is executing
+2018-09-11 17:34:24,871 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:34:24,871 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:34:24,872 [main] INFO action.action_execute - Perform Action: Wait
+2018-09-11 17:34:30,873 [main] INFO action.action_execute - Action Executed: Wait
+2018-09-11 17:34:30,873 [main] INFO action.action_execute - Status of Action Wait: 1
+2018-09-11 17:34:30,873 [main] INFO action.action_execute - log captured for action: Wait
+2018-09-11 17:34:30,873 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_05_TC_CityMarket_02
+2018-09-11 17:34:30,874 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_05_TC_CityMarket_02
+2018-09-11 17:34:31,447 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:31,730 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:31,730 [main] INFO action.action_execute - checkout: Test case US_ID_05_TC_CityMarket_03 is executing
+2018-09-11 17:34:31,765 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:34:31,765 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:34:31,765 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:34:32,683 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_05_TC_CityMarket_03
+2018-09-11 17:34:32,684 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_05_TC_CityMarket_03
+2018-09-11 17:34:32,956 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:34:33,009 [main] INFO action.action_execute - Output written
+2018-09-11 17:34:33,010 [main] INFO action.action_execute - checkout: Test case US_ID_06_TC_CityMarket_01 is executing
+2018-09-11 17:34:33,051 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:34:33,051 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:34:33,051 [main] INFO action.action_execute - Perform Action: Select Slot
+2018-09-11 17:45:22,319 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:45:22,320 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:45:22,320 [main] INFO action.action_execute - Perform Action: Select Slot
+2018-09-11 17:46:24,793 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:46:24,796 [main] INFO action.action_execute - Select Action: SelectSlot
+2018-09-11 17:46:24,796 [main] INFO action.action_execute - Perform Action: Select Slot
+2018-09-11 17:48:36,376 [main] INFO action.action_execute - Slot Selected: 12 Sep 10:00 AM-12:00 PM
+2018-09-11 17:48:41,965 [main] INFO action.action_execute - Status of select Product substitue: 1
+2018-09-11 17:48:42,653 [main] INFO action.action_execute - Action Executed: SelectSlot
+2018-09-11 17:48:42,655 [main] INFO action.action_execute - Status of Action SelectSlot: 1
+2018-09-11 17:48:42,655 [main] INFO action.action_execute - log captured for action: SelectSlot
+2018-09-11 17:48:42,655 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_06_TC_CityMarket_01
+2018-09-11 17:48:42,655 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_06_TC_CityMarket_01
+2018-09-11 17:48:43,247 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:48:43,324 [main] INFO action.action_execute - Output written
+2018-09-11 17:48:43,325 [main] INFO action.action_execute - checkout: Test case US_ID_07_TC_CityMarket_01 is executing
+2018-09-11 17:48:43,367 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:43,367 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:43,367 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:48:43,862 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_07_TC_CityMarket_01
+2018-09-11 17:48:43,863 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_07_TC_CityMarket_01
+2018-09-11 17:48:47,457 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:48:47,536 [main] INFO action.action_execute - Output written
+2018-09-11 17:48:47,537 [main] INFO action.action_execute - checkout: Test case US_ID_08_TC_CityMarket_01 is executing
+2018-09-11 17:48:47,599 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:47,599 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:47,599 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:48:47,991 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:48:47,991 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:48:47,991 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:48:47,992 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:48:47,992 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:48:47,992 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_08_TC_CityMarket_01
+2018-09-11 17:48:47,992 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_08_TC_CityMarket_01
+2018-09-11 17:48:48,506 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:48:48,594 [main] INFO action.action_execute - Output written
+2018-09-11 17:48:48,595 [main] INFO action.action_execute - checkout: Test case US_ID_08_TC_CityMarket_02 is executing
+2018-09-11 17:48:48,682 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:48:48,683 [main] INFO action.action_execute - Select Action: VerifyText
+2018-09-11 17:48:48,683 [main] INFO action.action_execute - Perform Action: Verify text
+2018-09-11 17:48:50,820 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:48:50,820 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:48:50,820 [main] INFO action.action_execute - Action Executed: VerifyText
+2018-09-11 17:48:50,820 [main] INFO action.action_execute - Status of Action VerifyText: 1
+2018-09-11 17:48:50,821 [main] INFO action.action_execute - log captured for action: VerifyText
+2018-09-11 17:48:50,821 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_08_TC_CityMarket_02
+2018-09-11 17:48:50,821 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_08_TC_CityMarket_02
+2018-09-11 17:48:51,097 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:48:51,160 [main] INFO action.action_execute - Output written
+2018-09-11 17:48:51,160 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_01 is executing
+2018-09-11 17:48:51,232 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:51,233 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:48:51,233 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:48:57,141 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_01
+2018-09-11 17:48:57,142 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_01
+2018-09-11 17:48:57,689 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:48:57,744 [main] INFO action.action_execute - Output written
+2018-09-11 17:48:57,745 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_02 is executing
+2018-09-11 17:48:57,812 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
+2018-09-11 17:48:57,812 [main] INFO action.action_execute - Select Action: DeleteProductfromViewCart
+2018-09-11 17:48:57,812 [main] INFO action.action_execute - Perform Action: DeleteProductfromViewCart
+2018-09-11 17:49:05,081 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:05,081 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:11,690 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:11,690 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:16,915 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:16,916 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:24,306 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:24,306 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:29,709 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:29,709 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:34,764 [main] INFO action.action_execute - Product Delete
+2018-09-11 17:49:34,764 [main] INFO action.action_execute - Status of DeleteProductfromViewCart: 1
+2018-09-11 17:49:34,764 [main] INFO action.action_execute - Action Executed: DeleteProductfromViewCart
+2018-09-11 17:49:34,764 [main] INFO action.action_execute - Status of Action DeleteProductfromViewCart: 1
+2018-09-11 17:49:34,764 [main] INFO action.action_execute - log captured for action: DeleteProductfromViewCart
+2018-09-11 17:49:34,765 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_02
+2018-09-11 17:49:34,765 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_02
+2018-09-11 17:49:39,878 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:39,990 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:39,990 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_03 is executing
+2018-09-11 17:49:40,045 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:49:40,045 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:49:40,046 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:49:40,197 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_03
+2018-09-11 17:49:40,198 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_03
+2018-09-11 17:49:40,610 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:40,655 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:40,656 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_04 is executing
+2018-09-11 17:49:40,698 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:49:40,699 [main] INFO action.action_execute - Select Action: Click
+2018-09-11 17:49:40,699 [main] INFO action.action_execute - Perform Action: Click
+2018-09-11 17:49:43,760 [main] INFO action.action_execute - click perfomed
+2018-09-11 17:49:43,761 [main] INFO action.action_execute - Status of Click: 1
+2018-09-11 17:49:43,761 [main] INFO action.action_execute - Action Executed: Click
+2018-09-11 17:49:43,761 [main] INFO action.action_execute - Status of Action Click: 1
+2018-09-11 17:49:43,761 [main] INFO action.action_execute - log captured for action: Click
+2018-09-11 17:49:43,761 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_04
+2018-09-11 17:49:43,762 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_04
+2018-09-11 17:49:44,766 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:44,815 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:44,815 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_05 is executing
+2018-09-11 17:49:44,864 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:49:44,864 [main] INFO action.action_execute - Select Action: Wait
+2018-09-11 17:49:44,864 [main] INFO action.action_execute - Perform Action: Wait
+2018-09-11 17:49:50,865 [main] INFO action.action_execute - Action Executed: Wait
+2018-09-11 17:49:50,888 [main] INFO action.action_execute - Status of Action Wait: 1
+2018-09-11 17:49:50,888 [main] INFO action.action_execute - log captured for action: Wait
+2018-09-11 17:49:50,889 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_05
+2018-09-11 17:49:50,889 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_05
+2018-09-11 17:49:51,352 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:51,407 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:51,408 [main] INFO action.action_execute - checkout: Test case US_ID_09_TC_CityMarket_06 is executing
+2018-09-11 17:49:51,477 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:49:51,478 [main] INFO action.action_execute - Select Action: VerifyElement
+2018-09-11 17:49:51,478 [main] INFO action.action_execute - Perform Action: verify Element
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - Verify Element
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - Status of verify Element: 1
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - Action Executed: VerifyElement
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - Status of Action VerifyElement: 1
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - log captured for action: VerifyElement
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - checkout: Execution complete for Test case US_ID_09_TC_CityMarket_06
+2018-09-11 17:49:51,803 [main] INFO action.action_execute - checkout: Taking Screenshot for Test case US_ID_09_TC_CityMarket_06
+2018-09-11 17:49:52,252 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:52,302 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:53,071 [main] INFO action.action_execute - Execution Start for: User Sign In
+2018-09-11 17:49:53,136 [main] INFO reader_writer.excelWriter - get Data set from excel test cases
+2018-09-11 17:49:53,150 [main] INFO reader_writer.excelWriter - Data set Successfully loaded on system for User Login Suit
+2018-09-11 17:49:53,151 [main] INFO reader_writer.excelWriter - Start Execution of loaded data set
+2018-09-11 17:49:53,151 [main] INFO reader_writer.excelWriter - Test case US_ID_01_TC_CityMarket_01 is executing
+2018-09-11 17:49:53,201 [main] INFO action.action_execute - Select Action: CloseBrowser
+2018-09-11 17:49:53,201 [main] INFO action.action_execute - Select Action: CloseBrowser
+2018-09-11 17:49:53,201 [main] INFO action.action_execute - Perform Action: Close Browser
+2018-09-11 17:49:55,314 [main] INFO action.action_execute - Browser Closed successfully
+2018-09-11 17:49:55,314 [main] INFO action.action_execute - Status of Close Browser: 1
+2018-09-11 17:49:55,314 [main] INFO action.action_execute - Action Executed: CloseBrowser
+2018-09-11 17:49:55,315 [main] INFO action.action_execute - Status of Action CloseBrowser: 1
+2018-09-11 17:49:55,315 [main] INFO action.action_execute - log captured for action: CloseBrowser
+2018-09-11 17:49:55,316 [main] INFO action.action_execute - Execution complete for Test case US_ID_01_TC_CityMarket_01
+2018-09-11 17:49:55,316 [main] INFO action.action_execute - Writing output in excel file
+2018-09-11 17:49:55,352 [main] INFO action.action_execute - Output written
+2018-09-11 17:49:55,352 [main] INFO action.action_execute - Test case US_ID_01_TC_CityMarket_02 is executing
+2018-09-11 17:49:55,396 [main] INFO action.action_execute - Select Action: QuitDriver
+2018-09-11 17:49:55,397 [main] INFO action.action_execute - Action Quit Driver Selected
+2018-09-11 17:49:55,397 [main] INFO action.action_execute - Perform Action: Quit Driver
+2018-09-11 17:49:55,484 [main] INFO action.action_execute - Execution Done

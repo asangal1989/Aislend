@@ -2396,288 +2396,297 @@ public class action_execute extends global_variables{
 	@SuppressWarnings({ "unused"})
 	public int MoveAndRemoveProduct(String ElementKey, String ElementSelector,String AllProduct) throws InterruptedException
 	{		
+		Thread.sleep(3000);
 		int MoveAndRemoveProduct=0;
-		if(AllProduct.toLowerCase().contains("all"))
+		if(Product_added_details.size()>0)
 		{
-			ArrayList<String> product_list_collection=new ArrayList<String>();
-			Set<String> product_category_set=Product_added_details.keySet();
-			for(String product_name:product_category_set)
+			if(AllProduct.toLowerCase().contains("all"))
 			{
-				product_list_collection.add(product_name);
-			}
-			for(String product_name:product_list_collection)
-			{
-				
-				ArrayList<String> productlist_temp=Product_added_details.get(product_name);
-				int productlastcount=Integer.parseInt(productlist_temp.get(2));
-				for(int i=0;i<productlastcount;i++)
+				ArrayList<String> product_list_collection=new ArrayList<String>();
+				Set<String> product_category_set=Product_added_details.keySet();
+				for(String product_name:product_category_set)
 				{
-					element_locator=element_loc.getElement(ElementKey, ElementSelector);
-					WebElement element_product_Wraper_list=Driver.findElement(element_locator);
-					List<WebElement> element_product_item_wraper=element_product_Wraper_list.findElements(By.tagName("ol"));
+					product_list_collection.add(product_name);
+				}
+				for(String product_name:product_list_collection)
+				{
 					
-					ArrayList<String> Productdetails = new ArrayList<String>();
-					String currect_Product_name=null;
-					String currect_Product_price=null;
-					String current_Product_count=null;
-					String currect_Product_price_offer=null;
-					int productsearchcount=0;
-					ProductSearch:
-				for(WebElement element_product_item_wraper_itrator:element_product_item_wraper)
-				{
-					List<WebElement> element_product_item_container=element_product_item_wraper_itrator.findElements(By.tagName("li"));
-					for(WebElement element_product_item_container_itrator:element_product_item_container)
-					{						
-						List<WebElement> element_product_item_info_container=element_product_item_container_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product-item-info product__card']"));					
-						for(WebElement element_product_item_info_cart:element_product_item_info_container)
-						{	
-							List<WebElement> element_product_item_info_details_cart=element_product_item_info_cart.findElements(By.xpath(".//div[normalize-space(@class) = 'product details product-item-details product__card-details']"));
-							for(WebElement element_product_item_info_cart_itrator:element_product_item_info_details_cart)
-							{
-								
-								List<WebElement> element_product_item_info_details_cart_name=element_product_item_info_cart_itrator.findElements(By.xpath(".//strong[normalize-space(@class) = 'product name product-item-name product__item-title']"));
-								List<WebElement> element_product_item_info_details_cart_price=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__price-container']"));
-								List<WebElement> element_product_item_info_details_cart_add_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-primary product__action-primary']"));
-								List<WebElement> element_product_item_info_details_cart_addmore_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__actions action__secondary']"));
-								List<WebElement> element_product_item_info_details_cart_wishlist_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-secondary product__action-secondry']"));
-								
-								for(WebElement element_product_item_info_details_cart_name_itrator:element_product_item_info_details_cart_name)
+					ArrayList<String> productlist_temp=Product_added_details.get(product_name);
+					int productlastcount=Integer.parseInt(productlist_temp.get(2));
+					for(int i=0;i<productlastcount;i++)
+					{
+						element_locator=element_loc.getElement(ElementKey, ElementSelector);
+						WebElement element_product_Wraper_list=Driver.findElement(element_locator);
+						List<WebElement> element_product_item_wraper=element_product_Wraper_list.findElements(By.tagName("ol"));
+						
+						ArrayList<String> Productdetails = new ArrayList<String>();
+						String currect_Product_name=null;
+						String currect_Product_price=null;
+						String current_Product_count=null;
+						String currect_Product_price_offer=null;
+						int productsearchcount=0;
+						ProductSearch:
+					for(WebElement element_product_item_wraper_itrator:element_product_item_wraper)
+					{
+						List<WebElement> element_product_item_container=element_product_item_wraper_itrator.findElements(By.tagName("li"));
+						for(WebElement element_product_item_container_itrator:element_product_item_container)
+						{						
+							List<WebElement> element_product_item_info_container=element_product_item_container_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product-item-info product__card']"));					
+							for(WebElement element_product_item_info_cart:element_product_item_info_container)
+							{	
+								List<WebElement> element_product_item_info_details_cart=element_product_item_info_cart.findElements(By.xpath(".//div[normalize-space(@class) = 'product details product-item-details product__card-details']"));
+								for(WebElement element_product_item_info_cart_itrator:element_product_item_info_details_cart)
 								{
 									
-									Actions act=new Actions(Driver);
-									act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
-									productsearchcount++;
-									if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().trim().equals(product_name.toLowerCase().trim().toString()))
-									{									
+									List<WebElement> element_product_item_info_details_cart_name=element_product_item_info_cart_itrator.findElements(By.xpath(".//strong[normalize-space(@class) = 'product name product-item-name product__item-title']"));
+									List<WebElement> element_product_item_info_details_cart_price=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__price-container']"));
+									List<WebElement> element_product_item_info_details_cart_add_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-primary product__action-primary']"));
+									List<WebElement> element_product_item_info_details_cart_addmore_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__actions action__secondary']"));
+									List<WebElement> element_product_item_info_details_cart_wishlist_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-secondary product__action-secondry']"));
+									
+									for(WebElement element_product_item_info_details_cart_name_itrator:element_product_item_info_details_cart_name)
+									{
 										
-										if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(product_name.toLowerCase().toString()))
-										{			
-																
-											WebElement currect_Product_element= element_product_item_info_cart_itrator;
-											currect_Product_name=element_product_item_info_details_cart_name_itrator.getText().toString();
-											ProductSearchbreak:
-											for(WebElement element_product_item_info_details_cart_price_itrator:element_product_item_info_details_cart_price)
-											{											
-												if(element_product_item_info_details_cart_price_itrator.getText().contains("Special Price".toString()))
-												{
-													currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString().trim();
-													currect_Product_price_offer=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[1].toString().trim();
-												}
-												else
-												{
-													currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString();
-												}
-																							
-												break ProductSearchbreak;
-											}
-												
-										}		
-										
-										if(Product_added_details.containsKey(product_name))
-										{
-											for(WebElement element_product_item_info_details_cart_add_container_itrate:element_product_item_info_details_cart_addmore_container)
-											{
-
-												List<WebElement> element_product_item_info_details_cart_add_button=element_product_item_info_details_cart_add_container_itrate.findElements(By.tagName("button"));											
-												for(WebElement element_product_item_info_details_cart_add_button_itrate:element_product_item_info_details_cart_add_button)
-												{							
-													int divcount1=0;
-													act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
-													
-													WebElement addmoreProduct=element_product_item_info_details_cart_add_button_itrate;
-													System.out.println(addmoreProduct.getText());
-													if(addmoreProduct.getText().equals("—"))
+										Actions act=new Actions(Driver);
+										act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
+										productsearchcount++;
+										if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().trim().equals(product_name.toLowerCase().trim().toString()))
+										{									
+											
+											if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(product_name.toLowerCase().toString()))
+											{			
+																	
+												WebElement currect_Product_element= element_product_item_info_cart_itrator;
+												currect_Product_name=element_product_item_info_details_cart_name_itrator.getText().toString();
+												ProductSearchbreak:
+												for(WebElement element_product_item_info_details_cart_price_itrator:element_product_item_info_details_cart_price)
+												{											
+													if(element_product_item_info_details_cart_price_itrator.getText().contains("Special Price".toString()))
 													{
-														if(addmoreProduct.isDisplayed()==true)
-														{												
-															act.moveToElement(addmoreProduct).build().perform();															
-															addmoreProduct.click();	
-															Thread.sleep(5000);
-															productlist_temp=Product_added_details.get(currect_Product_name);
-															productlastcount=Integer.parseInt(productlist_temp.get(2));
-															current_Product_count=String.valueOf(productlastcount-1);																												
-															Productdetails.add(currect_Product_price);
-															Productdetails.add(currect_Product_price_offer);
-															Productdetails.add(current_Product_count);
-															if(Integer.parseInt(current_Product_count)>0)
-															{
-																Product_added_details.put(currect_Product_name, Productdetails);
-															}
-															else
-															{
-																Product_added_details.remove(currect_Product_name);
-															}
-															Status=1;
-															log_system.info("Product Removed");
-															log_system.info("Status of Product move and Remove: "+Status);												
-														}
-														break ProductSearch;
+														currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString().trim();
+														currect_Product_price_offer=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[1].toString().trim();
 													}
-																										
+													else
+													{
+														currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString();
+													}
+																								
+													break ProductSearchbreak;
+												}
 													
-												}										
-											}
+											}		
+											
+											if(Product_added_details.containsKey(product_name))
+											{
+												for(WebElement element_product_item_info_details_cart_add_container_itrate:element_product_item_info_details_cart_addmore_container)
+												{
 
-										}
-										else
-										{
-											MoveAndRemoveProduct++;
-											log_system.info("Product found on screen but there is no product added in the cart");
-											log_system.info("Status of Product move and remove: "+Status);
+													List<WebElement> element_product_item_info_details_cart_add_button=element_product_item_info_details_cart_add_container_itrate.findElements(By.tagName("button"));											
+													for(WebElement element_product_item_info_details_cart_add_button_itrate:element_product_item_info_details_cart_add_button)
+													{							
+														int divcount1=0;
+														act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
+														
+														WebElement addmoreProduct=element_product_item_info_details_cart_add_button_itrate;
+														System.out.println(addmoreProduct.getText());
+														if(addmoreProduct.getText().equals("—"))
+														{
+															if(addmoreProduct.isDisplayed()==true)
+															{												
+																act.moveToElement(addmoreProduct).build().perform();															
+																addmoreProduct.click();	
+																Thread.sleep(5000);
+																productlist_temp=Product_added_details.get(currect_Product_name);
+																productlastcount=Integer.parseInt(productlist_temp.get(2));
+																current_Product_count=String.valueOf(productlastcount-1);																												
+																Productdetails.add(currect_Product_price);
+																Productdetails.add(currect_Product_price_offer);
+																Productdetails.add(current_Product_count);
+																if(Integer.parseInt(current_Product_count)>0)
+																{
+																	Product_added_details.put(currect_Product_name, Productdetails);
+																}
+																else
+																{
+																	Product_added_details.remove(currect_Product_name);
+																}
+																Status=1;
+																log_system.info("Product Removed");
+																log_system.info("Status of Product move and Remove: "+Status);												
+															}
+															break ProductSearch;
+														}
+																											
+														
+													}										
+												}
+
+											}
+											else
+											{
+												MoveAndRemoveProduct++;
+												log_system.info("Product found on screen but there is no product added in the cart");
+												log_system.info("Status of Product move and remove: "+Status);
+												
+											}
 											
 										}
-										
 									}
+									
 								}
-								
-							}
-						}								 
+							}								 
+						}
 					}
+					}
+					
+					
+					
 				}
-				}
+			}
+			else
+			{
+				Random rdm=new Random();
+				ArrayList<String> product_list_collection=new ArrayList<String>();
+				Set<String> product_category_set=Product_added_details.keySet();
+				for(String product_name:product_category_set)
+				{
+					product_list_collection.add(product_name);
+				}			
+				int index=rdm.nextInt(product_list_collection.size());
+				String ProductName=product_list_collection.get(index);
+				element_locator=element_loc.getElement(ElementKey, ElementSelector);
+				WebElement element_product_Wraper_list=Driver.findElement(element_locator);
+				List<WebElement> element_product_item_wraper=element_product_Wraper_list.findElements(By.tagName("ol"));
 				
+				ArrayList<String> Productdetails = new ArrayList<String>();
+				String currect_Product_name=null;
+				String currect_Product_price=null;
+				String current_Product_count=null;
+				String currect_Product_price_offer=null;
+				int productsearchcount=0;
 				
-				
+				ProductSearch:
+					for(WebElement element_product_item_wraper_itrator:element_product_item_wraper)
+					{	
+						List<WebElement> element_product_item_container=element_product_item_wraper_itrator.findElements(By.tagName("li"));
+						for(WebElement element_product_item_container_itrator:element_product_item_container)
+						{						
+							List<WebElement> element_product_item_info_container=element_product_item_container_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product-item-info product__card']"));					
+							for(WebElement element_product_item_info_cart:element_product_item_info_container)
+							{	
+								List<WebElement> element_product_item_info_details_cart=element_product_item_info_cart.findElements(By.xpath(".//div[normalize-space(@class) = 'product details product-item-details product__card-details']"));
+								for(WebElement element_product_item_info_cart_itrator:element_product_item_info_details_cart)
+								{
+									
+									List<WebElement> element_product_item_info_details_cart_name=element_product_item_info_cart_itrator.findElements(By.xpath(".//strong[normalize-space(@class) = 'product name product-item-name product__item-title']"));
+									List<WebElement> element_product_item_info_details_cart_price=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__price-container']"));
+									List<WebElement> element_product_item_info_details_cart_add_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-primary product__action-primary']"));
+									List<WebElement> element_product_item_info_details_cart_addmore_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__actions action__secondary']"));
+									List<WebElement> element_product_item_info_details_cart_wishlist_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-secondary product__action-secondry']"));
+									
+									for(WebElement element_product_item_info_details_cart_name_itrator:element_product_item_info_details_cart_name)
+									{
+										
+										Actions act=new Actions(Driver);
+										act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
+										productsearchcount++;
+										if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(ProductName.toLowerCase().toString()))
+										{									
+											
+											if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(ProductName.toLowerCase().toString()))
+											{			
+																	
+												WebElement currect_Product_element= element_product_item_info_cart_itrator;
+												currect_Product_name=element_product_item_info_details_cart_name_itrator.getText().toString();
+												ProductSearchbreak:
+												for(WebElement element_product_item_info_details_cart_price_itrator:element_product_item_info_details_cart_price)
+												{											
+													if(element_product_item_info_details_cart_price_itrator.getText().contains("Special Price".toString()))
+													{
+														currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString().trim();
+														currect_Product_price_offer=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[1].toString().trim();
+													}
+													else
+													{
+														currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString();
+													}
+																								
+													break ProductSearchbreak;
+												}
+													
+											}		
+											
+											if(Product_added_details.containsKey(ProductName))
+											{
+												for(WebElement element_product_item_info_details_cart_add_container_itrate:element_product_item_info_details_cart_addmore_container)
+												{
+
+													List<WebElement> element_product_item_info_details_cart_add_button=element_product_item_info_details_cart_add_container_itrate.findElements(By.tagName("button"));											
+													for(WebElement element_product_item_info_details_cart_add_button_itrate:element_product_item_info_details_cart_add_button)
+													{							
+														int divcount1=0;
+														act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
+														
+														WebElement addmoreProduct=element_product_item_info_details_cart_add_button_itrate;
+														if(addmoreProduct.getText().equals("—"))
+														{
+															if(addmoreProduct.isDisplayed()==true)
+															{												
+																act.moveToElement(addmoreProduct).build().perform();
+																addmoreProduct.click();
+																Thread.sleep(5000);															
+																ArrayList<String> productlist_temp=Product_added_details.get(currect_Product_name);
+																int productlastcount=Integer.parseInt(productlist_temp.get(2));
+																current_Product_count=String.valueOf(productlastcount-1);																												
+																Productdetails.add(currect_Product_price);
+																Productdetails.add(currect_Product_price_offer);
+																Productdetails.add(current_Product_count);
+																if(Integer.parseInt(current_Product_count)>0)
+																{
+																	Product_added_details.put(currect_Product_name, Productdetails);
+																}
+																else
+																{
+																	Product_added_details.remove(currect_Product_name);
+																}
+																Status=1;
+																log_system.info("Product Removed");
+																log_system.info("Status of Product move and Remove: "+Status);												
+															}
+															break ProductSearch;
+														}
+																											
+														
+													}										
+												}
+
+											}
+											else
+											{
+												MoveAndRemoveProduct++;
+												log_system.info("Product found on screen but there is no product added in the cart");
+												log_system.info("Status of Product move and remove: "+Status);
+												
+											}
+											
+										}
+									}
+									
+								}
+							}								 
+						}
+					}
+			}
+			
+			if(MoveAndRemoveProduct>0)
+			{
+				Status=0;
 			}
 		}
 		else
 		{
-			Random rdm=new Random();
-			ArrayList<String> product_list_collection=new ArrayList<String>();
-			Set<String> product_category_set=Product_added_details.keySet();
-			for(String product_name:product_category_set)
-			{
-				product_list_collection.add(product_name);
-			}			
-			int index=rdm.nextInt(product_list_collection.size());
-			String ProductName=product_list_collection.get(index);
-			element_locator=element_loc.getElement(ElementKey, ElementSelector);
-			WebElement element_product_Wraper_list=Driver.findElement(element_locator);
-			List<WebElement> element_product_item_wraper=element_product_Wraper_list.findElements(By.tagName("ol"));
-			
-			ArrayList<String> Productdetails = new ArrayList<String>();
-			String currect_Product_name=null;
-			String currect_Product_price=null;
-			String current_Product_count=null;
-			String currect_Product_price_offer=null;
-			int productsearchcount=0;
-			
-			ProductSearch:
-				for(WebElement element_product_item_wraper_itrator:element_product_item_wraper)
-				{	
-					List<WebElement> element_product_item_container=element_product_item_wraper_itrator.findElements(By.tagName("li"));
-					for(WebElement element_product_item_container_itrator:element_product_item_container)
-					{						
-						List<WebElement> element_product_item_info_container=element_product_item_container_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product-item-info product__card']"));					
-						for(WebElement element_product_item_info_cart:element_product_item_info_container)
-						{	
-							List<WebElement> element_product_item_info_details_cart=element_product_item_info_cart.findElements(By.xpath(".//div[normalize-space(@class) = 'product details product-item-details product__card-details']"));
-							for(WebElement element_product_item_info_cart_itrator:element_product_item_info_details_cart)
-							{
-								
-								List<WebElement> element_product_item_info_details_cart_name=element_product_item_info_cart_itrator.findElements(By.xpath(".//strong[normalize-space(@class) = 'product name product-item-name product__item-title']"));
-								List<WebElement> element_product_item_info_details_cart_price=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__price-container']"));
-								List<WebElement> element_product_item_info_details_cart_add_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-primary product__action-primary']"));
-								List<WebElement> element_product_item_info_details_cart_addmore_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'product__actions action__secondary']"));
-								List<WebElement> element_product_item_info_details_cart_wishlist_container=element_product_item_info_cart_itrator.findElements(By.xpath(".//div[normalize-space(@class) = 'actions-secondary product__action-secondry']"));
-								
-								for(WebElement element_product_item_info_details_cart_name_itrator:element_product_item_info_details_cart_name)
-								{
-									
-									Actions act=new Actions(Driver);
-									act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
-									productsearchcount++;
-									if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(ProductName.toLowerCase().toString()))
-									{									
-										
-										if(element_product_item_info_details_cart_name_itrator.getText().toLowerCase().toString().equals(ProductName.toLowerCase().toString()))
-										{			
-																
-											WebElement currect_Product_element= element_product_item_info_cart_itrator;
-											currect_Product_name=element_product_item_info_details_cart_name_itrator.getText().toString();
-											ProductSearchbreak:
-											for(WebElement element_product_item_info_details_cart_price_itrator:element_product_item_info_details_cart_price)
-											{											
-												if(element_product_item_info_details_cart_price_itrator.getText().contains("Special Price".toString()))
-												{
-													currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString().trim();
-													currect_Product_price_offer=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[1].toString().trim();
-												}
-												else
-												{
-													currect_Product_price=element_product_item_info_details_cart_price_itrator.getText().trim().split("Special Price")[0].toString();
-												}
-																							
-												break ProductSearchbreak;
-											}
-												
-										}		
-										
-										if(Product_added_details.containsKey(ProductName))
-										{
-											for(WebElement element_product_item_info_details_cart_add_container_itrate:element_product_item_info_details_cart_addmore_container)
-											{
-
-												List<WebElement> element_product_item_info_details_cart_add_button=element_product_item_info_details_cart_add_container_itrate.findElements(By.tagName("button"));											
-												for(WebElement element_product_item_info_details_cart_add_button_itrate:element_product_item_info_details_cart_add_button)
-												{							
-													int divcount1=0;
-													act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
-													
-													WebElement addmoreProduct=element_product_item_info_details_cart_add_button_itrate;
-													if(addmoreProduct.getText().equals("—"))
-													{
-														if(addmoreProduct.isDisplayed()==true)
-														{												
-															act.moveToElement(addmoreProduct).build().perform();
-															addmoreProduct.click();
-															Thread.sleep(5000);															
-															ArrayList<String> productlist_temp=Product_added_details.get(currect_Product_name);
-															int productlastcount=Integer.parseInt(productlist_temp.get(2));
-															current_Product_count=String.valueOf(productlastcount-1);																												
-															Productdetails.add(currect_Product_price);
-															Productdetails.add(currect_Product_price_offer);
-															Productdetails.add(current_Product_count);
-															if(Integer.parseInt(current_Product_count)>0)
-															{
-																Product_added_details.put(currect_Product_name, Productdetails);
-															}
-															else
-															{
-																Product_added_details.remove(currect_Product_name);
-															}
-															Status=1;
-															log_system.info("Product Removed");
-															log_system.info("Status of Product move and Remove: "+Status);												
-														}
-														break ProductSearch;
-													}
-																										
-													
-												}										
-											}
-
-										}
-										else
-										{
-											MoveAndRemoveProduct++;
-											log_system.info("Product found on screen but there is no product added in the cart");
-											log_system.info("Status of Product move and remove: "+Status);
-											
-										}
-										
-									}
-								}
-								
-							}
-						}								 
-					}
-				}
-		}
-		
-		if(MoveAndRemoveProduct>0)
-		{
-			Status=0;
+			System.out.println("no product found in cart");
+			log_system.info("no product found in cart");
 		}
 			
 		return Status;
@@ -3195,7 +3204,22 @@ public class action_execute extends global_variables{
 		element=Driver.findElement(element_locator);		
 		element=element.findElement(By.tagName("tbody"));
 		List<WebElement> elements=element.findElements(By.tagName("tr"));
-		break_slot:
+		for(WebElement search_timesslot:elements)
+		{
+			String date=search_timesslot.findElement(By.xpath(".//span[normalize-space(@class) = 'date-time']")).getText();
+			List<WebElement> timeslot=search_timesslot.findElements(By.xpath(".//div[normalize-space(@class) = 'slot']"));
+			if(timeslot.size()>0)
+			{
+				selection_date=date;
+				Random rdm=new Random();
+				int index=rdm.nextInt(timeslot.size());
+				WebElement timeslot_select=timeslot.get(index);
+				Selection_time=timeslot_select.getText();
+				break;
+			}
+		}
+		
+		break_slot:	
 		for(WebElement element2:elements)
 		{
 			if(element2.getText().toLowerCase().toString().contains(selection_date.toLowerCase().toString()))
