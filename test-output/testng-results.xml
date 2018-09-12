@@ -1,46 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="11" failed="0" total="12" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52919" started-at="2018-09-10T08:31:59Z" finished-at="2018-09-10T08:32:52Z">
+  <suite name="Failed suite [Default suite]" duration-ms="2034" started-at="2018-09-12T09:19:41Z" finished-at="2018-09-12T09:19:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52919" started-at="2018-09-10T08:31:59Z" finished-at="2018-09-10T08:32:52Z">
+    <test name="Default test" duration-ms="2034" started-at="2018-09-12T09:19:41Z" finished-at="2018-09-12T09:19:43Z">
+      <class name="suit.view_cart">
+        <test-method status="SKIP" signature="userregistration()[pri:0, instance:suit.view_cart@6737fd8f]" name="userregistration" duration-ms="2" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userregistration -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.view_cart@6737fd8f]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.view_cart -->
+      <class name="suit.mini_cart">
+        <test-method status="SKIP" signature="userregistration()[pri:0, instance:suit.mini_cart@1efed156]" name="userregistration" duration-ms="15" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userregistration -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.mini_cart@1efed156]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.mini_cart -->
       <class name="suit.open_browser">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:suit.open_browser@217ed35e]" name="Setup" is-config="true" duration-ms="276" started-at="2018-09-10T14:01:59Z" finished-at="2018-09-10T14:01:59Z">
+        <test-method status="SKIP" signature="openbrowser()[pri:0, instance:suit.open_browser@79be0360]" name="openbrowser" duration-ms="6" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openbrowser -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.open_browser@79be0360]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.open_browser -->
+      <class name="suit.user_registration">
+        <test-method status="SKIP" signature="userregistration()[pri:0, instance:suit.user_registration@22a67b4]" name="userregistration" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userregistration -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.user_registration@22a67b4]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.user_registration -->
+      <class name="suit.user_register_mailinator">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:suit.user_register_mailinator@6321e813]" name="Setup" is-config="true" duration-ms="239" started-at="2018-09-12T14:49:41Z" finished-at="2018-09-12T14:49:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="FAIL" signature="openbrowser()[pri:0, instance:suit.open_browser@217ed35e]" name="openbrowser" duration-ms="52878" started-at="2018-09-10T14:01:59Z" finished-at="2018-09-10T14:02:52Z">
-          <exception class="java.lang.IncompatibleClassChangeError">
-            <message>
-              <![CDATA[Class io.appium.java_client.remote.AppiumCommandExecutor$$Lambda$22/1788582153 does not implement the requested interface java.util.function.Supplier]]>
-            </message>
+        <test-method status="PASS" signature="random_email_registor()[pri:1, instance:suit.user_register_mailinator@6321e813]" name="random_email_registor" duration-ms="1920" started-at="2018-09-12T14:49:41Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- random_email_registor -->
+        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.user_register_mailinator@6321e813]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=random_email_registor status=SUCCESS method=user_register_mailinator.random_email_registor()[pri:1, instance:suit.user_register_mailinator@6321e813] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IncompatibleClassChangeError: Class io.appium.java_client.remote.AppiumCommandExecutor$$Lambda$22/1788582153 does not implement the requested interface java.util.function.Supplier
-	at java.util.Optional.orElseGet(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:100)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:87)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:111)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:72)
-	at action.action_execute.OpenBrowser(action_execute.java:162)
-	at action.action_perform.Perform_OpenBrowser(action_perform.java:15)
-	at action.action_select.ActionSelect(action_select.java:22)
-	at suit.open_browser.openbrowser(open_browser.java:73)
+              <![CDATA[java.lang.NullPointerException
+	at reports_utility.ReportsManager.getResult(ReportsManager.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:707)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -61,26 +95,85 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IncompatibleClassChangeError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openbrowser -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.open_browser@217ed35e]" name="getResult" is-config="true" duration-ms="26" started-at="2018-09-10T14:02:52Z" finished-at="2018-09-10T14:02:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openbrowser status=FAILURE method=open_browser.openbrowser()[pri:0, instance:suit.open_browser@217ed35e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:suit.open_browser@217ed35e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-09-10T14:02:52Z" finished-at="2018-09-10T14:02:52Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:suit.user_register_mailinator@6321e813]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- suit.open_browser -->
+      </class> <!-- suit.user_register_mailinator -->
+      <class name="suit.product_list">
+        <test-method status="SKIP" signature="productlist()[pri:0, instance:suit.product_list@63e2203c]" name="productlist" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productlist -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.product_list@63e2203c]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.product_list -->
+      <class name="suit.my_account">
+        <test-method status="SKIP" signature="usersign()[pri:0, instance:suit.my_account@a7e666]" name="usersign" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usersign -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.my_account@a7e666]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.my_account -->
+      <class name="suit.close_browser">
+        <test-method status="SKIP" signature="CloseBrowser()[pri:0, instance:suit.close_browser@68bbe345]" name="CloseBrowser" duration-ms="5" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.close_browser@68bbe345]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.close_browser -->
+      <class name="suit.category_page">
+        <test-method status="SKIP" signature="CategoryPage()[pri:0, instance:suit.category_page@3224f60b]" name="CategoryPage" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CategoryPage -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.category_page@3224f60b]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.category_page -->
+      <class name="suit.home_page">
+        <test-method status="SKIP" signature="homepage()[pri:0, instance:suit.home_page@3b084709]" name="homepage" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.home_page@3b084709]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.home_page -->
+      <class name="suit.user_sign_in">
+        <test-method status="SKIP" signature="usersign()[pri:0, instance:suit.user_sign_in@57855c9a]" name="usersign" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usersign -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.user_sign_in@57855c9a]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.user_sign_in -->
+      <class name="suit.checkout">
+        <test-method status="SKIP" signature="userregistration()[pri:0, instance:suit.checkout@72b6cbcc]" name="userregistration" duration-ms="1" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userregistration -->
+        <test-method status="SKIP" signature="getResult(org.testng.ITestResult)[pri:0, instance:suit.checkout@72b6cbcc]" name="getResult" is-config="true" duration-ms="0" started-at="2018-09-12T14:49:43Z" finished-at="2018-09-12T14:49:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- suit.checkout -->
     </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

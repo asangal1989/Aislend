@@ -27,6 +27,7 @@ public class user_sign_in extends global_variables{
 		
 		
 		testinfo=reports.createTest(this.getClass().getName());
+		qc_testinfo=qc_reports.createTest(this.getClass().getName());
 		log_system.info("*********************Execution Start for: "+this.getClass().getSimpleName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
@@ -85,6 +86,7 @@ public class user_sign_in extends global_variables{
 			  }
 			recorder.stopRecording();			
 			reports.flush();
+			qc_reports.flush();
 		}
 		catch(Exception e)
 		{
@@ -95,11 +97,13 @@ public class user_sign_in extends global_variables{
 				recorder.stopRecording();
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			} catch (Exception e1) {
 				log_system.error(e.getStackTrace().toString());
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			}			
 		}

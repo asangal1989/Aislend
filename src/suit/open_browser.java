@@ -29,6 +29,7 @@ public class open_browser extends global_variables{
 	
 		
 		testinfo=reports.createTest(this.getClass().getName());
+		qc_testinfo=qc_reports.createTest(this.getClass().getName());
 		log_system.info("*********************Execution Start for: "+this.getClass().getName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
@@ -85,7 +86,8 @@ public class open_browser extends global_variables{
 				  log_system.info("Output written");	  				 
 			  }
 			 recorder.stopRecording();
-			 reports.flush();			 
+			 reports.flush();
+			 qc_reports.flush();	
 		}
 		catch(Exception e)
 		{
@@ -96,11 +98,13 @@ public class open_browser extends global_variables{
 				recorder.stopRecording();
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			} catch (Exception e1) {
 				log_system.error(e.getStackTrace().toString());
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			}			
 		}

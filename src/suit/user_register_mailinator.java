@@ -68,7 +68,7 @@ public class user_register_mailinator extends global_variables{
 		} catch (IOException e) {
 			System.out.println("not able to register new user");
 			Driver.quit();
-			reports.flush();
+			
 			System.exit(0);
 		}
 		

@@ -1,6 +1,12 @@
 package action;
 
 import java.util.ArrayList;
+
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.Logs;
+
 import global_utility.global_variables;
 
 public class action_select extends global_variables{
@@ -848,9 +854,38 @@ public class action_select extends global_variables{
 			}
 			
 			default:
-				if(e.getMessage().contains("500") || e.getMessage().contains("ERR") || e.getMessage().toLowerCase().contains("error"))
+				
+				ArrayList<String> error=new ArrayList<String>();
+				try
+				{		
+					 Logs logs = Driver.manage().logs();
+				        LogEntries logEntries = logs.get(LogType.BROWSER);
+				        for(LogEntry logEntry :logEntries)
+				        {
+				            
+				            if (logEntry.getMessage().toLowerCase().contains("[error]")) {
+				            	error.add(logEntry.getMessage());				            	
+				            } else if (logEntry.getMessage().toLowerCase().contains("[warning]")){
+				                System.out.println("Warning Message in Console:"+logEntry.getMessage());
+				            }else{
+				                System.out.println("Information Message in Console:"+logEntry.getMessage());
+				            }
+				        }
+				        if(error.size()!=0)
+				        {
+				        	Driver.get(Driver.getCurrentUrl());		
+				        }
+						
+					
+				}
+				catch(Exception e1)
 				{
 					Driver.get(Driver.getCurrentUrl());
+				}
+				if(Driver.getPageSource().contains("500") || Driver.getPageSource().contains("Time") || Driver.getPageSource().contains("400"))
+				{
+					
+					
 				}
 			}
 		}

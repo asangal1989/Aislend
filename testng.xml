@@ -6,7 +6,7 @@
     <classes>
 	 <class name="suit.user_register_mailinator"/>
       <class name="suit.open_browser"/>
-	 <!-- <class name="suit.user_registration"/> 
+	 <class name="suit.user_registration"/> 
       <class name="suit.user_sign_in"/>
       <class name="suit.home_page"/>
       <class name="suit.category_page"/>
@@ -14,7 +14,7 @@
       <class name="suit.mini_cart"/>
       <class name="suit.view_cart"/>
       <class name="suit.checkout"/>
-      <class name="suit.my_account"/> -->
+      <class name="suit.my_account"/>
 	 <class name="suit.close_browser"/>
     </classes>
   </test> <!-- Default test -->

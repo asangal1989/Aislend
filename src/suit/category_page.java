@@ -27,6 +27,7 @@ public class category_page extends global_variables{
 		
 	
 		testinfo=reports.createTest(this.getClass().getName());		
+		qc_testinfo=qc_reports.createTest(this.getClass().getName());
 		log_system.info("*********************Execution Start for: "+this.getClass().getSimpleName()+"************************");
 		excelReader getExcelSheet=new excelReader();
 		takescreenshot getscreenshot=new takescreenshot();
@@ -66,7 +67,6 @@ public class category_page extends global_variables{
 				  {
 					  System.out.println("");
 				  }
-
 				  log_system.info(this.getClass().getSimpleName()+": Test case "+UseCase_ID+"_"+TestCase_ID+" is executing");
 				  result_log= act.ActionSelect(UseCase_ID,TestCase_ID, Description, Action,ElementType,Element,Input1,Input2,Input3,Input4);				  			
 				  log_system.info(this.getClass().getSimpleName()+": Execution complete for Test case "+UseCase_ID+"_"+TestCase_ID);
@@ -85,7 +85,7 @@ public class category_page extends global_variables{
 			  }
 			recorder.stopRecording();			
 			reports.flush();
-			
+			qc_reports.flush();
 		}
 		catch(Exception e)
 		{
@@ -96,11 +96,13 @@ public class category_page extends global_variables{
 				recorder.stopRecording();
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			} catch (Exception e1) {
 				log_system.error(e.getStackTrace().toString());
 				Driver.quit();
 				reports.flush();
+				qc_reports.flush();
 				System.exit(0);
 			}			
 		}
