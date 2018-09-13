@@ -23,8 +23,7 @@ public class global_variables extends ReportsManager{
 		File Rlog=new File(path_lib_system_log+"Rlog.log");
 		File TTCClog1=new File(path_lib_system_log+"TTCClog1.log");
 		File web=new File(path_lib_system_log+"Web.html");
-		File reportTest=new File(path_lib_system_log+"testReport.html");
-		File qc_reportTest=new File(path_lib_system_log+"qc_testReport.html");
+
 		if(Rlog.exists())
 		{
 			Rlog.delete();
@@ -38,14 +37,6 @@ public class global_variables extends ReportsManager{
 			web.delete();
 		}		
 		
-		if(reportTest.exists())
-		{
-			reportTest.delete();
-		}
-		if(qc_reportTest.exists())
-		{
-			qc_reportTest.delete();
-		}
 		log_system=Logger.getLogger(this.getClass().getName());
 		PropertyConfigurator.configure(SourcePath.getAbsolutePath()+"\\lib_properties\\log4j.properties");
 		

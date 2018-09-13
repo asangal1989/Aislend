@@ -80,12 +80,11 @@ public class action_execute extends global_variables{
 				    cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				    cap.setCapability(ChromeOptions.CAPABILITY, options);
 				    log_system.info("Creating object for browser"+ BrowserName );
-				    Driver = new ChromeDriver(cap);
-				    log_system.info("Browser Opened successfully: "+ BrowserName );
-				    log_system.info("Deleting all cookies for: "+ BrowserName );
+				    Driver = new ChromeDriver(cap);				    
 				    Driver.manage().deleteAllCookies();
 				    Status=1;
 				    mainwindow=Driver.getWindowHandle();
+				    log_system.info("Browser Opened successfully: "+ BrowserName );
 				    break;
 				}
 				case "FireFox":
@@ -179,8 +178,7 @@ public class action_execute extends global_variables{
 	{				
 		Driver.get(url);
 		Status=1;
-		log_system.info("URL opened Successfully: "+ url);
-		log_system.info("Status of Get URL: "+Status);
+		log_system.info("URL opened Successfully: "+ url);		
 		return Status;
 	}
 	
@@ -200,13 +198,11 @@ public class action_execute extends global_variables{
 		wait.until(ExpectedConditions.presenceOfElementLocated(element_locator));
 		Actions act=new Actions(Driver);
 		act.moveToElement(Driver.findElement(element_locator)).build().perform();
-		System.out.println(Driver.findElement(element_locator).getText().trim().toLowerCase().replace("\"", ""));
-		System.out.println(text);
 		if(Driver.findElement(element_locator).getText().trim().toLowerCase().replace("\"", "").contains(text.toString().trim().toLowerCase()))
 		{			
 			Status=1;
-			log_system.info("Verify Element");
-			log_system.info("Status of verify Element: "+Status);
+			log_system.info("Text Verified: "+text);
+			log_system.info("Status of verify Text: "+Status);
 		}				
 		
 		return Status;
@@ -255,7 +251,6 @@ public class action_execute extends global_variables{
 		{
 			Status=0;
 		}
-		log_system.info("Verify Element");
 		log_system.info("Status of verify Element: "+Status);
 		return Status;
 	}
@@ -273,14 +268,13 @@ public class action_execute extends global_variables{
 			Status=0;		
 		else		
 			Status=1;		
-		log_system.info("Verify No Element");
 		log_system.info("Status of verify No Element: "+Status);
 		return Status;
 	}
 	
 	
 	public int VerifyFooterLinks(String ElementKey, String ElementSelector) 
-	{	
+	{			
 		int verifyFooterCount=0;
 		ArrayList<String> categoryList=new ArrayList<String>();
 		element_locator=element_loc.getElement(ElementKey, ElementSelector);
@@ -290,41 +284,36 @@ public class action_execute extends global_variables{
 		List<WebElement> FotterLink_lst=FooterLink.findElements(By.xpath("//ul[normalize-space(@class) = 'categories-list']"));
 		for(WebElement footerLnk_itr:FotterLink_lst)
 		{
-			List<WebElement> footer_category=footerLnk_itr.findElements(By.tagName("li"));
+			List<WebElement> footer_category=footerLnk_itr.findElements(By.tagName("a"));
 			for(WebElement category:footer_category)
 			{
 				if(category.getText().length()>0)
-				categoryList.add(category.getText());
+					categoryList.add(category.getText());
 			}
 		}
 		
 		for(String categoryName:categoryList)
 		{
-			WebElement category_ele=Driver.findElement(By.linkText(categoryName));
-			act.moveToElement(category_ele).build().perform();
+			WebElement category_ele=Driver.findElement(By.xpath("//ul[normalize-space(@class) = 'categories-list']//a[contains(text(),'"+categoryName+"')]"));					
 			String old_url=Driver.getCurrentUrl();
 			category_ele.click();
 			String current_url=Driver.getCurrentUrl();
 			if(old_url!=current_url)
 			{
 				
-				Driver.navigate().back();	
+				Driver.navigate().back();				
 			}
 			else
 			{
+				log_system.error("Link is not working: "+ categoryName);
 				verifyFooterCount++;
 			}			
 		}
 		
-		if(verifyFooterCount>0)
+		if(verifyFooterCount==0)
 		{
-			Status=0;
-		}
-		else
-		{
-			Status=1;	
-		}
-		log_system.info("VerifyFooterLinks");
+			Status=1;
+		}	
 		log_system.info("Status of VerifyFooterLinks: "+Status);
 		return Status;
 	}
@@ -354,12 +343,12 @@ public class action_execute extends global_variables{
 			category_ele.click();
 			String current_url=Driver.getCurrentUrl();
 			if(old_url!=current_url)
-			{
-				
+			{				
 				Driver.navigate().back();	
 			}
 			else
 			{
+				log_system.error("Link is not working: "+ categoryName);
 				verifyFooterCount++;
 			}			
 		}
@@ -371,7 +360,6 @@ public class action_execute extends global_variables{
 			Status=1;
 		}
 		
-		log_system.info("VerifyFooterLinks");
 		log_system.info("Status of VerifyFooterLinks: "+Status);
 		return Status;
 	}
@@ -389,13 +377,10 @@ public class action_execute extends global_variables{
 				act.moveToElement(menu_list_itr).build().perform();
 				Status=1;
 				break;
-			}
-		
+			}			
 		
 		}
-		
 				
-		log_system.info("VerifyMyAccountMenu");
 		log_system.info("Status of VerifyMyAccountMenu: "+Status);
 		return Status;
 	}
@@ -454,7 +439,6 @@ public class action_execute extends global_variables{
 				}
 				
 				log_system.info("Product list get for categry: "+ categoryName);
-				System.out.println(category.getText());
 				category.click();
 				handle_ajax_call.HandleAjaxCall();
 				log_system.info("Verify Product by category: "+ categoryName);
@@ -470,24 +454,21 @@ public class action_execute extends global_variables{
 
 				if(!ProductListCategoryPage.equals(ProductListmenu))
 				{
+					log_system.error("Product List mismatch for category: "+ categoryName);
 					error.add("Product List mismatch for category: "+ categoryName);
 				}
 				
-				if(error.size()>0)
-				{
- 					Status=0;
-				}
-				else
+				if(error.size()==0)				
 				{
 					Status=1;
 				}
 			}
 		} catch (Exception e) {
 			Driver.get(Driver.getCurrentUrl());
+			log_system.error("Not able to verify category and it's product");
 			Status=0;
 		}
 		
-
 		log_system.info("Status of verify Category and Product on Home Page: "+Status);
 		return Status;
 	}
@@ -575,10 +556,11 @@ public class action_execute extends global_variables{
 							String Sitemap=Driver.findElement(By.xpath("//ul[normalize-space(@class) = 'items breadcrumbs__list']")).getText();
 							if(Sitemap.toLowerCase().contains(Category_itr.toLowerCase()) && Sitemap.toLowerCase().contains(Subcategory.toLowerCase()))
 							{
-								
+								continue;
 							}
 							else
 							{
+								log_system.error("incorrect category name: "+ Category_itr+ " or subcategory name: "+ Subcategory);
 								sitemapcount++;
 							}
 							Driver.navigate().back();
@@ -590,14 +572,11 @@ public class action_execute extends global_variables{
 			}
 			
 		} catch (Exception e) {
-			
+			error.add("Site map verification from category page is failed");
+			log_system.error("Site map verification from category page is failed");
 			Status=0;
 		}
-		if(sitemapcount>0)
-		{
-			Status=0;
-		}
-		else
+		if(sitemapcount==0)		
 		{
 			Status=1;
 		}
@@ -675,7 +654,7 @@ public class action_execute extends global_variables{
 			}
 		} catch (Exception e) {
 
-			log_system.info("User not navigated");
+			log_system.error("User is not able to navigate");
 			Status=0;
 		}
 				
@@ -723,7 +702,7 @@ public class action_execute extends global_variables{
 			}
 		} catch (Exception e) {
 
-			log_system.info("User not navigated");
+			log_system.info("User is not able to navigate");
 			Status=0;
 		}
 				
@@ -822,19 +801,19 @@ public class action_execute extends global_variables{
 								else
 								{
 									error_log.add("Incorrect count details for: "+ minicart_ProductName);
-									log_system.info("Incorrect count details for: "+ minicart_ProductName);
+									log_system.error("Incorrect count details for: "+ minicart_ProductName);
 								}
 							}
 							else
 							{
 								error_log.add("Incorrect price details for: "+ minicart_ProductName);
-								log_system.info("Incorrect price details for: "+ minicart_ProductName);
+								log_system.error("Incorrect price details for: "+ minicart_ProductName);
 							}
 						}
 						else
 						{
 							error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-							log_system.info("Incorrect Product Name for: "+ minicart_ProductName);
+							log_system.error("Incorrect Product Name for: "+ minicart_ProductName);
 							
 						}
 						
@@ -843,18 +822,18 @@ public class action_execute extends global_variables{
 				else
 				{
 					error_log.add("Incorrect Product total price");
-					log_system.info("Incorrect Product total price");
+					log_system.error("Incorrect Product total price");
 				}
 			}
 			
 		} catch (Exception e) {
 
-			e.printStackTrace();
-		}		
-		if(error_log.isEmpty())
-			Status=1;
-		else
+			log_system.error("minicart verification failed");
 			Status=0;
+		}
+		
+		if(error_log.isEmpty())
+			Status=1;		
 		
 		return Status;
 	}
@@ -887,7 +866,6 @@ public class action_execute extends global_variables{
 				    respCode = huc.getResponseCode();
 				    
 				    if(respCode >= 400){
-				        System.out.println(url+" is a broken link");
 				        log_system.error(url+" is a broken link");
 				        errorcount++;
 				    }            
@@ -927,6 +905,7 @@ public class action_execute extends global_variables{
  				else
  				{
  					error_log.add("Incorrect message for minicart empty");
+ 					log_system.error("Incorrect message appearing for minicart empty");
  				}
 			}
 			else
@@ -1019,7 +998,7 @@ public class action_execute extends global_variables{
 									else
 									{
 										error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-										log_system.info("Incorrect Product Name for: "+ minicart_ProductName);										
+										log_system.error("Incorrect Product Name for: "+ minicart_ProductName);										
 									}
 								}								
 							}
@@ -1127,7 +1106,7 @@ public class action_execute extends global_variables{
 										else
 										{
 											error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-											log_system.info("Incorrect Product Name for: "+ minicart_ProductName);										
+											log_system.error("Incorrect Product Name for: "+ minicart_ProductName);										
 										}
 									}								
 								}
@@ -1135,7 +1114,7 @@ public class action_execute extends global_variables{
 							else
 							{
 								error_log.add("Incorrect Product total price");
-								log_system.info("Incorrect Product total price");
+								log_system.error("Incorrect Product total price");
 								break;
 							}
 						}
@@ -1155,7 +1134,7 @@ public class action_execute extends global_variables{
 			
 		} catch (Exception e) {
 
-			e.printStackTrace();
+			log_system.error("system is not able to verify minicart dynamic messsage");
 		}		
 		
 		
@@ -1195,6 +1174,7 @@ public class action_execute extends global_variables{
  				else
  				{
  					error_log.add("Incorrect message for minicart empty");
+ 					log_system.error("Incorrect message appearing for minicart empty");
  				}
 			}
 			else
@@ -1273,7 +1253,7 @@ public class action_execute extends global_variables{
 							else
 							{
 								error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-								log_system.info("Incorrect Product Name for: "+ minicart_ProductName);
+								log_system.error("Incorrect Product Name for: "+ minicart_ProductName);
 								
 							}
 						}
@@ -1285,18 +1265,16 @@ public class action_execute extends global_variables{
 				else
 				{
 					error_log.add("Incorrect Product total price");
-					log_system.info("Incorrect Product total price");
+					log_system.error("Incorrect Product total price");
 				}
 			}
 			
 		} catch (Exception e) {
-
+			log_system.error("Ececutino failed for app product mini cart");
 			e.printStackTrace();
 		}		
 		if(error_log.isEmpty())
 			Status=1;
-		else
-			Status=0;
 		
 		return Status;
 	}
@@ -1335,6 +1313,7 @@ public class action_execute extends global_variables{
  				}
  				else
  				{
+ 					log_system.error("Incorrect message appearing for minicart empty");
  					error_log.add("Incorrect message for minicart empty");
  				}
 			}
@@ -1419,7 +1398,7 @@ public class action_execute extends global_variables{
 							else
 							{
 								error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-								log_system.info("Incorrect Product Name for: "+ minicart_ProductName);
+								log_system.error("Incorrect Product Name for: "+ minicart_ProductName);
 								
 							}
 						}
@@ -1428,18 +1407,16 @@ public class action_execute extends global_variables{
 				else
 				{
 					error_log.add("Incorrect Product total price");
-					log_system.info("Incorrect Product total price");
+					log_system.error("Incorrect Product total price");
 				}
 			}
 			
 		} catch (Exception e) {
 
-			e.printStackTrace();
+			log_system.error("Execution failed for remove product from mini cart");
 		}		
 		if(error_log.isEmpty())
 			Status=1;
-		else
-			Status=0;
 		
 		return Status;
 	}
@@ -1482,6 +1459,7 @@ public class action_execute extends global_variables{
  				}
  				else
  				{
+ 					log_system.error("Incorrect message appearing for minicart empty");
  					error_log.add("Incorrect message for minicart empty");
  				}
 			}
@@ -1568,7 +1546,7 @@ public class action_execute extends global_variables{
 									else
 									{
 										error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-										log_system.info("Incorrect Product Name for: "+ minicart_ProductName);
+										log_system.error("Incorrect Product Name for: "+ minicart_ProductName);
 										
 									}
 								}
@@ -1580,7 +1558,7 @@ public class action_execute extends global_variables{
 						else
 						{
 							error_log.add("Incorrect Product total price");
-							log_system.info("Incorrect Product total price");
+							log_system.error("Incorrect Product total price");
 						}
 					}
 					
@@ -1652,7 +1630,7 @@ public class action_execute extends global_variables{
 								else
 								{
 									error_log.add("Incorrect Product Name for: "+ minicart_ProductName);
-									log_system.info("Incorrect Product Name for: "+ minicart_ProductName);
+									log_system.error("Incorrect Product Name for: "+ minicart_ProductName);
 									
 								}
 							}
@@ -1664,7 +1642,7 @@ public class action_execute extends global_variables{
 					else
 					{
 						error_log.add("Incorrect Product total price");
-						log_system.info("Incorrect Product total price");
+						log_system.error("Incorrect Product total price");
 					}
 
 				}
@@ -1672,13 +1650,12 @@ public class action_execute extends global_variables{
 			}
 			
 		} catch (Exception e) {
-
-			e.printStackTrace();
+			log_system.error("Execution failed for delete product from mini cart");
+			
 		}		
 		if(error_log.isEmpty())
 			Status=1;
-		else
-			Status=0;
+		
 		
 		return Status;
 	}	
@@ -1755,8 +1732,6 @@ public class action_execute extends global_variables{
 		List<WebElement> sort_li_list=sort_ul.findElements(By.tagName("li"));
 		for(WebElement sort_li:sort_li_list)
 		{
-			System.out.println(sort_li.getText().toLowerCase());
-			System.out.println(SortType.toLowerCase());
 			if(sort_li.getText().toLowerCase().equals(SortType.toLowerCase()))
 			{
 				sort_li.click();
@@ -1852,10 +1827,9 @@ public class action_execute extends global_variables{
 			{						
 				if(!productprice_sequence_default.get(i).equals(productprice_sequence_sort_apply.get(i)))
 				{
-					System.out.println(i);
-					System.out.println(productprice_sequence_default.get(i));
-					System.out.println(productprice_sequence_sort_apply.get(i));
+					
 					errorLog.add("incorrect sort for product: "+ productname_sequence_default.get(i));
+					log_system.error("incorrect sort for product: "+ productname_sequence_default.get(i));
 					count_sort_found++;
 				}						
 			}				
@@ -1866,11 +1840,9 @@ public class action_execute extends global_variables{
 			for(int i=0;i<listsize;i++)
 			{						
 				if(!productprice_sequence_default.get(i).equals(productprice_sequence_sort_apply.get(i)))
-				{
-					System.out.println(i);
-					System.out.println(productprice_sequence_default.get(i));
-					System.out.println(productprice_sequence_sort_apply.get(i));
+				{					
 					errorLog.add("incorrect sort for product: "+ productname_sequence_default.get(i));
+					log_system.error("incorrect sort for product: "+ productname_sequence_default.get(i));
 					count_sort_found++;
 				}						
 			}				
@@ -1928,8 +1900,6 @@ public class action_execute extends global_variables{
 				
 		}
 		
-		
-		log_system.info("SelectMyAccountTab perfomed");
 		log_system.info("Status of SelectMyAccountTab: "+Status);
 		return Status;
 	}
@@ -1955,7 +1925,6 @@ public class action_execute extends global_variables{
 		Driver.findElement(element_locator).sendKeys(Keys.BACK_SPACE);
 		Driver.findElement(element_locator).sendKeys(InputString);
 		Status=1;
-		log_system.info("Text Entered");
 		log_system.info("Status of SetText: "+Status);
 		return Status;
 	}
@@ -1979,7 +1948,6 @@ public class action_execute extends global_variables{
 		Driver.findElement(element_locator).sendKeys(Keys.CONTROL+"a");
 		Driver.findElement(element_locator).sendKeys(Keys.BACK_SPACE);
 		Status=1;
-		log_system.info("Text Cleared");
 		log_system.info("Status of ClearText: "+Status);
 		return Status;
 	}
@@ -2031,8 +1999,8 @@ public class action_execute extends global_variables{
 		if(Status==0)
 		{
 			
-			log_system.info("Product details not found: "+ ProductName);
-			log_system.info("Status of Product Search: "+Status);
+			log_system.error("Product details not found: "+ ProductName);
+			log_system.error("Status of Product Search: "+Status);
 		}
 		return Status;
 	}
@@ -2153,6 +2121,7 @@ public class action_execute extends global_variables{
 				if(productfound==0)
 				{
 					errorlog.add("Product not added in wishlist: "+ productnamewishlist);
+					log_system.error("Product not added in wishlist: "+ productnamewishlist);
 				}
 			}			
 		}
@@ -2187,8 +2156,8 @@ public class action_execute extends global_variables{
 		
 		if(Status==0)
 		{
-			log_system.info("Link not found: "+ LinkName);
-			log_system.info("Status of HeaderMenuSearch: "+Status);
+			log_system.error("Link not found: "+ LinkName);
+			log_system.error("Status of HeaderMenuSearch: "+Status);
 		}
 		return Status;
 	}
@@ -2206,7 +2175,7 @@ public class action_execute extends global_variables{
 		ArrayList<String> product_list_Collection=new ArrayList<String>();
 		String ProductName=null;
 		Random rdm=new Random();
-		if(Exist.toLowerCase().contains("exist"))
+		if(Exist.toLowerCase().contains("exist") && !Product_added_details.isEmpty())
 		{
 			Set<String> product_category_set=Product_added_details.keySet();
 			for(String product_name:product_category_set)
@@ -2377,7 +2346,7 @@ public class action_execute extends global_variables{
 									else
 									{
 										Status=0;
-										log_system.info("Product not found");
+										log_system.error("Product not found");
 										log_system.info("Status of Product move and add: "+Status);
 									}
 																		
@@ -2488,7 +2457,6 @@ public class action_execute extends global_variables{
 														act.moveToElement(element_product_item_info_details_cart_name_itrator).build().perform();
 														
 														WebElement addmoreProduct=element_product_item_info_details_cart_add_button_itrate;
-														System.out.println(addmoreProduct.getText());
 														if(addmoreProduct.getText().equals("—"))
 														{
 															if(addmoreProduct.isDisplayed()==true)
@@ -2525,7 +2493,7 @@ public class action_execute extends global_variables{
 											else
 											{
 												MoveAndRemoveProduct++;
-												log_system.info("Product found on screen but there is no product added in the cart");
+												log_system.error("Product found on screen but there is no product added in the cart");
 												log_system.info("Status of Product move and remove: "+Status);
 												
 											}
@@ -2664,7 +2632,7 @@ public class action_execute extends global_variables{
 											else
 											{
 												MoveAndRemoveProduct++;
-												log_system.info("Product found on screen but there is no product added in the cart");
+												log_system.error("Product found on screen but there is no product added in the cart");
 												log_system.info("Status of Product move and remove: "+Status);
 												
 											}
@@ -2685,8 +2653,7 @@ public class action_execute extends global_variables{
 		}
 		else
 		{
-			System.out.println("no product found in cart");
-			log_system.info("no product found in cart");
+			log_system.error("no product found in cart");
 		}
 			
 		return Status;
@@ -2746,7 +2713,7 @@ public class action_execute extends global_variables{
 				else
 				{
 					Status=0;
-					log_system.info("Select Substitute Not Done for Product: "+ ProductName+" as Product not found");
+					log_system.error("Select Substitute Not Done for Product: "+ ProductName+" as Product not found");
 					log_system.info("Status of select Product substitue: "+Status);
 				}
 				break Substitue_select;
@@ -3190,8 +3157,10 @@ public class action_execute extends global_variables{
 	}
 	
 	
-	public int SelectSlot(String ElementKey, String ElementSelector,String selection_date,String Selection_time) throws InterruptedException
+	public int SelectSlot(String ElementKey, String ElementSelector) throws InterruptedException
 	{
+		String selection_date=null;
+		String Selection_time=null;
 		Thread.sleep(3000);
 		int Date_search=0;
 		int Time_search=0;
@@ -3219,70 +3188,87 @@ public class action_execute extends global_variables{
 			}
 		}
 		
-		break_slot:	
-		for(WebElement element2:elements)
+		if(selection_date==null || Selection_time==null)
 		{
-			if(element2.getText().toLowerCase().toString().contains(selection_date.toLowerCase().toString()))
-			{
-				Date_search++;
-				elements=element2.findElements(By.tagName("td"));
-				for(WebElement element3:elements)
+			log_system.info("no slot for seletion");
+			Status=1;
+		}
+		else
+		{
+			break_slot:	
+				for(WebElement element2:elements)
 				{
-					if(element3.getText().toLowerCase().toString().contains(Selection_time.toLowerCase().toString()))
-					{						
-						elements=element2.findElements(By.tagName("div"));
-						for(WebElement element4:elements)
+					if(element2.getText().toLowerCase().toString().contains(selection_date.toLowerCase().toString()))
+					{
+						Date_search++;
+						elements=element2.findElements(By.tagName("td"));
+						for(WebElement element3:elements)
 						{
-							if(element4.getText().toLowerCase().toString().contains(Selection_time.toLowerCase().toString()))
-							{
-								Time_search++;
-								
-								if(element4.getAttribute("class").toLowerCase().toString().equals("Slot".toLowerCase().toString()) || element4.getAttribute("class").toLowerCase().toString().equals("slot selected".toLowerCase().toString()))
-								{									
-									Actions act=new Actions(Driver);
-									act.moveToElement(element4).build().perform();
-									element4.click();
-									if(element4.getAttribute("class").toLowerCase().toString().equals("slot selected".toLowerCase().toString()))
-									{
-										Status=1;
-										log_system.info("Slot Selected: "+selection_date+" "+ Selection_time);
-										log_system.info("Status of select Product substitue: "+Status);
-										break break_slot;
-									}
-									else
-									{
-										Status=1;
-										log_system.info("system is not able to select slot: "+selection_date+" "+ Selection_time);
-										log_system.info("Status of select Product substitue: "+Status);
-										break break_slot;
-									}
-								}
-								else
+							if(element3.getText().toLowerCase().toString().contains(Selection_time.toLowerCase().toString()))
+							{						
+								elements=element2.findElements(By.tagName("div"));
+								for(WebElement element4:elements)
 								{
-									Status=0;
-									log_system.info("Slot is disabled: "+ selection_date+" "+Selection_time);
-									log_system.info("Status of Selection of slot: "+Status);
-									break break_slot;
+									if(element4.getText().toLowerCase().toString().contains(Selection_time.toLowerCase().toString()))
+									{
+										Time_search++;
+										
+										if(element4.getAttribute("class").toLowerCase().toString().equals("Slot".toLowerCase().toString()) || element4.getAttribute("class").toLowerCase().toString().equals("slot selected".toLowerCase().toString()))
+										{									
+											Actions act=new Actions(Driver);
+											act.moveToElement(element4).build().perform();
+											element4.click();
+											if(element4.getAttribute("class").toLowerCase().toString().equals("slot selected".toLowerCase().toString()))
+											{
+												Status=1;
+												log_system.info("Slot Selected: "+selection_date+" "+ Selection_time);
+												log_system.info("Status of select Product substitue: "+Status);
+												break break_slot;
+											}
+											else
+											{
+												Status=0;
+												log_system.error("system is not able to select slot: "+selection_date+" "+ Selection_time);
+												log_system.info("Status of select Product substitue: "+Status);
+												break break_slot;
+											}
+										}
+										else
+										{
+											Status=0;
+											log_system.error("Slot is disabled: "+ selection_date+" "+Selection_time);
+											log_system.info("Status of Selection of slot: "+Status);
+											break break_slot;
+										}
+										
+									}
 								}
-								
 							}
 						}
 					}
 				}
-			}
 		}
 		
-		if(Date_search<=0)
+		
+		
+		if(selection_date==null || Selection_time==null)
 		{
-			Status=0;
-			log_system.info("Slot date not founnd: "+ selection_date+" "+Selection_time);
-			log_system.info("Status of slot Selection: "+Status);
+			
 		}
-		else if(Time_search<=0)
+		else
 		{
-			Status=0;
-			log_system.info("Slot Time not founnd: "+ selection_date+" "+Selection_time);
-			log_system.info("Status of slot Selection: "+Status);
+			if(Date_search<=0)
+			{
+			
+				log_system.error("Slot date not founnd: "+ selection_date+" "+Selection_time);
+				log_system.info("Status of slot Selection: "+Status);
+			}
+			else if(Time_search<=0)
+			{
+				Status=0;
+				log_system.error("Slot Time not founnd: "+ selection_date+" "+Selection_time);
+				log_system.info("Status of slot Selection: "+Status);
+			}
 		}
 		return Status;
 	}

@@ -13,7 +13,7 @@ import global_utility.global_variables;
 import global_utility.handle_ajax_call;
 import global_utility.random_email;
 import global_utility.takescreenshot;
-import global_utility.video_capture;
+
 import reader_writer.excelReader;
 import reader_writer.excelWriter;
 
@@ -33,7 +33,7 @@ public class view_cart extends global_variables{
 		takescreenshot getscreenshot=new takescreenshot();
 		action_select act=new action_select();
 		excelWriter output=new excelWriter();		
-		video_capture recorder=new video_capture();
+		/*video_capture recorder=new video_capture();*/
 		
 		try
 		{
@@ -46,7 +46,7 @@ public class view_cart extends global_variables{
 			test_data=getExcelSheet.readInputs(path_lib_testcase+prop.getProperty("aislend_ViewCart_FileName"), prop.getProperty("aislend_ViewCart_SheetName"));
 			log_system.info("*************************** Data set Ready for "+this.getClass().getSimpleName()+" ***************************************");
 			log_system.info("******************************* Intializing Recorder *************************************");
-			recorder.startRecording(path_lib_record,prop.getProperty("aislend_ViewCart_SheetName"));
+			/*recorder.startRecording(path_lib_record,prop.getProperty("aislend_ViewCart_SheetName"));*/
 			path_lib_recoderfull=path_lib_record+prop.getProperty("aislend_ViewCart_SheetName")+".mov";
 			log_system.info("************************************** Start Execution "+this.getClass().getSimpleName()+" *********************************************");
 			for(List TestData:test_data)
@@ -84,7 +84,7 @@ public class view_cart extends global_variables{
 				  log_system.info("Output written");	
 				  
 			  }
-			recorder.stopRecording();			
+			/*recorder.stopRecording();*/			
 			reports.flush();
 			qc_reports.flush();
 		}
@@ -94,7 +94,7 @@ public class view_cart extends global_variables{
 			log_system.error(e.getStackTrace().toString());
 			log_system.error(e.getMessage());
 			try {
-				recorder.stopRecording();
+				/*recorder.stopRecording();*/
 				Driver.quit();
 				reports.flush();
 				qc_reports.flush();

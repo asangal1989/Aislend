@@ -18,8 +18,7 @@ public class action_select extends global_variables{
 		int Status=0;
 		ArrayList<String> result_log=new ArrayList<String>();
 		try
-		{
-			log_system.info("Select Action: "+ Action);
+		{			
 			switch(Action)
 			{
 			case "OpenBrowser":
@@ -35,7 +34,7 @@ public class action_select extends global_variables{
 			}
 			case "GetURL":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_GetURL(Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -46,7 +45,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyURL":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyURL(Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -57,7 +56,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyText":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyText(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -68,7 +67,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyTitle":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyTitle(Input1,Input2);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -79,7 +78,7 @@ public class action_select extends global_variables{
 			}			
 			case "VerifyElement":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyElement(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -90,7 +89,7 @@ public class action_select extends global_variables{
 			}			
 			case "VerifyNoElement":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyNoElement(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -101,7 +100,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyCategoryAndProduct":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyCategoryAndProduct(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -112,7 +111,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyMyAccountMenu":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyMyAccountMenu(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -123,7 +122,7 @@ public class action_select extends global_variables{
 			}
 			case "MoveToCategory":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_MoveToCategory(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -134,7 +133,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifySiteMapFromCategoryPage":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifySiteMapFromCategoryPage(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -146,7 +145,7 @@ public class action_select extends global_variables{
 			case "MoveToProductList":
 			{
 
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_MoveToProductList(ElementType,Element,Input1,Input2);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -157,7 +156,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyMiniCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyMiniCart(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -168,7 +167,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyBrokenLink":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyBrokenLink();
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -179,7 +178,7 @@ public class action_select extends global_variables{
 			}
 			case "AddProductfromMiniCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_AddProductfromMiniCart(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -190,7 +189,7 @@ public class action_select extends global_variables{
 			}
 			case "RemoveProductfromMiniCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_RemoveProductfromMiniCart(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -201,7 +200,7 @@ public class action_select extends global_variables{
 			}
 			case "DeleteProductfromMiniCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_DeleteProductfromMiniCart(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -212,7 +211,7 @@ public class action_select extends global_variables{
 			}
 			case "AddProductfromViewCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_AddProductfromViewCart(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -223,7 +222,7 @@ public class action_select extends global_variables{
 			}
 			case "AddInstruction":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_AddInstruction(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -234,7 +233,7 @@ public class action_select extends global_variables{
 			}
 			case "EditInstruction":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_EditInstruction(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -245,7 +244,7 @@ public class action_select extends global_variables{
 			}
 			case "RemoveInstruction":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_RemoveInstruction(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -256,7 +255,7 @@ public class action_select extends global_variables{
 			}
 			case "RemoveProductfromViewCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_RemoveProductfromViewCart(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -267,7 +266,7 @@ public class action_select extends global_variables{
 			}
 			case "DeleteProductfromViewCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_DeleteProductfromViewCart(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -278,7 +277,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifySummaryViewCart":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifySummaryViewCart(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -289,7 +288,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyMiniCartMsg":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyMiniCartMsg(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -300,7 +299,7 @@ public class action_select extends global_variables{
 			}
 			case "Click":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_Click(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -311,7 +310,7 @@ public class action_select extends global_variables{
 			}			
 			case "SelectMyAccountTab":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SelectMyAccountTab(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -322,7 +321,7 @@ public class action_select extends global_variables{
 			}
 			case "SetText":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SetText(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -333,7 +332,7 @@ public class action_select extends global_variables{
 			}
 			case "Wait":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_wait(Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -344,7 +343,7 @@ public class action_select extends global_variables{
 			}
 			case "ClearText":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_ClearText(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -355,7 +354,7 @@ public class action_select extends global_variables{
 			}
 			case "SearchProduct":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SearchProduct(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -366,7 +365,7 @@ public class action_select extends global_variables{
 			}
 			case "SearchAndAddToWishlist":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SearchAndAddToWishlist(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -377,7 +376,7 @@ public class action_select extends global_variables{
 			}
 			case "HeaderMenuSearch":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_HeaderMenuSearch(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -388,7 +387,7 @@ public class action_select extends global_variables{
 			}
 			case "MoveAndAddProduct":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_MoveAndAddProduct(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -399,7 +398,7 @@ public class action_select extends global_variables{
 			}
 			case "MoveAndRemoveProduct":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_MoveAndRemoveProduct(ElementType,Element,Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -410,7 +409,7 @@ public class action_select extends global_variables{
 			}
 			case "SortBy":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SortBy(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -421,7 +420,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyFooterLinks":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyFooterLinks(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -432,7 +431,7 @@ public class action_select extends global_variables{
 			}
 			case "VerifyPopularMultiLink":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_VerifyPopularMultiLink(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -443,7 +442,7 @@ public class action_select extends global_variables{
 			}
 			case "SelectSubstitute":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SelectSubstitute(ElementType,Element, Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -454,7 +453,7 @@ public class action_select extends global_variables{
 			}
 			case "SelectSlot":
 			{
-				log_system.info("Select Action: "+ Action);
+				log_system.info("Action Selected: "+ Action);
 				Status=act_perform.Perform_SelectSlot(ElementType,Element, Input1,Input2);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
@@ -465,7 +464,7 @@ public class action_select extends global_variables{
 			}
 			case "CloseBrowser":
 			{
-				log_system.info("Select Action: "+ Action);				
+				log_system.info("Action Selected: "+ Action);				
 				Status=act_perform.Perform_CloseBrowser(Input1);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
