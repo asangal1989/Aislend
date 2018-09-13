@@ -454,7 +454,7 @@ public class action_select extends global_variables{
 			case "SelectSlot":
 			{
 				log_system.info("Action Selected: "+ Action);
-				Status=act_perform.Perform_SelectSlot(ElementType,Element, Input1,Input2);
+				Status=act_perform.Perform_SelectSlot(ElementType,Element);
 				log_system.info("Action Executed: "+ Action);
 				log_system.info("Status of Action "+Action+": "+Status);
 				if(Status==1){result_log.add(Action+": "+Input1);result_log.add("Pass");result_log.add("-");}

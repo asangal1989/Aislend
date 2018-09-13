@@ -3251,11 +3251,7 @@ public class action_execute extends global_variables{
 		
 		
 		
-		if(selection_date==null || Selection_time==null)
-		{
-			
-		}
-		else
+		if(selection_date!=null || Selection_time!=null)
 		{
 			if(Date_search<=0)
 			{
@@ -3270,6 +3266,7 @@ public class action_execute extends global_variables{
 				log_system.info("Status of slot Selection: "+Status);
 			}
 		}
+	
 		return Status;
 	}
 	

@@ -291,10 +291,10 @@ public class action_perform extends global_variables{
 		return Status;
 	}
 	
-	public int Perform_SelectSlot(String ElementKey, String ElementSelector,String Selection_date,String Selection_time) throws InterruptedException
+	public int Perform_SelectSlot(String ElementKey, String ElementSelector) throws InterruptedException
 	{
 		
-		Status=act_execute.SelectSlot(ElementKey,ElementSelector,Selection_date,Selection_time);
+		Status=act_execute.SelectSlot(ElementKey,ElementSelector);
 		return Status;
 	}
 	
