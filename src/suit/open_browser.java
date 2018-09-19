@@ -14,7 +14,6 @@ import global_utility.global_variables;
 import global_utility.handle_ajax_call;
 import global_utility.random_email;
 import global_utility.takescreenshot;
-import global_utility.video_capture;
 import reader_writer.excelReader;
 import reader_writer.excelWriter;
 

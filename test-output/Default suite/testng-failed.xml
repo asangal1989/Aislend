@@ -3,19 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="suit.user_sign_in"/>
+      <class name="suit.view_cart"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="suit.user_sign_in">
+      <class name="suit.view_cart">
         <methods>
           <include name="getResult"/>
-          <include name="usersign"/>
           <include name="Setup"/>
           <include name="tearDown"/>
+          <include name="userregistration"/>
         </methods>
-      </class> <!-- suit.user_sign_in -->
+      </class> <!-- suit.view_cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

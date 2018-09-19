@@ -663,7 +663,7 @@ public class action_select extends global_variables{
 			}
 			case "MoveAndAddProduct":
 			{
-				result_log.add("action Move and add product failed: "+ Input1);
+				result_log.add("action Move and add product failed");
 				result_log.add("Fail");
 				result_log.add(e.getMessage());
 				log_system.error(e.getMessage());
