@@ -48,6 +48,7 @@
         <methods>
           <include name="getResult"/>
           <include name="Setup"/>
+          <include name="random_email_registor"/>
         </methods>
       </class> <!-- suit.user_register_mailinator -->
       <class name="suit.my_account">
